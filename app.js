@@ -5,6 +5,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+const sequelize = require('./app/services/db');
+
 var app = express();
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -20,6 +22,8 @@ app.use(cookieParser());
 
 // ROUTES
 app.use('/games', require('./app/routes/games.route'));
+app.use('/companies', require('./app/routes/companies.route'));
+app.use('/platforms', require('./app/routes/platforms.route'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -39,6 +43,10 @@ app.use(function(err, req, res, next) {
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
+
+  sequelize.sync({alter: true}).then(function () {
+    console.log("Database Configured");
+  });
 });
 
 module.exports = app;
