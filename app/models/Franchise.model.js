@@ -1,10 +1,11 @@
 const { DataTypes, Model } = require('sequelize');
 const sequelize = require('../services/db');
+const Company = require('./Company.model');
 
-class Person extends Model {
+class Franchise extends Model {
 }
   
-Person.init({
+Franchise.init({
     id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
@@ -17,14 +18,18 @@ Person.init({
     main_img: {
         type: DataTypes.STRING
     },
-    nationality: {
-        type: DataTypes.STRING
-    },
-    birthday: {
+    first_game_date: {
         type: DataTypes.DATEONLY
+    },
+    color: {
+        type: DataTypes.STRING
     }
 }, { 
     sequelize
 });
 
-module.exports = Person;
+Franchise.belongsTo(Company, {as: 'company', foreignKey: 'ownerId'});
+Company.hasMany(Franchise, {as: 'franchises', foreignKey: 'ownerId'});
+
+
+module.exports = Franchise;

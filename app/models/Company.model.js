@@ -14,7 +14,7 @@ Company.init({
         type: DataTypes.STRING,
         allowNull: false
     },
-    logo: {
+    main_img: {
         type: DataTypes.STRING
     },
     country: {

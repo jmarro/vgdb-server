@@ -13,8 +13,8 @@ async function getAllCompanies(req, res) {
 async function getCompany(req, res) {
   try {
     const id = req.params.id_company;
-    const game = await services.getCompany(id);
-    res.json(game);
+    const company = await services.getCompany(id);
+    res.json(company);
   } catch (err) {
     console.error(err);
     res.status(500).send('Internal Server Error');
@@ -25,8 +25,8 @@ async function createCompany(req, res) {
   try {
     console.log('request', req);
     console.log('company', req.body);
-    const something = await services.createCompany(req.body);
-    res.json(something);
+    const response = await services.createCompany(req.body);
+    res.json(response);
   } catch (err) {
     console.error(err);
     res.status(500).send('Internal Server Error');

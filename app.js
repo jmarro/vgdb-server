@@ -24,6 +24,7 @@ app.use(cookieParser());
 app.use('/games', require('./app/routes/games.route'));
 app.use('/companies', require('./app/routes/companies.route'));
 app.use('/platforms', require('./app/routes/platforms.route'));
+app.use('/people', require('./app/routes/people.route'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
