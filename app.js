@@ -25,6 +25,9 @@ app.use('/games', require('./app/routes/games.route'));
 app.use('/companies', require('./app/routes/companies.route'));
 app.use('/platforms', require('./app/routes/platforms.route'));
 app.use('/people', require('./app/routes/people.route'));
+app.use('/franchises', require('./app/routes/franchises.route'));
+app.use('/series', require('./app/routes/series.route'));
+app.use('/characters', require('./app/routes/characters.route'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

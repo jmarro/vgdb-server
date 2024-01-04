@@ -1,25 +1,34 @@
-const Company = require('../models/Company.model');
+const Franchise = require('../models/Franchise.model');
+const Franchise_Franchise = require('../models/Franchise_Franchise.model');
+const Franchise_Person = require('../models/Franchise_Person.model');
+const Person = require('../models/Person.model');
 
 
-async function getAllCompanies() {
-  return await Company.findAndCountAll({ limit: 6 });
+async function getAllFranchises() {
+  return await Franchise.findAndCountAll({ limit: 6 });
 };
 
-async function getCompany(id) {
-  return await Company.findAll({
+async function getFranchise(id) {
+  return await Franchise.findAll({
     where: {
       id: id
     },
-    include: ['parent_company', 'platforms']
+    include: ['company', 'creators', 'series', 'characters']
   });
 };
 
-async function createCompany(company) {
-  return await Company.create(company);
+async function createFranchise(company) {
+  return await Franchise.create(company);
 };
 
+async function addCreators(franchiseCreatorsArr) {
+  console.log(franchiseCreatorsArr)
+  return await Franchise_Person.bulkCreate(franchiseCreatorsArr);
+}
+
 module.exports = {
-  getAllCompanies,
-  getCompany,
-  createCompany
+  getAllFranchises,
+  getFranchise,
+  createFranchise,
+  addCreators
 };

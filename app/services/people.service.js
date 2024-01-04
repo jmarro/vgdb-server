@@ -8,7 +8,8 @@ async function getPerson(id) {
   return await Person.findAll({
     where: {
       id: id
-    }
+    },
+    include: ['franchises', 'characters']
   });
 };
 

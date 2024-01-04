@@ -33,8 +33,21 @@ async function createPlatform(req, res) {
   }
 };
 
+async function createPlatformModel(req, res) {
+  try {
+    console.log('request', req);
+    console.log('platformModel', req.body);
+    const response = await services.createPlatformModel(req.body);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 module.exports = {
   getAllPlatforms,
   getPlatform,
-  createPlatform
+  createPlatform,
+  createPlatformModel
 };

@@ -13,6 +13,7 @@ Franchise_Franchise.init({
     sequelize
 });
 
-Franchise.belongsToMany(Franchise, { through: Franchise_Franchise });
+Franchise.belongsToMany(Franchise, {  as: 'franchises_parents', through: Franchise_Franchise, foreignKey:'parent_id' });
+Franchise.belongsToMany(Franchise, {  as: 'subfranchises', through: Franchise_Franchise, foreignKey:'parent_id' });
 
 module.exports = Franchise_Franchise;

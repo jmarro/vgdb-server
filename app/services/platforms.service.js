@@ -1,4 +1,5 @@
 const Platform = require('../models/Platform.model');
+const PlatformModel = require('../models/Platform_Model.model');
 
 
 async function getAllPlatforms() {
@@ -10,7 +11,7 @@ async function getPlatform(id) {
     where: {
       id: id
     },
-    include: 'manufacturer'
+    include: ['manufacturer', 'models']
   });
 };
 
@@ -18,8 +19,13 @@ async function createPlatform(platform) {
   return await Platform.create(platform);
 };
 
+async function createPlatformModel(platformModel) {
+  return await PlatformModel.create(platformModel);
+};
+
 module.exports = {
   getAllPlatforms,
   getPlatform,
-  createPlatform
+  createPlatform,
+  createPlatformModel
 };
