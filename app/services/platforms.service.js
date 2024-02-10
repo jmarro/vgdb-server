@@ -11,7 +11,7 @@ async function getPlatform(id) {
     where: {
       id: id
     },
-    include: ['manufacturer', 'models']
+    include: ['manufacturer', 'models', 'games']
   });
 };
 

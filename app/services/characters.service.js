@@ -10,7 +10,7 @@ async function getCharacter(id) {
     where: {
       id: id
     },
-    include: ['franchise', 'creators']
+    include: ['franchise', 'creators', 'games']
   });
 };
 

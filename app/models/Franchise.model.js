@@ -31,5 +31,8 @@ Franchise.init({
 Franchise.belongsTo(Company, {as: 'company', foreignKey: 'ownerId'});
 Company.hasMany(Franchise, {as: 'franchises', foreignKey: 'ownerId'});
 
+Franchise.belongsTo(Company, {as: 'company_creator', foreignKey: 'company_creator_id'});
+Company.hasMany(Franchise, {as: 'franchises_created', foreignKey: 'company_creator_id'});
+
 
 module.exports = Franchise;

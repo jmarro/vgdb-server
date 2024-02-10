@@ -9,7 +9,7 @@ async function getPerson(id) {
     where: {
       id: id
     },
-    include: ['franchises', 'characters']
+    include: ['franchises', 'characters', 'games']
   });
 };
 
