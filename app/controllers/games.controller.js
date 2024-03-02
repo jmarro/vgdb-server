@@ -250,6 +250,31 @@ async function addAwards(req, res) {
   }
 };
 
+async function updateOwnedGame(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    console.log('request', req);
+    console.log('owned', req.body.owned);
+    const response = await services.updateOwnedGame(parseInt(game_id), req.body.owned);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function updatePersonalStatus(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    console.log('request', req);
+    console.log('personal_status', req.body.personal_status);
+    const response = await services.updatePersonalStatus(parseInt(game_id), req.body.personal_status);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
 
 module.exports = {
   getAllGames,
@@ -265,5 +290,7 @@ module.exports = {
   addSecondaryCharacters,
   addAntagonistCharacters,
   addVillainCharacters,
-  addAwards
+  addAwards,
+  updateOwnedGame,
+  updatePersonalStatus
 };

@@ -17,5 +17,7 @@ router.post('/:id_game/addAntagonistCharacters', controllers.addAntagonistCharac
 router.post('/:id_game/addSecondaryCharacters', controllers.addSecondaryCharacters);
 router.post('/:id_game/addVillainCharacters', controllers.addVillainCharacters);
 router.post('/:id_game/addAwards', controllers.addAwards);
+router.post('/:id_game/updateOwnedGame', controllers.updateOwnedGame);
+router.post('/:id_game/updatePersonalStatus', controllers.updatePersonalStatus);
 
 module.exports = router;

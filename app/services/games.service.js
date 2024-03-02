@@ -85,6 +85,23 @@ async function addAwards(gameAwardsArr) {
   return await Game_Award.bulkCreate(gameAwardsArr);
 }
 
+async function updateOwnedGame(id, owned) {
+  console.log(id);
+  await Game.update({ owned }, {
+    where: {
+      id: id
+    }
+  });
+}
+
+async function updatePersonalStatus(id, personal_status) {
+  console.log(id);
+  await Game.update({ personal_status }, {
+    where: {
+      id: id
+    }
+  });
+}
 
 module.exports = {
   getAllGames,
@@ -100,5 +117,7 @@ module.exports = {
   addSecondaryCharacters,
   addAntagonistCharacters,
   addVillainCharacters,
-  addAwards
+  addAwards,
+  updateOwnedGame,
+  updatePersonalStatus
 };
