@@ -43,6 +43,9 @@ Platform.init({
     },
     color: {
         type: DataTypes.STRING
+    },
+    wikipedia: {
+        type: DataTypes.STRING
     }
 }, { 
     sequelize

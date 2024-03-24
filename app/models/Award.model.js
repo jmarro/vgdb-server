@@ -19,7 +19,7 @@ Award.init({
     },
     main_img: {
         type: DataTypes.STRING
-    },
+    }
 }, { 
     sequelize
 });

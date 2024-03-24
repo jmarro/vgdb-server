@@ -10,7 +10,7 @@ async function getCompany(id) {
     where: {
       id: id
     },
-    include: ['parent_company', 'platforms','games']
+    include: ['parent_company', 'platforms','games', 'sub_companies']
   });
 };
 

@@ -39,6 +39,9 @@ Character.init({
     },
     bio: {
         type: DataTypes.TEXT
+    },
+    wikipedia: {
+        type: DataTypes.STRING
     }
 }, { 
     sequelize

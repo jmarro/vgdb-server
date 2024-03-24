@@ -39,12 +39,15 @@ Company.init({
     },
     color: {
         type: DataTypes.STRING
+    },
+    wikipedia: {
+        type: DataTypes.STRING
     }
 }, { 
     sequelize
 });
 
-Company.hasMany(Company, {as: 'sub_company', foreignKey: 'ownerId'});
+Company.hasMany(Company, {as: 'sub_companies', foreignKey: 'ownerId'});
 Company.belongsTo(Company, {as: 'parent_company', foreignKey: 'ownerId'});
 
 

@@ -50,6 +50,9 @@ Game.init({
     wikipedia: {
         type: DataTypes.STRING
     },
+    media: {
+        type: DataTypes.STRING
+    },
     color: {
         type: DataTypes.STRING
     },

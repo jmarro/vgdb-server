@@ -2,6 +2,7 @@ const Franchise = require('../models/Franchise.model');
 const Franchise_Franchise = require('../models/Franchise_Franchise.model');
 const Franchise_Person = require('../models/Franchise_Person.model');
 const Person = require('../models/Person.model');
+const Serie = require('../models/Serie.model');
 
 
 async function getAllFranchises() {
@@ -13,7 +14,12 @@ async function getFranchise(id) {
     where: {
       id: id
     },
-    include: ['company', 'creators', 'series', 'characters']
+    include: ['company', 'creators', 'characters',
+    {
+      model: Serie,
+      as: 'series',
+      include: ['games']
+    }]
   });
 };
 

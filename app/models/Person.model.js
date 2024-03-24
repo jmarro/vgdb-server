@@ -22,6 +22,9 @@ Person.init({
     },
     birthday: {
         type: DataTypes.DATEONLY
+    },
+    wikipedia: {
+        type: DataTypes.STRING
     }
 }, { 
     sequelize
