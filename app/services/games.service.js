@@ -7,6 +7,7 @@ const Game_Person = require('../models/Game_Person.model');
 const Game_Platform = require('../models/Game_Platform.model');
 const Game_Theme = require('../models/Game_Theme.model');
 const AwardCategory = require('../models/AwardCategory.model');
+const Character = require('../models/Character.model');
 
 async function getAllGames() {
   return await Game.findAndCountAll({ limit: 6 });
@@ -17,7 +18,12 @@ async function getGame(id) {
     where: {
       id: id
     },
-    include: ['serie', 'franchise', 'genres', 'themes', 'directors', 'platforms', 'companies', 'characters', 
+    include: ['serie', 'franchise', 'genres', 'themes', 'directors', 'platforms', 'companies',
+    {
+      model: Character,
+      as: 'characters',
+      include: ['franchise']
+    },
     {
       model: AwardCategory,
       as: 'awards',

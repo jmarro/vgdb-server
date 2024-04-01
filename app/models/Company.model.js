@@ -34,6 +34,9 @@ Company.init({
     defunct_reason: {
         type: DataTypes.STRING
     },
+    owner_relation: {
+        type: DataTypes.STRING
+    },
     previous_names: {
         type: DataTypes.STRING
     },

@@ -2,7 +2,13 @@ const services = require('../services/franchises.service');
 
 async function getAllFranchises(req, res) {
   try {
-		const franchises = await services.getAllFranchises();
+    let franchises;
+    if (req.query && req.query.name) {
+      console.log('here',req.query.name)
+      franchises = await services.getSearchFranchises(req.query.name);
+    } else { 
+      franchises = await services.getAllFranchises();
+    }
     res.json(franchises);
   } catch (err) {
     console.error(err);
@@ -52,9 +58,36 @@ async function addCreators(req, res) {
   }
 };
 
+async function updateFranchise(req, res) {
+  try {
+    const franchise_id = req.params.id_franchise;
+    console.log('request', req);
+    console.log('update franchise', req.body);
+    const response = await services.updateFranchise(parseInt(franchise_id), req.body);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function deleteFranchise(req, res) {
+  try {
+    const franchise_id = req.params.id_franchise;
+    console.log('delete', req);
+    const response = await services.deleteFranchise(parseInt(franchise_id));
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 module.exports = {
   getAllFranchises,
   getFranchise,
   createFranchise,
+  updateFranchise,
+  deleteFranchise,
   addCreators
 };

@@ -2,7 +2,13 @@ const services = require('../services/characters.service');
 
 async function getAlCharacters(req, res) {
   try {
-		const characters = await services.getAlCharacters();
+    let characters;
+    if (req.query && req.query.name) {
+      console.log('here',req.query.name)
+      characters = await services.getSearchCharacter(req.query.name);
+    } else { 
+      characters = await services.getAllCharacters();
+    }
     res.json(characters);
   } catch (err) {
     console.error(err);
@@ -33,6 +39,31 @@ async function createCharacter(req, res) {
   }
 };
 
+async function updateCharacter(req, res) {
+  try {
+    const character_id = req.params.id_character;
+    console.log('request', req);
+    console.log('update char', req.body);
+    const response = await services.updateCharacter(parseInt(character_id), req.body);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function deleteCharacter(req, res) {
+  try {
+    const character_id = req.params.id_character;
+    console.log('delete', req);
+    const response = await services.deleteCharacter(parseInt(character_id));
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 async function addCreators(req, res) {
   try {
     const character_id = req.params.id_character;
@@ -52,9 +83,30 @@ async function addCreators(req, res) {
   }
 };
 
+
+async function removeCreator(req, res) {
+  try {
+    const character_id = req.params.id_character;
+    toRemove = {
+      CharacterId: parseInt(character_id),
+      PersonId: req.body.creatorId
+    }
+    console.log('request', req);
+    console.log('persons', req.body);
+    const response = await services.removeCreator(toRemove);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 module.exports = {
   getAlCharacters,
   getCharacter,
   createCharacter,
-  addCreators
+  updateCharacter,
+  deleteCharacter,
+  addCreators,
+  removeCreator
 };

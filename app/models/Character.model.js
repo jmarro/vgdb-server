@@ -34,8 +34,7 @@ Character.init({
         type: DataTypes.STRING
     },
     role_in_franchise: {
-        type: DataTypes.STRING,
-        allowNull: false
+        type: DataTypes.STRING
     },
     bio: {
         type: DataTypes.TEXT
