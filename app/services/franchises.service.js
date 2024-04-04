@@ -23,7 +23,7 @@ async function getFranchise(id) {
     where: {
       id: id
     },
-    include: ['company', 'creators', 'characters',
+    include: ['company', 'creators', 'characters', 'company_creator',
     {
       model: Serie,
       as: 'series',
@@ -59,6 +59,16 @@ async function addCreators(franchiseCreatorsArr) {
   return await Franchise_Person.bulkCreate(franchiseCreatorsArr);
 }
 
+async function removeCreator(franchiseCreator) {
+  console.log(franchiseCreator)
+  return await Franchise_Person.destroy({
+    where: {
+      FranchiseId: franchiseCreator.FranchiseId,
+      PersonId: franchiseCreator.PersonId
+    },
+  });
+}
+
 
 
 module.exports = {
@@ -68,5 +78,6 @@ module.exports = {
   createFranchise,
   updateFranchise,
   deleteFranchise,
-  addCreators
+  addCreators,
+  removeCreator
 };

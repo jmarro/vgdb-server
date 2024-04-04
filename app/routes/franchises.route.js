@@ -9,5 +9,6 @@ router.post('/', controllers.createFranchise);
 router.put('/:id_franchise', controllers.updateFranchise);
 router.delete('/:id_franchise', controllers.deleteFranchise);
 router.post('/:id_franchise/addCreators', controllers.addCreators);
+router.post('/:id_franchise/removeCreator', controllers.removeCreator);
 
 module.exports = router;

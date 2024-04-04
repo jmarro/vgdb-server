@@ -16,8 +16,28 @@ async function createSerie(serie) {
   return await Serie.create(serie);
 };
 
+async function updateSerie(id, serie) {
+  console.log(id);
+  await Serie.update(serie, {
+    where: {
+      id: id
+    }
+  });
+}
+
+async function deleteSerie(id) {
+  console.log(id);
+  await Serie.destroy({
+    where: {
+      id: id
+    }
+  });
+}
+
 module.exports = {
   getAllSeries,
   getSerie,
-  createSerie
+  createSerie,
+  updateSerie,
+  deleteSerie
 };

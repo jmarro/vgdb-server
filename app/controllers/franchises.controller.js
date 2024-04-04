@@ -39,25 +39,6 @@ async function createFranchise(req, res) {
   }
 };
 
-async function addCreators(req, res) {
-  try {
-    const franchise_id = req.params.id_franchise;
-    console.log('request', req);
-    console.log('persons', req.body);
-    franchiseCreatorArr = req.body.map(creatorId => {
-      return {
-        FranchiseId: parseInt(franchise_id),
-        PersonId: creatorId
-      }
-    });
-    const response = await services.addCreators(franchiseCreatorArr);
-    res.json(response);
-  } catch (err) {
-    console.error(err);
-    res.status(500).send('Internal Server Error');
-  }
-};
-
 async function updateFranchise(req, res) {
   try {
     const franchise_id = req.params.id_franchise;
@@ -83,11 +64,48 @@ async function deleteFranchise(req, res) {
   }
 };
 
+async function addCreators(req, res) {
+  try {
+    const franchise_id = req.params.id_franchise;
+    console.log('request', req);
+    console.log('persons', req.body);
+    franchiseCreatorArr = req.body.map(creatorId => {
+      return {
+        FranchiseId: parseInt(franchise_id),
+        PersonId: creatorId
+      }
+    });
+    const response = await services.addCreators(franchiseCreatorArr);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function removeCreator(req, res) {
+  try {
+    const franchise_id = req.params.id_franchise;
+    toRemove = {
+      FranchiseId: parseInt(franchise_id),
+      PersonId: req.body.creatorId
+    }
+    console.log('request', req);
+    console.log('persons', req.body);
+    const response = await services.removeCreator(toRemove);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 module.exports = {
   getAllFranchises,
   getFranchise,
   createFranchise,
   updateFranchise,
   deleteFranchise,
-  addCreators
+  addCreators,
+  removeCreator
 };

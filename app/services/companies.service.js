@@ -22,7 +22,7 @@ async function getCompany(id) {
     where: {
       id: id
     },
-    include: ['parent_company', 'platforms', 'games', 'sub_companies']
+    include: ['parent_company', 'platforms', 'games', 'sub_companies', 'franchises', 'franchises_created']
   });
 };
 

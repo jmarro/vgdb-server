@@ -83,7 +83,6 @@ async function addCreators(req, res) {
   }
 };
 
-
 async function removeCreator(req, res) {
   try {
     const character_id = req.params.id_character;
