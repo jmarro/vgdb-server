@@ -6,6 +6,7 @@ const controllers = require('../controllers/platforms.controller');
 router.get('/', controllers.getAllPlatforms);
 router.get('/:id_platform', controllers.getPlatform);
 router.post('/', controllers.createPlatform);
-router.post('/model', controllers.createPlatformModel);
+router.put('/:id_platform', controllers.updatePlatform);
+router.delete('/:id_platform', controllers.deletePlatform);
 
 module.exports = router;

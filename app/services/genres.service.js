@@ -1,7 +1,27 @@
+const { Op } = require('sequelize');
+
 const Genre = require('../models/Genre.model');
 
 async function getAllGenres() {
-  return await Genre.findAndCountAll({ limit: 6 });
+  return await Genre.findAndCountAll({
+    where: {
+      parentId: {
+        [Op.eq]: null
+      }
+    },
+    limit: 9
+  });
+};
+
+async function getSearchGenres(search) {
+  return await Genre.findAndCountAll({
+    where: {
+      name: {
+        [Op.iLike]: '%'+search+'%'
+      }
+    },
+    limit: 9
+  });
 };
 
 async function getGenre(id) {
@@ -17,8 +37,29 @@ async function createGenre(genre) {
   return await Genre.create(genre);
 };
 
+async function updateGenre(id, genre) {
+  console.log(id);
+  await Genre.update(genre, {
+    where: {
+      id: id
+    }
+  });
+}
+
+async function deleteGenre(id) {
+  console.log(id);
+  await Genre.destroy({
+    where: {
+      id: id
+    }
+  });
+}
+
 module.exports = {
   getAllGenres,
+  getSearchGenres,
   getGenre,
-  createGenre
+  createGenre,
+  updateGenre,
+  deleteGenre
 };
