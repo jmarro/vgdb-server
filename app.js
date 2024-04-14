@@ -32,6 +32,7 @@ app.use('/characters', require('./app/routes/characters.route'));
 app.use('/genres', require('./app/routes/genres.route'));
 app.use('/themes', require('./app/routes/themes.route'));
 app.use('/awards', require('./app/routes/awards.route'));
+app.use('/awards-category', require('./app/routes/awardsCategory.route'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

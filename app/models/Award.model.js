@@ -19,6 +19,9 @@ Award.init({
     },
     main_img: {
         type: DataTypes.STRING
+    },
+    wikipedia: {
+        type: DataTypes.STRING
     }
 }, { 
     sequelize

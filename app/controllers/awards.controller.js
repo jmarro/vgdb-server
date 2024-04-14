@@ -2,7 +2,13 @@ const services = require('../services/awards.service');
 
 async function getAllAwards(req, res) {
   try {
-		const awards = await services.getAllAwards();
+    let awards;
+    if (req.query && req.query.name) {
+      console.log('here',req.query.name)
+      awards = await services.getSearchAwards(req.query.name);
+    } else { 
+      awards = await services.getAllAwards();
+    }
     res.json(awards);
   } catch (err) {
     console.error(err);
@@ -33,11 +39,24 @@ async function createAward(req, res) {
   }
 };
 
-async function createAwardCategory(req, res) {
+async function updateAward(req, res) {
   try {
+    const award_id = req.params.id_award;
     console.log('request', req);
-    console.log('awardCat', req.body);
-    const response = await services.createAwardCategory(req.body);
+    console.log('update award', req.body);
+    const response = await services.updateAward(parseInt(award_id), req.body);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function deleteAward(req, res) {
+  try {
+    const award_id = req.params.id_award;
+    console.log('delete', req);
+    const response = await services.deleteAward(parseInt(award_id));
     res.json(response);
   } catch (err) {
     console.error(err);
@@ -50,5 +69,6 @@ module.exports = {
   getAllAwards,
   getAward,
   createAward,
-  createAwardCategory
+  updateAward,
+  deleteAward
 };

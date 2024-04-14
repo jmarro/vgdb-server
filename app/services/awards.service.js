@@ -1,8 +1,20 @@
+const { Op } = require('sequelize');
+
 const Award = require('../models/Award.model');
-const AwardCategory = require('../models/AwardCategory.model');
 
 async function getAllAwards() {
   return await Award.findAndCountAll({ limit: 6 });
+};
+
+async function getSearchAwards(search) {
+  return await Award.findAndCountAll({
+    where: {
+      name: {
+        [Op.iLike]: '%'+search+'%'
+      }
+    },
+    limit: 9
+  });
 };
 
 async function getAward(id) {
@@ -18,13 +30,30 @@ async function createAward(award) {
   return await Award.create(award);
 };
 
-async function createAwardCategory(awardCategory) {
-  return await AwardCategory.create(awardCategory);
-};
+async function updateAward(id, award) {
+  console.log(id);
+  await Award.update(award, {
+    where: {
+      id: id
+    }
+  });
+}
+
+async function deleteAward(id) {
+  console.log(id);
+  await Award.destroy({
+    where: {
+      id: id
+    }
+  });
+}
+
 
 module.exports = {
   getAllAwards,
+  getSearchAwards,
   getAward,
   createAward,
-  createAwardCategory
+  updateAward,
+  deleteAward
 };
