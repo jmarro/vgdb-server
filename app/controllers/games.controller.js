@@ -2,7 +2,13 @@ const services = require('../services/games.service');
 
 async function getAllGames(req, res) {
   try {
-		const games = await services.getAllGames();
+    let games;
+    if (req.query && req.query.name) {
+      console.log('here',req.query.name)
+      games = await services.getSearchGames(req.query.name);
+    } else { 
+      games = await services.getAllGames();
+    }
     res.json(games);
   } catch (err) {
     console.error(err);
@@ -33,6 +39,31 @@ async function createGame(req, res) {
   }
 };
 
+async function updateGame(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    console.log('request', req);
+    console.log('update game', req.body);
+    const response = await services.updateGame(parseInt(game_id), req.body);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function deleteGame(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    console.log('delete', req);
+    const response = await services.deleteGame(parseInt(game_id));
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 async function addGenres(req, res) {
   try {
     const game_id = req.params.id_game;
@@ -52,6 +83,23 @@ async function addGenres(req, res) {
   }
 };
 
+async function removeGenre(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      GameId: parseInt(game_id),
+      GenreId: req.body.genreId
+    }
+    console.log('request', req);
+    console.log('genre', req.body);
+    const response = await services.removeGenre(toRemove);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 async function addThemes(req, res) {
   try {
     const game_id = req.params.id_game;
@@ -63,7 +111,24 @@ async function addThemes(req, res) {
         ThemeId: themeId
       }
     });
-    const response = await services.addGenres(gameThemesArr);
+    const response = await services.addThemes(gameThemesArr);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function removeTheme(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      GameId: parseInt(game_id),
+      ThemeId: req.body.themeId
+    }
+    console.log('request', req);
+    console.log('theme', req.body);
+    const response = await services.removeTheme(toRemove);
     res.json(response);
   } catch (err) {
     console.error(err);
@@ -90,6 +155,23 @@ async function addDirectors(req, res) {
   }
 };
 
+async function removeDirector(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      GameId: parseInt(game_id),
+      PersonId: req.body.directorId
+    }
+    console.log('request', req);
+    console.log('director', req.body);
+    const response = await services.removeDirector(toRemove);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 async function addPlatforms(req, res) {
   try {
     const game_id = req.params.id_game;
@@ -102,6 +184,23 @@ async function addPlatforms(req, res) {
       }
     });
     const response = await services.addPlatforms(gamePlatformsArr);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function removePlatform(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      GameId: parseInt(game_id),
+      PersonId: req.body.platformId
+    }
+    console.log('request', req);
+    console.log('platform', req.body);
+    const response = await services.removePlatform(toRemove);
     res.json(response);
   } catch (err) {
     console.error(err);
@@ -129,6 +228,23 @@ async function addDevelopers(req, res) {
   }
 };
 
+async function removeDeveloper(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      GameId: parseInt(game_id),
+      CompanyId: req.body.companyId
+    }
+    console.log('request', req);
+    console.log('company', req.body);
+    const response = await services.removeDeveloper(toRemove);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 async function addPublishers(req, res) {
   try {
     const game_id = req.params.id_game;
@@ -142,6 +258,23 @@ async function addPublishers(req, res) {
       }
     });
     const response = await services.addPublishers(gameCompaniesArr);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function removePublisher(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      GameId: parseInt(game_id),
+      CompanyId: req.body.companyId
+    }
+    console.log('request', req);
+    console.log('company', req.body);
+    const response = await services.removePublisher(toRemove);
     res.json(response);
   } catch (err) {
     console.error(err);
@@ -169,6 +302,23 @@ async function addSecondaryCharacters(req, res) {
   }
 };
 
+async function removeSecondaryCharacter(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      GameId: parseInt(game_id),
+      CharacterId: req.body.characterId
+    }
+    console.log('request', req);
+    console.log('char', req.body);
+    const response = await services.removeSecondaryCharacter(toRemove);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 async function addPlayableCharacters(req, res) {
   try {
     const game_id = req.params.id_game;
@@ -182,6 +332,23 @@ async function addPlayableCharacters(req, res) {
       }
     });
     const response = await services.addPlayableCharacters(gameCharactersArr);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function removePlayableCharacter(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      GameId: parseInt(game_id),
+      CharacterId: req.body.characterId
+    }
+    console.log('request', req);
+    console.log('char', req.body);
+    const response = await services.removePlayableCharacter(toRemove);
     res.json(response);
   } catch (err) {
     console.error(err);
@@ -209,6 +376,23 @@ async function addAntagonistCharacters(req, res) {
   }
 };
 
+async function removeAntagonistCharacter(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      GameId: parseInt(game_id),
+      CharacterId: req.body.characterId
+    }
+    console.log('request', req);
+    console.log('char', req.body);
+    const response = await services.removeAntagonistCharacter(toRemove);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 async function addVillainCharacters(req, res) {
   try {
     const game_id = req.params.id_game;
@@ -222,6 +406,23 @@ async function addVillainCharacters(req, res) {
       }
     });
     const response = await services.addVillainCharacters(gameCharactersArr);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function removeVillainCharacter(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      GameId: parseInt(game_id),
+      CharacterId: req.body.characterId
+    }
+    console.log('request', req);
+    console.log('char', req.body);
+    const response = await services.removeVillainCharacter(toRemove);
     res.json(response);
   } catch (err) {
     console.error(err);
@@ -243,6 +444,23 @@ async function addAwards(req, res) {
       }
     });
     const response = await services.addAwards(gameAwardsArr);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function removeAward(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      GameId: parseInt(game_id),
+      AwardCategoryId: req.body.awardCategoryId
+    }
+    console.log('request', req);
+    console.log('char', req.body);
+    const response = await services.removeAward(toRemove);
     res.json(response);
   } catch (err) {
     console.error(err);
@@ -280,17 +498,30 @@ module.exports = {
   getAllGames,
   getGame,
   createGame,
+  updateGame,
+  deleteGame,
   addGenres,
+  removeGenre,
   addThemes,
+  removeTheme,
   addDirectors,
+  removeDirector,
   addPlatforms,
+  removePlatform,
   addDevelopers,
+  removeDeveloper,
   addPublishers,
+  removePublisher,
   addPlayableCharacters,
+  removePlayableCharacter,
   addSecondaryCharacters,
+  removeSecondaryCharacter,
   addAntagonistCharacters,
+  removeAntagonistCharacter,
   addVillainCharacters,
+  removeVillainCharacter,
   addAwards,
+  removeAward,
   updateOwnedGame,
   updatePersonalStatus
 };

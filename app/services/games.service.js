@@ -1,3 +1,5 @@
+const { Op } = require('sequelize');
+
 const Game = require('../models/Game.model');
 const Game_Award = require('../models/Game_Award.model');
 const Game_Character = require('../models/Game_Character.model');
@@ -11,6 +13,17 @@ const Character = require('../models/Character.model');
 
 async function getAllGames() {
   return await Game.findAndCountAll({ limit: 6 });
+};
+
+async function getSearchGames(search) {
+  return await Game.findAndCountAll({
+    where: {
+      name: {
+        [Op.iLike]: '%'+search+'%'
+      }
+    },
+    limit: 9
+  });
 };
 
 async function getGame(id) {
@@ -36,9 +49,37 @@ async function createGame(game) {
   return await Game.create(game);
 };
 
+async function updateGame(id, game) {
+  console.log(id);
+  await Game.update(game, {
+    where: {
+      id: id
+    }
+  });
+}
+
+async function deleteGame(id) {
+  console.log(id);
+  await Game.destroy({
+    where: {
+      id: id
+    }
+  });
+}
+
 async function addGenres(gameGenresArr) {
   console.log(gameGenresArr)
   return await Game_Genre.bulkCreate(gameGenresArr);
+}
+
+async function removeGenre(gameGenre) {
+  console.log(gameGenre)
+  return await Game_Genre.destroy({
+    where: {
+      GameId: gameGenre.GameId,
+      GenreId: gameGenre.GenreId
+    }
+  });
 }
 
 async function addThemes(gameThemesArr) {
@@ -46,9 +87,29 @@ async function addThemes(gameThemesArr) {
   return await Game_Theme.bulkCreate(gameThemesArr);
 }
 
+async function removeTheme(gameTheme) {
+  console.log(gameTheme)
+  return await Game_Theme.destroy({
+    where: {
+      GameId: gameTheme.GameId,
+      ThemeId: gameTheme.ThemeId
+    }
+  });
+}
+
 async function addDirectors(gameDirectorsArr) {
   console.log(gameDirectorsArr)
   return await Game_Person.bulkCreate(gameDirectorsArr);
+}
+
+async function removeDirector(gameDirector) {
+  console.log(gameDirector)
+  return await Game_Person.destroy({
+    where: {
+      GameId: gameDirector.GameId,
+      PersonId: gameDirector.PersonId
+    }
+  });
 }
 
 async function addPlatforms(gamePlatformsArr) {
@@ -56,9 +117,30 @@ async function addPlatforms(gamePlatformsArr) {
   return await Game_Platform.bulkCreate(gamePlatformsArr);
 }
 
+async function removePlatform(gamePlatform) {
+  console.log(gamePlatform)
+  return await Game_Platform.destroy({
+    where: {
+      GameId: gamePlatform.GameId,
+      PlatformId: gamePlatform.PersonId
+    }
+  });
+}
+
 async function addDevelopers(gameCompaniesArr) {
   console.log(gameCompaniesArr)
   return await Game_Company.bulkCreate(gameCompaniesArr);
+}
+
+async function removeDeveloper(gameCompany) {
+  console.log(gameCompany)
+  return await Game_Company.destroy({
+    where: {
+      GameId: gameCompany.GameId,
+      CompanyId: gameCompany.CompanyId,
+      type: 'DEVELOPER'
+    }
+  });
 }
 
 async function addPublishers(gameCompaniesArr) {
@@ -66,9 +148,31 @@ async function addPublishers(gameCompaniesArr) {
   return await Game_Company.bulkCreate(gameCompaniesArr);
 }
 
+async function removePublisher(gameCompany) {
+  console.log(gameCompany)
+  return await Game_Company.destroy({
+    where: {
+      GameId: gameCompany.GameId,
+      CompanyId: gameCompany.CompanyId,
+      type: 'PUBLISHER'
+    }
+  });
+}
+
 async function addPlayableCharacters(gameCharactersArr) {
   console.log(gameCharactersArr)
   return await Game_Character.bulkCreate(gameCharactersArr);
+}
+
+async function removePlayableCharacter(gameCharacter) {
+  console.log(gameCharacter)
+  return await Game_Character.destroy({
+    where: {
+      GameId: gameCharacter.GameId,
+      CharacterId: gameCharacter.CharacterId,
+      type: 'PLAYABLE'
+    }
+  });
 }
 
 async function addSecondaryCharacters(gameCharactersArr) {
@@ -76,9 +180,31 @@ async function addSecondaryCharacters(gameCharactersArr) {
   return await Game_Character.bulkCreate(gameCharactersArr);
 }
 
+async function removeSecondaryCharacter(gameCharacter) {
+  console.log(gameCharacter)
+  return await Game_Character.destroy({
+    where: {
+      GameId: gameCharacter.GameId,
+      CharacterId: gameCharacter.CharacterId,
+      type: 'SECONDARY'
+    }
+  });
+}
+
 async function addAntagonistCharacters(gameCharactersArr) {
   console.log(gameCharactersArr)
   return await Game_Character.bulkCreate(gameCharactersArr);
+}
+
+async function removeAntagonistCharacter(gameCharacter) {
+  console.log(gameCharacter)
+  return await Game_Character.destroy({
+    where: {
+      GameId: gameCharacter.GameId,
+      CharacterId: gameCharacter.CharacterId,
+      type: 'ANTAGONIST'
+    }
+  });
 }
 
 async function addVillainCharacters(gameCharactersArr) {
@@ -86,9 +212,30 @@ async function addVillainCharacters(gameCharactersArr) {
   return await Game_Character.bulkCreate(gameCharactersArr);
 }
 
+async function removeVillainCharacter(gameCharacter) {
+  console.log(gameCharacter)
+  return await Game_Character.destroy({
+    where: {
+      GameId: gameCharacter.GameId,
+      CharacterId: gameCharacter.CharacterId,
+      type: 'VILLAIN'
+    }
+  });
+}
+
 async function addAwards(gameAwardsArr) {
   console.log(gameAwardsArr)
   return await Game_Award.bulkCreate(gameAwardsArr);
+}
+
+async function removeAward(gameAward) {
+  console.log(gameAward)
+  return await Game_Award.destroy({
+    where: {
+      GameId: gameAward.GameId,
+      AwardCategoryId: gameAward.AwardCategoryId
+    }
+  });
 }
 
 async function updateOwnedGame(id, owned) {
@@ -111,19 +258,33 @@ async function updatePersonalStatus(id, personal_status) {
 
 module.exports = {
   getAllGames,
+  getSearchGames,
   getGame,
   createGame,
+  updateGame,
+  deleteGame,
   addGenres,
+  removeGenre,
   addThemes,
+  removeTheme,
   addDirectors,
+  removeDirector,
   addPlatforms,
+  removePlatform,
   addDevelopers,
+  removeDeveloper,
   addPublishers,
+  removePublisher,
   addPlayableCharacters,
+  removePlayableCharacter,
   addSecondaryCharacters,
+  removeSecondaryCharacter,
   addAntagonistCharacters,
+  removeAntagonistCharacter,
   addVillainCharacters,
+  removeVillainCharacter,
   addAwards,
+  removeAward,
   updateOwnedGame,
   updatePersonalStatus
 };

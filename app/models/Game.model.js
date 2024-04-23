@@ -30,16 +30,13 @@ Game.init({
         allowNull: false
     },
     score: {
-        type: DataTypes.INTEGER,
-        allowNull: false
+        type: DataTypes.INTEGER
     },
     format: {
-        type: DataTypes.STRING,
-        allowNull: false
+        type: DataTypes.STRING
     },
     price: {
-        type: DataTypes.FLOAT,
-        allowNull: false
+        type: DataTypes.FLOAT
     },
     num_players: {
         type: DataTypes.STRING
