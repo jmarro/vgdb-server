@@ -3,11 +3,12 @@ const services = require('../services/franchises.service');
 async function getAllFranchises(req, res) {
   try {
     let franchises;
+    let page = req.query && req.query.page ? req.query.page : 0;
     if (req.query && req.query.name) {
       console.log('here',req.query.name)
-      franchises = await services.getSearchFranchises(req.query.name);
+      franchises = await services.getSearchFranchises(req.query.name, page);
     } else { 
-      franchises = await services.getAllFranchises();
+      franchises = await services.getAllFranchises(page);
     }
     res.json(franchises);
   } catch (err) {

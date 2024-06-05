@@ -3,11 +3,12 @@ const services = require('../services/people.service');
 async function getAllPeople(req, res) {
   try {
     let people;
+    let page = req.query && req.query.page ? req.query.page : 0;
     if (req.query && req.query.name) {
       console.log('here',req.query.name)
-      people = await services.getSearchPeople(req.query.name);
+      people = await services.getSearchPeople(req.query.name, page);
     } else { 
-      people = await services.getAllPeople();
+      people = await services.getAllPeople(page);
     }
     res.json(people);
   } catch (err) {

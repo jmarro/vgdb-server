@@ -3,11 +3,12 @@ const services = require('../services/genres.service');
 async function getAllGenres(req, res) {
   try {
     let genres;
+    let page = req.query && req.query.page ? req.query.page : 0;
     if (req.query && req.query.name) {
       console.log('here',req.query.name)
-      genres = await services.getSearchGenres(req.query.name);
+      genres = await services.getSearchGenres(req.query.name, page);
     } else { 
-      genres = await services.getAllGenres();
+      genres = await services.getAllGenres(page);
     }
     res.json(genres);
   } catch (err) {

@@ -2,18 +2,26 @@ const { Op } = require('sequelize');
 
 const Award = require('../models/Award.model');
 
-async function getAllAwards() {
-  return await Award.findAndCountAll({ limit: 6 });
+async function getAllAwards(page) {
+  const offset = 9*page;
+  return await Award.findAndCountAll({ 
+    limit: 9,
+    offset,
+    order: [['is_main', 'DESC NULLS LAST'],['name', 'ASC']]
+  });
 };
 
-async function getSearchAwards(search) {
+async function getSearchAwards(search, page) {
+  const offset = 9*page;
   return await Award.findAndCountAll({
     where: {
       name: {
         [Op.iLike]: '%'+search+'%'
       }
     },
-    limit: 9
+    limit: 9,
+    offset,
+    order: [['name', 'ASC']]
   });
 };
 

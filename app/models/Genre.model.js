@@ -17,6 +17,9 @@ Genre.init({
     main_img: {
         type: DataTypes.STRING
     },
+    is_main: {
+        type: DataTypes.BOOLEAN
+    }
 }, { 
     sequelize
 });

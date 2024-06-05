@@ -2,25 +2,31 @@ const { Op } = require('sequelize');
 
 const Theme = require('../models/Theme.model');
 
-async function getAllThemes() {
+async function getAllThemes(page) {
+  const offset = 9*page;
   return await Theme.findAndCountAll({
     where: {
       parentId: {
         [Op.eq]: null
       }
     },
-    limit: 9
+    limit: 9,
+    offset,
+    order: [['is_main', 'DESC NULLS LAST'],['name', 'ASC']]
   });
 };
 
-async function getSearchThemes(search) {
+async function getSearchThemes(search, page) {
+  const offset = 9*page;
   return await Theme.findAndCountAll({
     where: {
       name: {
         [Op.iLike]: '%'+search+'%'
       }
     },
-    limit: 9
+    limit: 9,
+    offset,
+    order: [['name', 'ASC']]
   });
 };
 

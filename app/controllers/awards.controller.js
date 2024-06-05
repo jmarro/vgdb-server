@@ -3,11 +3,12 @@ const services = require('../services/awards.service');
 async function getAllAwards(req, res) {
   try {
     let awards;
+    let page = req.query && req.query.page ? req.query.page : 0;
     if (req.query && req.query.name) {
       console.log('here',req.query.name)
-      awards = await services.getSearchAwards(req.query.name);
+      awards = await services.getSearchAwards(req.query.name, page);
     } else { 
-      awards = await services.getAllAwards();
+      awards = await services.getAllAwards(page);
     }
     res.json(awards);
   } catch (err) {

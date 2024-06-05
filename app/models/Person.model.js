@@ -25,6 +25,9 @@ Person.init({
     },
     wikipedia: {
         type: DataTypes.STRING
+    },
+    is_main: {
+        type: DataTypes.BOOLEAN
     }
 }, { 
     sequelize

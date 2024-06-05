@@ -11,18 +11,26 @@ const Game_Theme = require('../models/Game_Theme.model');
 const AwardCategory = require('../models/AwardCategory.model');
 const Character = require('../models/Character.model');
 
-async function getAllGames() {
-  return await Game.findAndCountAll({ limit: 6 });
+async function getAllGames(page) {
+  const offset = 9*page;
+  return await Game.findAndCountAll({ 
+    limit: 9,
+    offset,
+    order: [['score', 'DESC NULLS LAST'], ['name', 'ASC']]
+  });
 };
 
-async function getSearchGames(search) {
+async function getSearchGames(search, page) {
+  const offset = 9*page;
   return await Game.findAndCountAll({
     where: {
       name: {
         [Op.iLike]: '%'+search+'%'
       }
     },
-    limit: 9
+    limit: 9,
+    offset,
+    order: [['name', 'ASC']]
   });
 };
 

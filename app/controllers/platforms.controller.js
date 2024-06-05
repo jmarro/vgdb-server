@@ -3,11 +3,12 @@ const services = require('../services/platforms.service');
 async function getAllPlatforms(req, res) {
   try {
     let platforms;
+    let page = req.query && req.query.page ? req.query.page : 0;
     if (req.query && req.query.name) {
       console.log('here',req.query.name)
-      platforms = await services.getSearchPlatforms(req.query.name);
+      platforms = await services.getSearchPlatforms(req.query.name, page);
     } else { 
-      platforms = await services.getAllPlatforms();
+      platforms = await services.getAllPlatforms(page);
     }
     res.json(platforms);
   } catch (err) {

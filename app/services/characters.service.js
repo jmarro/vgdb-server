@@ -3,9 +3,12 @@ const { Op } = require('sequelize');
 const Character = require('../models/Character.model');
 const Character_Person = require('../models/Character_Person.model');
 
-async function getAllCharacters() {
+async function getAllCharacters(page) {
+  const offset = 18*page;
   return await Character.findAndCountAll({ 
-    limit: 6,
+    limit: 18,
+    offset,
+    order: [['is_main', 'DESC NULLS LAST'], ['name', 'ASC']],
     include: ['franchise']
   });
 };
@@ -19,14 +22,18 @@ async function getCharacter(id) {
   });
 };
 
-async function getSearchCharacter(search) {
+async function getSearchCharacter(search, page) {
+  const offset = 18*page;
   return await Character.findAndCountAll({
     where: {
       name: {
         [Op.iLike]: '%'+search+'%'
       }
     },
-    limit: 9
+    limit: 18,
+    offset,
+    order: [['name', 'ASC']],
+    include: ['franchise']
   });
 };
 

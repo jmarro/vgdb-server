@@ -2,18 +2,26 @@ const { Op } = require('sequelize');
 
 const Company = require('../models/Company.model');
 
-async function getAllCompanies() {
-  return await Company.findAndCountAll({ limit: 9 });
+async function getAllCompanies(page) {
+  const offset = 9*page;
+  return await Company.findAndCountAll({ 
+    limit: 9,
+    offset,
+    order: [['is_main', 'DESC NULLS LAST'],['active', 'DESC'], ['owner_relation','NULLS FIRST'], ['founding_year', 'ASC']]
+  });
 };
 
-async function getSearchCompanies(search) {
+async function getSearchCompanies(search, page) {
+  const offset = 9*page;
   return await Company.findAndCountAll({
     where: {
       name: {
         [Op.iLike]: '%'+search+'%'
       }
     },
-    limit: 9
+    limit: 9,
+    offset,
+    order: [['name', 'ASC']]
   });
 };
 

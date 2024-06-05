@@ -3,18 +3,26 @@ const Franchise_Person = require('../models/Franchise_Person.model');
 const Serie = require('../models/Serie.model');
 const { Op } = require('sequelize');
 
-async function getAllFranchises() {
-  return await Franchise.findAndCountAll({ limit: 6 });
+async function getAllFranchises(page) {
+  const offset = 9*page;
+  return await Franchise.findAndCountAll({     
+    limit: 9,
+    offset,
+    order: [['is_main', 'DESC NULLS LAST'],['name', 'ASC']]
+  });
 };
 
-async function getSearchFranchises(search) {
+async function getSearchFranchises(search, page) {
+  const offset = 9*page;
   return await Franchise.findAndCountAll({
     where: {
       name: {
         [Op.iLike]: '%'+search+'%'
       }
     },
-    limit: 9
+    limit: 9,
+    offset,
+    order: [['name', 'ASC']]
   });
 };
 

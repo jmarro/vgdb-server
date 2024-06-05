@@ -3,11 +3,12 @@ const services = require('../services/games.service');
 async function getAllGames(req, res) {
   try {
     let games;
+    let page = req.query && req.query.page ? req.query.page : 0;
     if (req.query && req.query.name) {
       console.log('here',req.query.name)
-      games = await services.getSearchGames(req.query.name);
+      games = await services.getSearchGames(req.query.name, page);
     } else { 
-      games = await services.getAllGames();
+      games = await services.getAllGames(page);
     }
     res.json(games);
   } catch (err) {

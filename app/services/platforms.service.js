@@ -1,24 +1,29 @@
 const { Op } = require('sequelize');
 
 const Platform = require('../models/Platform.model');
-const PlatformModel = require('../models/Platform_Model.model');
 
-
-async function getAllPlatforms() {
-  return await Platform.findAndCountAll({ limit: 6 });
+async function getAllPlatforms(page) {
+  const offset = 9*page;
+  return await Platform.findAndCountAll({ 
+    limit: 9,
+    offset,
+    order: [['is_main', 'DESC NULLS LAST'],['name', 'ASC']]
+  });
 };
 
-async function getSearchPlatforms(search) {
+async function getSearchPlatforms(search, page) {
+  const offset = 9*page;
   return await Platform.findAndCountAll({
     where: {
       name: {
         [Op.iLike]: '%'+search+'%'
       }
     },
-    limit: 9
+    limit: 9,
+    offset,
+    order: [['name', 'ASC']]
   });
 };
-
 
 async function getPlatform(id) {
   return await Platform.findAll({

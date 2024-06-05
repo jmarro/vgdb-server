@@ -2,25 +2,31 @@ const { Op } = require('sequelize');
 
 const Genre = require('../models/Genre.model');
 
-async function getAllGenres() {
+async function getAllGenres(page) {
+  const offset = 9*page;
   return await Genre.findAndCountAll({
     where: {
       parentId: {
         [Op.eq]: null
       }
     },
-    limit: 9
+    limit: 9,
+    offset,
+    order: [['is_main', 'DESC NULLS LAST'],['name', 'ASC']]
   });
 };
 
-async function getSearchGenres(search) {
+async function getSearchGenres(search, page) {
+  const offset = 9*page;
   return await Genre.findAndCountAll({
     where: {
       name: {
         [Op.iLike]: '%'+search+'%'
       }
     },
-    limit: 9
+    limit: 9,
+    offset,
+    order: [['is_main', 'ASC'],['name', 'ASC']]
   });
 };
 

@@ -3,11 +3,12 @@ const services = require('../services/themes.service');
 async function getAllThemes(req, res) {
   try {
     let themes;
+    let page = req.query && req.query.page ? req.query.page : 0;
     if (req.query && req.query.name) {
       console.log('here',req.query.name)
-      themes = await services.getSearchThemes(req.query.name);
+      themes = await services.getSearchThemes(req.query.name, page);
     } else { 
-      themes = await services.getAllThemes();
+      themes = await services.getAllThemes(page);
     }
     res.json(themes);
   } catch (err) {

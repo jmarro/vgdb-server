@@ -3,11 +3,12 @@ const services = require('../services/characters.service');
 async function getAlCharacters(req, res) {
   try {
     let characters;
+    let page = req.query && req.query.page ? req.query.page : 0;
     if (req.query && req.query.name) {
       console.log('here',req.query.name)
-      characters = await services.getSearchCharacter(req.query.name);
+      characters = await services.getSearchCharacter(req.query.name, page);
     } else { 
-      characters = await services.getAllCharacters();
+      characters = await services.getAllCharacters(page);
     }
     res.json(characters);
   } catch (err) {

@@ -21,7 +21,7 @@ Game_Company.init({
     sequelize
 });
 
-Company.belongsToMany(Game, { as: 'games', through: Game_Company });
-Game.belongsToMany(Company, { as: 'companies', through: Game_Company });
+Company.belongsToMany(Game, { as: 'games', through: Game_Company, unique: false });
+Game.belongsToMany(Company, { as: 'companies', through: Game_Company, unique: false });
 
 module.exports = Game_Company;

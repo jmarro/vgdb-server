@@ -3,11 +3,12 @@ const services = require('../services/companies.service');
 async function getAllCompanies(req, res) {
   try {
     let companies;
+    let page = req.query && req.query.page ? req.query.page : 0;
     if (req.query && req.query.name) {
       console.log('here',req.query.name)
-      companies = await services.getSearchCompanies(req.query.name);
+      companies = await services.getSearchCompanies(req.query.name, page);
     } else { 
-      companies = await services.getAllCompanies();
+      companies = await services.getAllCompanies(page);
     }
     res.json(companies);
   } catch (err) {
