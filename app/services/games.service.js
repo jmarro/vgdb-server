@@ -10,6 +10,7 @@ const Game_Platform = require('../models/Game_Platform.model');
 const Game_Theme = require('../models/Game_Theme.model');
 const AwardCategory = require('../models/AwardCategory.model');
 const Character = require('../models/Character.model');
+const Serie = require('../models/Serie.model');
 
 async function getAllGames(page) {
   const offset = 9*page;
@@ -39,7 +40,7 @@ async function getGame(id) {
     where: {
       id: id
     },
-    include: ['serie', 'franchise', 'genres', 'themes', 'directors', 'platforms', 'companies',
+    include: ['franchise', 'genres', 'themes', 'directors', 'platforms', 'companies',
     {
       model: Character,
       as: 'characters',
@@ -49,7 +50,12 @@ async function getGame(id) {
       model: AwardCategory,
       as: 'awards',
       include: ['award']
-    }]
+    },
+    {
+      model: Serie,
+      as: 'serie',
+      include: ['games']
+    },]
   });
 };
 
