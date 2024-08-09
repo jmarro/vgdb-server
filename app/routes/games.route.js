@@ -32,5 +32,13 @@ router.post('/:id_game/addAwards', controllers.addAwards);
 router.post('/:id_game/removeAward', controllers.removeAward);
 router.post('/:id_game/updateOwnedGame', controllers.updateOwnedGame);
 router.post('/:id_game/updatePersonalStatus', controllers.updatePersonalStatus);
+router.post('/:id_game/addGameToCollection', controllers.addGameToCollection);
+router.post('/:id_game/removeGameFromCollection', controllers.removeGameFromCollection);
+router.post('/:id_game/addGameRemake', controllers.addGameRemake);
+router.post('/:id_game/removeGameRemake', controllers.removeGameRemake);
+router.post('/:id_game/addGameRemaster', controllers.addGameRemaster);
+router.post('/:id_game/removeGameRemaster', controllers.removeGameRemaster);
+router.post('/:id_game/addGameSpinoff', controllers.addGameSpinoff);
+router.post('/:id_game/removeGameSpinoff', controllers.removeGameSpinoff);
 
 module.exports = router;

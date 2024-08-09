@@ -431,6 +431,154 @@ async function removeVillainCharacter(req, res) {
   }
 };
 
+async function addGameToCollection(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    console.log('request', req);
+    console.log('gmaes', req.body);
+    const gameGamesArr = req.body.map(gameId => {
+      return {
+        subGameId: parseInt(game_id),
+        parentGameId: gameId,
+        type: 'COLLECTION'
+      }
+    });
+    const response = await services.addGameRelation(gameGamesArr);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function removeGameFromCollection(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      subGameId: parseInt(game_id),
+      parentGameId: req.body.gameId
+    }
+    console.log('request', req);
+    console.log('char', req.body);
+    const response = await services.removeGameFromCollection(toRemove);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function addGameRemaster(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    console.log('request', req);
+    console.log('gmaes', req.body);
+    const gameGamesArr = req.body.map(gameId => {
+      return {
+        subGameId: parseInt(game_id),
+        parentGameId: gameId,
+        type: 'REMASTER'
+      }
+    });
+    const response = await services.addGameRelation(gameGamesArr);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function removeGameRemaster(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      subGameId: parseInt(game_id),
+      parentGameId: req.body.gameId
+    }
+    console.log('request', req);
+    console.log('char', req.body);
+    const response = await services.removeGameRemaster(toRemove);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function addGameRemake(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    console.log('request', req);
+    console.log('gmaes', req.body);
+    const gameGamesArr = req.body.map(gameId => {
+      return {
+        subGameId: parseInt(game_id),
+        parentGameId: gameId,
+        type: 'REMAKE'
+      }
+    });
+    const response = await services.addGameRelation(gameGamesArr);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function removeGameRemake(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      subGameId: parseInt(game_id),
+      parentGameId: req.body.gameId
+    }
+    console.log('request', req);
+    console.log('char', req.body);
+    const response = await services.removeGameRemake(toRemove);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function addGameSpinoff(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    console.log('request', req);
+    console.log('gmaes', req.body);
+    const gameGamesArr = req.body.map(gameId => {
+      return {
+        subGameId: parseInt(game_id),
+        parentGameId: gameId,
+        type: 'SPINOFF'
+      }
+    });
+    const response = await services.addGameRelation(gameGamesArr);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function removeGameSpinoff(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      subGameId: parseInt(game_id),
+      parentGameId: req.body.gameId
+    }
+    console.log('request', req);
+    console.log('char', req.body);
+    const response = await services.removeGameSpinoff(toRemove);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 async function addAwards(req, res) {
   try {
     const game_id = req.params.id_game;
@@ -524,5 +672,13 @@ module.exports = {
   addAwards,
   removeAward,
   updateOwnedGame,
-  updatePersonalStatus
+  updatePersonalStatus,
+  addGameRemake,
+  addGameToCollection,
+  addGameRemaster,
+  addGameSpinoff,
+  removeGameFromCollection,
+  removeGameRemake,
+  removeGameRemaster,
+  removeGameSpinoff
 };

@@ -11,6 +11,7 @@ const Game_Theme = require('../models/Game_Theme.model');
 const AwardCategory = require('../models/AwardCategory.model');
 const Character = require('../models/Character.model');
 const Serie = require('../models/Serie.model');
+const Game_Games = require('../models/Game_Games.model');
 
 async function getAllGames(page) {
   const offset = 9*page;
@@ -55,7 +56,15 @@ async function getGame(id) {
       model: Serie,
       as: 'serie',
       include: ['games']
-    },]
+    },
+    {
+      model: Game,
+      as: 'parentGames'
+    },
+    {
+      model: Game,
+      as: 'subGames'
+    }]
   });
 };
 
@@ -237,6 +246,55 @@ async function removeVillainCharacter(gameCharacter) {
   });
 }
 
+async function addGameRelation(gameGamesArr) {
+  console.log(gameGamesArr)
+  return await Game_Games.bulkCreate(gameGamesArr);
+}
+
+async function removeGameFromCollection(gameGames) {
+  console.log(gameGames)
+  return await Game_Games.destroy({
+    where: {
+      subGameId: gameGames.subGameId,
+      parentGameId: gameGames.parentGameId,
+      type: 'COLLECTION'
+    }
+  });
+}
+
+async function removeGameRemaster(gameGames) {
+  console.log(gameGames)
+  return await Game_Games.destroy({
+    where: {
+      subGameId: gameGames.subGameId,
+      parentGameId: gameGames.parentGameId,
+      type: 'REMASTER'
+    }
+  });
+}
+
+async function removeGameRemake(gameGames) {
+  console.log(gameGames)
+  return await Game_Games.destroy({
+    where: {
+      subGameId: gameGames.subGameId,
+      parentGameId: gameGames.parentGameId,
+      type: 'REMAKE'
+    }
+  });
+}
+
+async function removeGameSpinoff(gameGames) {
+  console.log(gameGames)
+  return await Game_Games.destroy({
+    where: {
+      subGameId: gameGames.subGameId,
+      parentGameId: gameGames.parentGameId,
+      type: 'SPINOFF'
+    }
+  });
+}
+
 async function addAwards(gameAwardsArr) {
   console.log(gameAwardsArr)
   return await Game_Award.bulkCreate(gameAwardsArr);
@@ -300,5 +358,10 @@ module.exports = {
   addAwards,
   removeAward,
   updateOwnedGame,
-  updatePersonalStatus
+  updatePersonalStatus,
+  addGameRelation,
+  removeGameFromCollection,
+  removeGameRemaster,
+  removeGameRemake,
+  removeGameSpinoff
 };
