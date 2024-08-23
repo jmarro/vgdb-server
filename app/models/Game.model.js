@@ -60,7 +60,10 @@ Game.init({
     personal_status: {
         type: DataTypes.STRING,
         defaultValue: 'NOT_PLAYED'
-    }
+    },
+    dlc: {
+        type: DataTypes.TEXT
+    },
 }, { 
     sequelize
 });
