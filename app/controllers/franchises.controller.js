@@ -101,6 +101,42 @@ async function removeCreator(req, res) {
   }
 };
 
+async function addParentFranchises(req, res) {
+  try {
+    const franchise_id = req.params.id_franchise;
+    console.log('request', req);
+    console.log('franchises', req.body);
+    franchiseFranchiseArr = req.body.map(franchiseId => {
+      return {
+        subFranchiseId: parseInt(franchise_id),
+        parentFranchiseId: franchiseId
+      }
+    });
+    const response = await services.addParentFranchise(franchiseFranchiseArr);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function removeParentFranchise(req, res) {
+  try {
+    const franchise_id = req.params.id_franchise;
+    toRemove = {
+      subFranchiseId: parseInt(franchise_id),
+      parentFranchiseId: req.body.franchiseId
+    }
+    console.log('request', req);
+    console.log('franchise', req.body);
+    const response = await services.removeParentFranchise(toRemove);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 module.exports = {
   getAllFranchises,
   getFranchise,
@@ -108,5 +144,7 @@ module.exports = {
   updateFranchise,
   deleteFranchise,
   addCreators,
-  removeCreator
+  removeCreator,
+  addParentFranchises,
+  removeParentFranchise
 };

@@ -1,4 +1,5 @@
 const Franchise = require('../models/Franchise.model');
+const Franchise_Franchise = require('../models/Franchise_Franchise.model');
 const Franchise_Person = require('../models/Franchise_Person.model');
 const Serie = require('../models/Serie.model');
 const { Op } = require('sequelize');
@@ -36,6 +37,14 @@ async function getFranchise(id) {
       model: Serie,
       as: 'series',
       include: ['games']
+    },
+    {
+      model: Franchise,
+      as: 'parentFranchises'
+    },
+    {
+      model: Franchise,
+      as: 'subFranchises'
     }]
   });
 };
@@ -77,6 +86,20 @@ async function removeCreator(franchiseCreator) {
   });
 }
 
+async function addParentFranchise(franchiseFranchiseArr) {
+  console.log(franchiseFranchiseArr)
+  return await Franchise_Franchise.bulkCreate(franchiseFranchiseArr);
+}
+
+async function removeParentFranchise(franchiseFranchise) {
+  console.log(franchiseFranchise)
+  return await Franchise_Franchise.destroy({
+    where: {
+      subFranchiseId: franchiseFranchise.subFranchiseId,
+      parentFranchiseId: franchiseFranchise.parentFranchiseId
+    },
+  });
+}
 
 
 module.exports = {
@@ -87,5 +110,7 @@ module.exports = {
   updateFranchise,
   deleteFranchise,
   addCreators,
-  removeCreator
+  removeCreator,
+  addParentFranchise,
+  removeParentFranchise
 };

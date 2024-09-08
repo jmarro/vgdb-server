@@ -10,5 +10,7 @@ router.put('/:id_franchise', controllers.updateFranchise);
 router.delete('/:id_franchise', controllers.deleteFranchise);
 router.post('/:id_franchise/addCreators', controllers.addCreators);
 router.post('/:id_franchise/removeCreator', controllers.removeCreator);
+router.post('/:id_franchise/addParentFranchises', controllers.addParentFranchises);
+router.post('/:id_franchise/removeParentFranchise', controllers.removeParentFranchise);
 
 module.exports = router;
