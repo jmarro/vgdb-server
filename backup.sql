@@ -875,6 +875,24 @@ COPY public."AwardCategories" (id, name, is_main, "createdAt", "updatedAt", awar
 25	Genesis Game of the Year	f	2024-08-29 17:34:04.253+02	2024-08-29 17:34:04.253+02	5
 26	Master System Game of the Year	f	2024-08-29 17:34:11.059+02	2024-08-29 17:34:11.059+02	5
 27	Nintendo Game of the Year	f	2024-08-29 17:34:21.428+02	2024-08-29 17:34:21.428+02	5
+28	Best Original Computer Game	f	2024-09-20 15:57:35.621+02	2024-09-20 15:57:35.621+02	3
+29	Best Licensed Console Game	f	2024-09-20 15:59:01.03+02	2024-09-20 15:59:01.03+02	3
+30	Best Licensed Computer Game	f	2024-09-20 15:59:08.56+02	2024-09-20 15:59:08.56+02	3
+31	Handheld Game of the Year	f	2024-09-20 16:13:15.465+02	2024-09-20 16:13:15.465+02	3
+32	Portable Game of the Year	f	2024-09-21 11:04:05.462+02	2024-09-21 11:04:05.462+02	6
+33	Multimedia Game of the Year	f	2024-09-21 11:04:14.997+02	2024-09-21 11:04:14.997+02	6
+34	Best Electronic Game Graphics	f	2024-09-21 11:04:57.144+02	2024-09-21 11:04:57.144+02	6
+35	Best Action Video Game\t	f	2024-09-21 11:05:21.785+02	2024-09-21 11:05:21.785+02	6
+36	Best Action Computer Game	f	2024-09-21 11:05:54.842+02	2024-09-21 11:05:54.842+02	6
+37	Best Adventure/RPG Video Game\t	f	2024-09-21 11:06:11.916+02	2024-09-21 11:06:11.916+02	6
+38	Best Adventure/RPG Computer Game\t	f	2024-09-21 11:06:22.764+02	2024-09-21 11:06:22.764+02	6
+39	Best Strategy Video Game\t	f	2024-09-21 11:06:40.675+02	2024-09-21 11:06:40.675+02	6
+40	Best Strategy Computer Game\t	f	2024-09-21 11:06:47.772+02	2024-09-21 11:06:47.772+02	6
+41	Best Sports Video Game\t	f	2024-09-21 11:07:18.213+02	2024-09-21 11:07:18.213+02	6
+42	Best Sports Computer Game\t	f	2024-09-21 11:07:26.918+02	2024-09-21 11:07:26.918+02	6
+43	Most Humorous Electronic Game\t	f	2024-09-21 11:07:54.371+02	2024-09-21 11:07:54.371+02	6
+44	Best Science Fiction or Fantasy Electronic Game	f	2024-09-21 11:21:05.731+02	2024-09-21 11:21:05.731+02	6
+45	Game of the Year	f	2024-09-25 16:49:40.547+02	2024-09-25 16:49:40.547+02	8
 \.
 
 
@@ -889,6 +907,7 @@ COPY public."Awards" (id, name, is_main, main_img, "createdAt", "updatedAt", wik
 6	Arkie Awards	f	Electronic_Games_Logo.png	2024-07-04 16:37:40.146+02	2024-07-04 16:37:40.146+02	https://en.wikipedia.org/wiki/Electronic_Games#Arcade_Awards
 7	Famitsu Awards	f	famitsu.png	2024-07-24 16:49:15.426+02	2024-07-24 16:49:15.426+02	https://en.wikipedia.org/wiki/Famitsu_scores#Famitsu_Awards
 3	Golden Joystick Awards	t	Golden_Joystick_Award.png	2024-02-10 12:24:15.754+01	2024-08-09 10:34:24.726+02	https://en.wikipedia.org/wiki/Golden_Joystick_Awards
+8	Game Informer	f	Game_Informer.png	2024-09-25 16:49:33.064+02	2024-09-25 16:49:33.064+02	https://en.wikipedia.org/wiki/Game_Informer#Game_of_the_Year_winners
 \.
 
 
@@ -965,6 +984,32 @@ COPY public."Character_People" (is_main_for_person, "createdAt", "updatedAt", "P
 \N	2024-09-02 15:56:00.045+02	2024-09-02 15:56:00.045+02	63	123
 \N	2024-09-08 10:54:37.927+02	2024-09-08 10:54:37.927+02	75	143
 \N	2024-09-08 10:55:14.218+02	2024-09-08 10:55:14.218+02	75	144
+\N	2024-09-12 16:34:13.632+02	2024-09-12 16:34:13.632+02	117	146
+\N	2024-09-12 16:37:57.481+02	2024-09-12 16:37:57.481+02	117	147
+\N	2024-09-13 10:11:55.013+02	2024-09-13 10:11:55.013+02	118	148
+\N	2024-09-13 13:29:51.65+02	2024-09-13 13:29:51.65+02	120	149
+\N	2024-09-15 12:05:48.528+02	2024-09-15 12:05:48.528+02	124	154
+\N	2024-09-15 12:05:48.528+02	2024-09-15 12:05:48.528+02	125	154
+\N	2024-09-15 12:10:05.505+02	2024-09-15 12:10:05.505+02	125	155
+\N	2024-09-15 12:10:05.505+02	2024-09-15 12:10:05.505+02	124	155
+\N	2024-09-15 12:13:33.153+02	2024-09-15 12:13:33.153+02	125	156
+\N	2024-09-15 12:18:05.499+02	2024-09-15 12:18:05.499+02	124	157
+\N	2024-09-15 12:18:05.499+02	2024-09-15 12:18:05.499+02	125	157
+\N	2024-09-15 12:21:54.604+02	2024-09-15 12:21:54.604+02	124	158
+\N	2024-09-15 12:21:54.604+02	2024-09-15 12:21:54.604+02	125	158
+\N	2024-09-15 12:24:57.974+02	2024-09-15 12:24:57.974+02	124	159
+\N	2024-09-15 12:24:57.974+02	2024-09-15 12:24:57.974+02	125	159
+\N	2024-09-15 12:29:48.534+02	2024-09-15 12:29:48.534+02	124	160
+\N	2024-09-15 12:29:48.534+02	2024-09-15 12:29:48.534+02	125	160
+\N	2024-09-15 12:32:43.777+02	2024-09-15 12:32:43.777+02	124	161
+\N	2024-09-15 12:32:43.777+02	2024-09-15 12:32:43.777+02	125	161
+\N	2024-09-15 12:39:45.673+02	2024-09-15 12:39:45.673+02	124	162
+\N	2024-09-15 12:39:45.673+02	2024-09-15 12:39:45.673+02	125	162
+\N	2024-09-15 12:42:47.802+02	2024-09-15 12:42:47.802+02	124	163
+\N	2024-09-15 12:42:47.802+02	2024-09-15 12:42:47.802+02	125	163
+\N	2024-09-16 15:24:00.366+02	2024-09-16 15:24:00.366+02	74	164
+\N	2024-09-17 16:12:47.5+02	2024-09-17 16:12:47.5+02	128	165
+\N	2024-09-18 16:15:10.831+02	2024-09-18 16:15:10.831+02	129	166
 \.
 
 
@@ -1115,6 +1160,39 @@ COPY public."Characters" (id, name, full_name, alias, alt_names, main_img, color
 142	James Pond	\N	\N	\N	james_pond/james_pond.jpg	\N	MAIN	\N	2024-09-08 09:25:55.852+02	2024-09-08 09:26:01.49+02	166	1990	\N	\N
 143	ToeJam	\N	\N	\N	toejam_&_earl/toejam.jpg	\N	MAIN	\N	2024-09-08 10:54:32.613+02	2024-09-08 10:54:43.992+02	167	1991	\N	\N
 144	Earl	\N	\N	\N	toejam_&_earl/earl.jpg	\N	MAIN	\N	2024-09-08 10:55:08.533+02	2024-09-08 10:55:23.661+02	167	1991	\N	\N
+145	Terminator T-800	\N	\N	\N	terminator/t800.jpg		MAIN	\N	2024-09-11 13:44:25.977+02	2024-09-11 13:44:36.102+02	173	1990	https://es.wikipedia.org/wiki/Terminator_T-800	\N
+146	Kirby	\N	\N	\N	kirby/kirby.jpg	#df6da9	MAIN	\N	2024-09-12 16:34:05.754+02	2024-09-12 16:34:19.602+02	176	1992	https://es.wikipedia.org/wiki/Kirby_(personaje)	t
+147	Rey Dedede	\N	\N	\N	kirby/Rey_Dedede.jpg	\N	ANTAGONIST	\N	2024-09-12 16:37:46.364+02	2024-09-12 16:38:04.682+02	176	1992	https://es.wikipedia.org/wiki/Rey_Dedede	\N
+148	B.J. Blazkowicz	William Joseph Blazkowicz	\N	\N	wolfenstein/BJ_Blazkowicz.jpg	\N	MAIN	\N	2024-09-13 10:11:46.406+02	2024-09-13 10:12:03.092+02	60	1992	https://es.wikipedia.org/wiki/William_%22B.J.%22_Blazkowicz	\N
+149	Ecco	\N	\N	\N	ecco_the_dolphin/Ecco.jpg	\N	MAIN	\N	2024-09-13 13:29:46.166+02	2024-09-13 13:29:56.23+02	177	1992	\N	\N
+150	Ryo Sakazaki	\N	\N	\N	art_of_fighting/ryo-sakazaki.jpg	\N	MAIN	\N	2024-09-15 09:33:06.351+02	2024-09-15 09:33:15.097+02	180	1992	https://es.wikipedia.org/wiki/Ryo_Sakazaki	\N
+151	Robert Garcia	\N	\N	\N	art_of_fighting/Robert_Garcia.jpg	\N	MAIN	\N	2024-09-15 09:35:54.374+02	2024-09-15 09:36:04.682+02	180	1992	https://es.wikipedia.org/wiki/Robert_Garcia_(Art_of_Fighting)	\N
+152	Yuri Sakazaki	\N	\N	\N	art_of_fighting/yuri_sakazaki.jpg	\N	SECONDARY	\N	2024-09-15 09:39:24.069+02	2024-09-15 09:39:31.743+02	180	1992	https://es.wikipedia.org/wiki/Yuri_Sakazaki	\N
+153	Zool	\N	\N	\N	zool/zool.jpg	\N	MAIN	\N	2024-09-15 10:52:05.905+02	2024-09-15 10:52:38.797+02	181	1992	\N	\N
+154	Liu Kang	\N	\N	\N	mortal_kombat/liu_kang.jpg	\N	MAIN	\N	2024-09-15 12:05:31.498+02	2024-09-15 12:05:40.64+02	182	1992	https://es.wikipedia.org/wiki/Liu_Kang	\N
+155	Raiden	\N	\N	\N	mortal_kombat/Raiden.jpg	\N	SECONDARY	\N	2024-09-15 12:09:34.618+02	2024-09-15 12:09:44.172+02	182	1992	https://es.wikipedia.org/wiki/Raiden_(Mortal_Kombat)	\N
+156	Johnny Cage	Jonathan Carlton	\N	\N	mortal_kombat/Johnnycage.jpg	\N	SECONDARY	\N	2024-09-15 12:13:24.764+02	2024-09-15 12:13:41.119+02	182	1992	https://es.wikipedia.org/wiki/Johnny_Cage	\N
+157	Sonya Blade	\N	\N	\N	mortal_kombat/Sonya_Blade.jpg	\N	SECONDARY	\N	2024-09-15 12:17:56.837+02	2024-09-15 12:18:14.381+02	182	1992	https://es.wikipedia.org/wiki/Sonya_Blade	\N
+158	Kano	\N	\N	\N	mortal_kombat/kano.jpg	\N	SECONDARY	\N	2024-09-15 12:20:45.117+02	2024-09-15 12:22:03.58+02	182	1992	https://es.wikipedia.org/wiki/Kano_(Mortal_Kombat)	\N
+159	Scorpion	Hanzo Hasashi	\N	\N	mortal_kombat/scorpion.jpg	\N	SECONDARY	\N	2024-09-15 12:24:50.163+02	2024-09-15 12:25:07.594+02	182	1992	https://es.wikipedia.org/wiki/Scorpion_(Mortal_Kombat)	\N
+160	Sub-Zero	Bi-Han / Kuai Liang	\N	\N	mortal_kombat/sub-zero.jpg	\N	SECONDARY	\N	2024-09-15 12:29:38.771+02	2024-09-15 12:29:56.16+02	182	1992	https://es.wikipedia.org/wiki/Sub-Zero	\N
+161	Goro	\N	\N	\N	mortal_kombat/Goro.jpg	\N	VILLAIN	\N	2024-09-15 12:32:31.356+02	2024-09-15 12:32:51.897+02	182	1992	https://es.wikipedia.org/wiki/Goro_(personaje)	\N
+162	Reptile	Syzoth	\N	\N	mortal_kombat/Reptile.jpg	\N	SECONDARY	\N	2024-09-15 12:39:38.035+02	2024-09-15 12:39:53.083+02	182	1992	https://es.wikipedia.org/wiki/Reptile_(Mortal_Kombat)	\N
+163	Shang Tsung	\N	\N	\N	mortal_kombat/Shang_Tsung .jpg	\N	ANTAGONIST	\N	2024-09-15 12:42:31.458+02	2024-09-15 12:42:40.661+02	182	1992	https://es.wikipedia.org/wiki/Shang_Tsung	\N
+164	Wario	\N	\N	\N	mario/wario.jpg	\N	VILLAIN	\N	2024-09-16 15:23:37.804+02	2024-09-16 15:23:51.006+02	14	1992	https://es.wikipedia.org/wiki/Wario	f
+165	Conrad	Conrad B. Hart	\N	\N	flashback/conrad.jpg	\N	MAIN	\N	2024-09-17 16:12:40.244+02	2024-09-17 16:12:53.398+02	184	1992	\N	\N
+166	Edward Carnby	\N	\N	\N	alone_in_the_dark/edward_carnby.jpg	\N	MAIN	\N	2024-09-18 16:14:56.242+02	2024-09-18 16:15:04.584+02	185	1992	https://es.wikipedia.org/wiki/Edward_Carnby	\N
+167	Mai Shiranui	\N	\N	\N	fatal_fury/mai.jpg	\N	SECONDARY	\N	2024-09-20 12:36:58.065+02	2024-09-20 12:37:05.965+02	152	1992	https://es.wikipedia.org/wiki/Mai_Shiranui	\N
+168	Correcaminos	\N	\N	Road Runner	looney_tunes/Road-runner.jpg	\N	MAIN	\N	2024-09-21 12:57:13.961+02	2024-09-21 12:57:24.947+02	189	1979	https://es.wikipedia.org/wiki/El_Coyote_y_el_Correcaminos	\N
+169	Coyote	Wile E. Coyote	\N	\N	looney_tunes/Wile_e_coyote.jpg	\N	ANTAGONIST	\N	2024-09-21 12:59:15.655+02	2024-09-21 12:59:22.875+02	189	1979	https://es.wikipedia.org/wiki/El_Coyote_y_el_Correcaminos	\N
+170	Krusty	Herschel Krustofsky	\N	\N	the_simpsons/krusty.jpg	\N	SECONDARY	\N	2024-09-24 15:41:42.035+02	2024-09-24 15:41:51.598+02	161	1992	https://es.wikipedia.org/wiki/Krusty_el_payaso	\N
+171	Taz	\N	Demonio de Tasmania	\N	looney_tunes/Taz.jpg	\N	MAIN	\N	2024-09-24 16:05:31.638+02	2024-09-24 16:05:57.9+02	189	1983	https://es.wikipedia.org/wiki/Taz_(Looney_Tunes)	\N
+172	Xenomorfo	\N	\N	\N	alien/xenomorph.jpg	\N	ANTAGONIST	\N	2024-09-24 16:51:22.432+02	2024-09-24 16:51:28.99+02	193	1982	https://es.wikipedia.org/wiki/Xenomorfo	\N
+173	Astérix	\N	\N	\N	asterix/Asterix.jpg	\N	MAIN	\N	2024-09-26 16:53:57.289+02	2024-09-26 16:54:05.367+02	194	1983	https://es.wikipedia.org/wiki/Ast%C3%A9rix_(Ast%C3%A9rix_el_Galo)	\N
+174	Obélix	\N	\N	\N	asterix/obelix.jpg	\N	MAIN	\N	2024-09-26 16:54:40.106+02	2024-09-26 16:54:47.735+02	194	1983	https://es.wikipedia.org/wiki/Ob%C3%A9lix	\N
+175	Chip	\N	\N	\N	chip_n_dale/chip.jpg	\N	MAIN	\N	2024-09-26 17:23:51.051+02	2024-09-26 17:23:57.065+02	195	1990	https://en.wikipedia.org/wiki/Chip_%27n%27_Dale	\N
+176	Dale	\N	\N	Chop (ES)	chip_n_dale/dale.jpg	\N	MAIN	\N	2024-09-26 17:24:29.006+02	2024-09-26 17:24:36.92+02	195	1990	https://en.wikipedia.org/wiki/Chip_%27n%27_Dale	\N
+177	Pingüino	Oswald Chesterfield Cobblepot	\N	\N	batman/Penguin.jpg	\N	VILLAIN	\N	2024-09-27 08:57:04.955+02	2024-09-27 08:57:11.619+02	87	1988	https://es.wikipedia.org/wiki/Ping%C3%BCino_(personaje)	\N
 \.
 
 
@@ -1131,7 +1209,6 @@ COPY public."Companies" (id, name, country, founding_year, active, defunct_year,
 32	Nintendo	jp	1889	t	\N	\N	Nintendo Koppai (1889)\nYamauchi Nintendo (1889–1933)\nYamauchi Nintendo & Co. (1933–1947)\nMarufuku Co., Ltd. (1947–1951)\nNintendo Playing Card Co. Ltd. (1951–1963)	#E60012	2024-05-24 13:53:58.743+02	2024-05-24 14:03:07.664+02	\N	Nintendo.png	https://es.wikipedia.org/wiki/Nintendo	\N	\N	t
 37	Universal Studios	us	1912	t	\N	\N	\N	\N	2024-06-02 11:42:20.643+02	2024-06-02 11:42:20.643+02	\N	universal.png	https://es.wikipedia.org/wiki/Universal_Pictures	\N	\N	\N
 14	Taito	jp	1953	t	\N	\N	\N	\N	2024-04-27 13:20:35.505+02	2024-04-27 13:28:13.671+02	15	taito.png	https://es.wikipedia.org/wiki/Taito_Corporation	ADQUISITION	Adquirida por Squarex Enix en 2015	\N
-12	Atari SA	fr	1983	t	\N	\N	Infogrames Entertainment SA	\N	2024-04-26 10:47:51.064+02	2024-04-27 13:29:28.741+02	\N	atari.png	https://es.wikipedia.org/wiki/Atari_SA	\N	Cambio de nombre de Infogrames a Atari SA, al adquirir la totalidad de Atari	\N
 13	Infogrames	fr	1983	f	2009	Cambió de nombre a Atari SA después de la adquisición de Atari	\N	\N	2024-04-26 10:52:26.345+02	2024-04-27 13:29:55.869+02	12	infogrames.png	hhttps://es.wikipedia.org/wiki/Atari_SA	DIVISION	\N	\N
 34	General Computer Corporation	us	1981	f	2015	Disolución	\N	\N	2024-05-28 17:17:31.375+02	2024-05-28 17:17:31.375+02	\N	GCC_Technologies.png	https://en.wikipedia.org/wiki/General_Computer_Corporation	\N	\N	\N
 9	Magnavox	us	1917	t	\N	\N	\N	\N	2024-04-25 15:55:56.695+02	2024-04-27 13:31:25.295+02	10	magnavox.png	https://es.wikipedia.org/wiki/Magnavox	ADQUISITION	Adquirida por Philips en 1974	\N
@@ -1145,6 +1222,7 @@ COPY public."Companies" (id, name, country, founding_year, active, defunct_year,
 17	Midway	us	1958	f	2010	Bancarrota	Bally Midway (1982–1988)	\N	2024-04-27 17:36:10.943+02	2024-04-27 17:44:12.125+02	\N	midway.png	https://es.wikipedia.org/wiki/Midway_Games	\N	Propiedad de Bally (1969–1988)\nPropiedad de WMS Industries (1988–1998)\nAl quebrar sus derechos los compró Warner Bros	\N
 18	Namco	jp	1955	f	2006	Desaparecida en la fusión con Bandai	Nakamura Seisakusho Co.	#a51e23	2024-04-30 17:37:16.495+02	2024-05-30 17:03:07.754+02	19	namco.png	https://es.wikipedia.org/wiki/Namco	MERGE	\N	f
 22	Activision Blizzard	us	2008	t	\N	\N	\N	\N	2024-05-01 11:02:06.678+02	2024-08-11 13:42:45.071+02	23	Activision_Blizzard.png	https://es.wikipedia.org/wiki/Activision_Blizzard	ADQUISITION	Adquirida por Microsoft en 2023	f
+11	Atari	us	1972	t	\N	\N		\N	2024-04-26 10:43:24.491+02	2024-09-12 15:18:40.313+02	12	atari.png	https://es.wikipedia.org/wiki/Atari	ADQUISITION	Parte de Warner Communications (1976–1995)\nParte de Hasbro (1995–2001)\nAdquirida por Infogrames (ahora Atari SA) en 2001	f
 24	Epyx	us	1978	f	1993	Bancarrota	\N	\N	2024-05-01 12:45:14.274+02	2024-05-01 12:45:14.274+02	\N	Epyx.png	https://es.wikipedia.org/wiki/Epyx	\N	\N	\N
 25	Sierra	us	1979	f	2008	Disuelta en la formación de Activision-Blizzard	On-Line Systems (1979–1982)	\N	2024-05-01 13:20:06.05+02	2024-05-01 13:22:48.175+02	22	sierra.png	https://es.wikipedia.org/wiki/Sierra_Entertainment	ADQUISITION	Fue comprada por Vivendi Games en 2006\nEn la fusión de Vivendi con Activision para formar Activision-Blizzard fue disuelta	\N
 28	Origin Systems	us	1983	f	2004	Disuelta por Electronic Arts	\N	\N	2024-05-18 19:40:50.217+02	2024-05-18 19:54:53.241+02	29	Origin_Systems.png	https://es.wikipedia.org/wiki/Origin_Systems	ADQUISITION	Comprada por Electronic Arts en 1992	\N
@@ -1152,7 +1230,6 @@ COPY public."Companies" (id, name, country, founding_year, active, defunct_year,
 23	Microsoft	us	1975	t	\N	\N	\N	#7EB900	2024-05-01 11:07:15.752+02	2024-05-24 14:03:41.845+02	\N	microsoft.png	https://es.wikipedia.org/wiki/Microsoft	\N	\N	t
 29	Electronic Arts	us	1982	t	\N	\N	\N	#6E34EB	2024-05-18 19:48:21.902+02	2024-05-24 14:03:52.288+02	\N	Electronic_Arts.png	https://es.wikipedia.org/wiki/Electronic_Arts	\N	\N	t
 36	Sony	jp	1946	t	\N	\N	Tokyo Tsushin Kogyo K.K. (1946–1957)	#003087	2024-05-30 16:50:51.947+02	2024-08-22 15:23:58.352+02	\N	sony.png	https://es.wikipedia.org/wiki/Sony	\N	\N	f
-11	Atari	us	1972	t	\N	\N	Adquirida por Infogrames (ahora Atari SA) en 2009	\N	2024-04-26 10:43:24.491+02	2024-05-30 16:59:45.79+02	12	atari.png	https://es.wikipedia.org/wiki/Atari	ADQUISITION	\N	f
 33	Coleco	us	1932	f	1989	Bancarrota	The Connecticut Leather Company	\N	2024-05-26 12:26:44.033+02	2024-05-26 12:26:44.033+02	\N	Coleco.png	https://es.wikipedia.org/wiki/Coleco	\N	\N	\N
 35	Gottlieb	us	1927	f	1996	Bancarrota	D. Gottlieb & Co.	\N	2024-05-30 16:36:16.619+02	2024-05-30 16:36:57.777+02	\N	Gottlieb.png	https://es.wikipedia.org/wiki/Gottlieb	\N	Empresa dedicada mayormente a pinball	\N
 7	Softkey	ca	1986	f	1999	Disuelta por Mattel	The Learning Company (1995–1999)	\N	2024-04-24 23:38:18.324+02	2024-08-31 12:55:15.628+02	146	softkey.png	https://en.wikipedia.org/wiki/SoftKey	ADQUISITION	\N	\N
@@ -1252,6 +1329,7 @@ COPY public."Companies" (id, name, country, founding_year, active, defunct_year,
 131	Reflections	gb	1984	f	2006	Comprada por Ubisoft	Reflections (1984–1998)\nReflections Interactive Limited (1998–2006)	\N	2024-08-22 15:13:22.854+02	2024-09-07 11:40:39.449+02	130	reflections.jpg	https://es.wikipedia.org/wiki/Ubisoft_Reflections	ADQUISITION	Fue adquirida por Ubisoft en 2006 y cambió de nombre a Ubisoft Reflections	\N
 133	Sony Interactive Entertainment	jp	1993	t	\N	\N	Sony Computer Entertainment (1993-2016)	#003087	2024-08-22 15:23:39.433+02	2024-08-22 15:23:47.931+02	36	Sony_Interactive_Entertainment.png	https://es.wikipedia.org/wiki/Sony_Interactive_Entertainment	DIVISION	\N	t
 132	Psygnosis	gb	1984	f	1999	Absorción total en Sony Computer y renombrada SCE Studio Liverpool		\N	2024-08-22 15:17:46.988+02	2024-09-07 14:18:24.124+02	169	Psygnosis.png	https://es.wikipedia.org/wiki/Psygnosis	ADQUISITION	Comprada por Sony Computer Entertainment en 1993	\N
+178	Game Arts	jp	1985	t	\N	\N	\N	\N	2024-09-10 15:24:18.366+02	2024-09-10 15:24:18.366+02	\N	Game_Arts.png	https://es.wikipedia.org/wiki/Game_Arts	\N	\N	\N
 134	Anco Software	gb	1982	f	2003	Disolución	\N	\N	2024-08-22 16:11:14.653+02	2024-08-22 16:11:14.653+02	\N	anco-software.jpg	\N	\N	\N	\N
 140	DMA Design	gb	1988	f	2002	Cambió de nombre a Rockstar North	\N		2024-08-30 13:59:33.679+02	2024-09-07 11:40:05.386+02	141	DMA_Design.png	https://es.wikipedia.org/wiki/Rockstar_North	ADQUISITION	Comprada por Take-Two en 1999 y puesta bajo Rockstar Games	\N
 136	Firaxis Games	us	1996	t	\N	\N	\N	\N	2024-08-23 10:36:11.256+02	2024-08-23 10:38:00.567+02	135	Firaxis_Games.png	https://es.wikipedia.org/wiki/Firaxis_Games	ADQUISITION	Fundada por Sid Meier tras salir de Micropose\nComprada por Take-Two en 2005 y puesta bajo 2K	\N
@@ -1266,6 +1344,7 @@ COPY public."Companies" (id, name, country, founding_year, active, defunct_year,
 144	Wizards of the Coast	us	1990	t	\N	\N	\N	\N	2024-08-31 12:16:52.738+02	2024-08-31 12:17:03.101+02	75	Wizards_of_the_coast.png	https://es.wikipedia.org/wiki/Wizards_of_the_Coast	ADQUISITION	Adquirida por Hasbro en 1999	\N
 145	Strategic Simulations	us	1979	f	2001	Disuelta por Ubisoft	\N	\N	2024-08-31 12:29:19.885+02	2024-08-31 12:57:51.108+02	147	Strategic_Simulations.png	https://es.wikipedia.org/wiki/Strategic_Simulations	ADQUISITION	Adquirida por Mindscape en 1994\nMindscape fue adquirida por Softkey en 1998\nSoftkey fue adquirida por Mattel Interactive en 1999\nMattel vendió a Ubisoft en 2001.\nUbisoft disolvió el nombre de la marca.	\N
 135	2K Games	us	2005	t	\N	\N	\N	\N	2024-08-23 10:30:34.446+02	2024-09-05 16:56:46.083+02	54	2K.png	https://es.wikipedia.org/wiki/2K_Games	DIVISION	Fundada tras la adquisición de Visual Concepts (creadores de las sagas deportivas 2k) por parte de Take-Two	\N
+179	McDonald's	us	1940	t	\N	\N	\N	\N	2024-09-10 15:41:11.954+02	2024-09-10 15:41:11.954+02	\N	McDonald's.png	McDonald's.png	\N	\N	\N
 146	Mattel Interactive	us	1996	f	2001	Disuelta por Mattel	Mattel Media (1996-1999)	#FF0028	2024-08-31 12:45:46.977+02	2024-08-31 12:46:16.484+02	8	Mattel_Interactive.png	https://en.wikipedia.org/wiki/Mattel_Interactive	DIVISION	División creada por Mattel para explotar franquicias de videojuegos.\nLas franquicias adquiridas de otras compañias fueron vendidas a Ubisoft en 2001.	\N
 163	Magnetic Fields	gb	1982	f	2000	Disolución	\N	\N	2024-09-07 11:22:03.511+02	2024-09-07 11:22:11.764+02	\N	Magnetic_Fields.png	https://es.wikipedia.org/wiki/Magnetic_Fields_(empresa)	\N	\N	\N
 147	Mindscape	us	1983	f	2001	Disolución	\N	\N	2024-08-31 12:54:21.19+02	2024-08-31 12:55:35.132+02	7	Mindscape.png	https://es.wikipedia.org/wiki/Mindscape_(empresa)	ADQUISITION	Comprada por Softkey 1998	\N
@@ -1295,6 +1374,62 @@ COPY public."Companies" (id, name, country, founding_year, active, defunct_year,
 171	Guerrilla Games	nl	2000	t	\N	\N	Lost Boys Games (2000–2003)	\N	2024-09-07 14:27:21.742+02	2024-09-07 14:28:54.737+02	170	Guerrilla_Games.png	https://es.wikipedia.org/wiki/Guerrilla_Games	ADQUISITION	Comprada por Sony Computer en 2005	\N
 173	HumaNature Studios	us	2006	t	\N	\N	\N	\N	2024-09-08 10:45:16.354+02	2024-09-08 10:46:00.872+02	\N	HumaNature_Studios.jpg	https://en.wikipedia.org/wiki/Greg_Johnson_(game_designer)#HumaNature_Studios	\N	Creada por el fundador de ToeJam & Earl Productions, después de que esta cerrara	\N
 174	Codemasters	gb	1986	t	\N	\N	\N	\N	2024-09-08 11:30:46.206+02	2024-09-08 11:30:55.886+02	29	Codemasters.png	https://es.wikipedia.org/wiki/Codemasters	ADQUISITION	Estuvo desde 2010 a 2018 bajo Reliance Entertainment.\nComprado en 2020 por Electronic Arts	\N
+175	Now Production	jp	1986	t	\N	\N	\N	\N	2024-09-09 15:41:29.972+02	2024-09-09 15:41:29.972+02	\N	Now_Production.png	https://es.wikipedia.org/wiki/Now_Production	\N	\N	\N
+176	Produce!	jp	1990	f	2015	Disolución	\N	\N	2024-09-09 16:23:18.23+02	2024-09-09 16:23:18.23+02	\N	produce!.png	https://en.wikipedia.org/wiki/Produce!	\N	\N	\N
+177	Quintet	jp	1989	f	2002	Disolución	\N	\N	2024-09-09 17:37:51.474+02	2024-09-09 17:37:51.474+02	\N	Quintet.png	https://es.wikipedia.org/wiki/Quintet	\N	\N	\N
+193	Compile	jp	1982	f	2003	Bancarrota	\N	\N	2024-09-12 16:05:46.216+02	2024-09-12 16:05:46.216+02	\N	Compile.png	https://es.wikipedia.org/wiki/Compile	\N	Sus empleados fundaron Compile Heart tras la bancarrota y se quedaron con sus assets excepto la franquicia Puyo Puyo que la adquirió Sega.	\N
+180	Virgin Interactive	gb	1983	f	2003	Renombrada como Avalon Interactive	Virgin Games (1983-1993)	\N	2024-09-10 16:00:25.832+02	2024-09-10 16:04:18.356+02	181	Virgin_Interactive.png	https://es.wikipedia.org/wiki/Virgin_Interactive	ADQUISITION	Comprada en 1999 por Titus Software y renombrada en 2003 como Avalon Interactive.	\N
+194	Visco Corporation	jp	1982	t	\N	\N	\N	\N	2024-09-13 11:26:47.155+02	2024-09-13 11:26:47.155+02	\N	Visco_Corporation.png	https://es.wikipedia.org/wiki/Visco_Corporation	\N	Actualmente dedicada a los slots	\N
+182	Titus Interactive	fr	1985	f	2005	Bancarrota	\N	\N	2024-09-10 16:09:18.453+02	2024-09-10 16:09:18.453+02	\N	TitusInteractive.jpg	https://es.wikipedia.org/wiki/Titus_Interactive	\N	Todos sus assets fueron comprado por Interplay Entertainment después de su bancarrota.	\N
+181	Avalon Interactive	gb	2003	f	2005	Disuelta tras la bancarrota de Titus Interactive.	\N	\N	2024-09-10 16:04:02.499+02	2024-09-10 16:09:50.301+02	182	Avalon_Interactive.png	https://es.wikipedia.org/wiki/Avalon_Interactive	DIVISION	Nombre que obtuvo Virgin Interactive en 2003 después de que anteriormente, en 1999, fuese adquirida por Titus Interactive.	\N
+183	Interplay Entertainment	us	1983	t	\N	\N	Interplay Productions (1983–1998)	\N	2024-09-10 16:28:31.14+02	2024-09-10 16:28:31.14+02	\N	Interplay_Entertainment.png	https://es.wikipedia.org/wiki/Interplay_Entertainment	\N	\N	\N
+186	Acclaim Entertainment	us	1987	f	2004	Bancarrota	\N	\N	2024-09-11 12:39:04.485+02	2024-09-11 12:40:20.779+02	\N	Acclaim.png	https://es.wikipedia.org/wiki/Acclaim_Entertainment	\N	Todos sus assets fueron subastados tras la bancarrota y acabaron divididos en numerosas compañias.	\N
+195	Appaloosa Interactive	hu	1983	f	2006	Disolución	Novotrade (1983-1996)	\N	2024-09-13 13:21:59.542+02	2024-09-13 13:21:59.542+02	\N	AppaloosaInteractive.png	https://es.wikipedia.org/wiki/Appaloosa_Interactive	\N	\N	\N
+185	Acclaim Studios London	gb	1995	f	2000	Disuelta por Acclaim	Probe Entertainment (1984-1995)	\N	2024-09-11 12:36:08.174+02	2024-09-11 12:41:45.143+02	186	acclaimStudiosLondon.png	https://en.wikipedia.org/wiki/List_of_Acclaim_Entertainment_subsidiaries#Acclaim_Studios_London	DIVISION	Fundada como Probe Entertainment y renombrada tras la compra por parte de Acclaim	\N
+184	Probe Entertainment	gb	1984	f	1995	Renombrada como Acclaim Studios London	\N	\N	2024-09-11 12:33:25.171+02	2024-09-11 12:42:11.447+02	185	ProbeEntertainment.jpg	https://en.wikipedia.org/wiki/List_of_Acclaim_Entertainment_subsidiaries#Acclaim_Studios_London	ADQUISITION	Comprada por Acclaim y renombrada como Acclaim Studios London	\N
+187	Vivendi	fr	1853	t	\N	\N	Compagnie Générale des Eaux (1853–1998)	\N	2024-09-11 13:02:13.793+02	2024-09-11 13:02:13.793+02	\N	Vivendi.png	https://es.wikipedia.org/wiki/Vivendi	\N	\N	\N
+188	StudioCanal	fr	1984	t	\N	\N	Canal+ Production	\N	2024-09-11 13:04:49.304+02	2024-09-11 13:04:57.651+02	187	Studiocanal.png	https://es.wikipedia.org/wiki/StudioCanal	DIVISION	\N	\N
+189	Climax Entertainment	jp	1990	f	2015	Bancarrota	\N	\N	2024-09-11 16:55:29.005+02	2024-09-11 16:55:29.005+02	\N	Climax_Entertainment.png	https://en.wikipedia.org/wiki/Climax_Entertainment	\N	\N	\N
+191	Camelot Software Planning	jp	1994	t	\N	\N	\N	\N	2024-09-11 17:12:14.28+02	2024-09-11 17:12:14.28+02	\N	Camelot_Software_Planning.png	https://es.wikipedia.org/wiki/Camelot_Software_Planning	\N	Fundada tras la separación de la división Sonic! Software Planning de Sega	\N
+190	Sonic! Software Planning	jp	1991	f	1998	Disuelta por Camelot	\N	\N	2024-09-11 17:08:34.621+02	2024-09-11 17:12:36.974+02	191	Sonic!_Software_Planning.png	https://es.wikipedia.org/wiki/Camelot_Software_Planning	DIVISION	Compañia fundada dentro de Sega, que pasa a formar parte de otro compañia externa llamada Camelot en 1995, aunque sigue realizando trabajos para Sega hasta ser completamentamente absorbida por Camelot	\N
+196	Sports Interactive	gb	1994	t	\N	\N	\N	\N	2024-09-14 12:53:23.679+02	2024-09-14 12:53:30.906+02	1	Sports_Interactive.png	https://en.wikipedia.org/wiki/Sports_Interactive	ADQUISITION	Adquirida por Sega en 2006	\N
+192	Tengen	us	1987	f	1994	Disuelto por Warner Bros cuando decidió reestructurar en 1994. Su plantilla pasó a formar parte de Time Warner.	\N	\N	2024-09-12 15:12:31.673+02	2024-09-12 15:19:29.035+02	11	Tengen.png	https://es.wikipedia.org/wiki/Tengen	DIVISION	\N	\N
+197	Domark	gb	1984	f	1994	Absorbida por Eidos	\N	\N	2024-09-14 13:00:43.537+02	2024-09-14 13:06:41.516+02	198	Domark.png	https://en.wikipedia.org/wiki/Eidos_Interactive#Founding_of_publisher_Domark_(1984%E2%80%931994)	ADQUISITION	Absorbida por Eidos que hasta aquel momento era una empresa de compresión de software, para pasar a ser una distribuidora de software.	\N
+198	Eidos Interactive	gb	1995	f	2009	Disuelta por Square Enix cuando esta compró SCi		\N	2024-09-14 13:06:23.123+02	2024-09-14 13:12:46.034+02	199	Eidos_Interactive.png	https://es.wikipedia.org/wiki/Eidos_Interactive	ADQUISITION	Fundada tras la adquisición de Domark en 1994\nComprada por SCi en 2006	\N
+199	SCi Games	gb	1988	f	2009	Comprada por Square Enix	The Sales Curve Limited (1988–1994)\nSales Curve Interactive	\N	2024-09-14 13:12:24.786+02	2024-09-14 13:13:03.013+02	15	SCi.png	https://es.wikipedia.org/wiki/SCi_Games	ADQUISITION	\N	\N
+200	Sega AM2	jp	1992	t	\N	\N	Sega AM R&D Dept. #2\nSega Software R&D Dept #2 (AM2)\nAM2 of CRI\nSEGA-AM2 Co., Ltd.\nAM R&D Dept. #2\nSega R&D2\nSega Interactive R&D2	\N	2024-09-15 10:00:33.655+02	2024-09-15 10:01:05.505+02	1	Sega_AM2.png	https://es.wikipedia.org/wiki/Sega-AM2	DIVISION	\N	\N
+201	Sumo Group	gb	2017	t	\N	\N	\N	\N	2024-09-15 10:26:59.469+02	2024-09-15 10:41:23.034+02	202	Sumo_Group.png	https://es.wikipedia.org/wiki/Sumo_Group	ADQUISITION	Fundada por Sumo Digital para funcionar como su empresa matriz.\nComprada en 2022 por Tencent.	\N
+202	Tencent	cn	1998	t	\N	\N	\N	\N	2024-09-15 10:31:48.252+02	2024-09-15 10:43:08.436+02	\N	Tencent.png	https://es.wikipedia.org/wiki/Tencent	\N	\N	f
+203	Sumo Digital	gb	2003	t	\N	\N	\N	\N	2024-09-15 10:46:09.137+02	2024-09-15 10:46:21.692+02	201	Sumo_Digital.png	https://es.wikipedia.org/wiki/Sumo_Digital	DIVISION	Fundada por exmiembros de Gremlin después de su adquisición y posterior cierre por parte de Infogrames	\N
+205	Warner Bros. Games	us	2004	t	\N	\N	Warner Bros. Interactive Entertainment (2004–2021)	\N	2024-09-15 11:50:34.45+02	2024-09-15 11:50:41.944+02	64	Warner_Bros._Games.png	https://es.wikipedia.org/wiki/Warner_Bros._Games	DIVISION	\N	\N
+204	NetherRealm Studios	us	2010	t	\N	\N	WB Games Chicago	\N	2024-09-15 11:45:38.705+02	2024-09-15 11:51:48.232+02	205	NetherRealm_Studios.png	https://es.wikipedia.org/wiki/NetherRealm_Studios	DIVISION	Con el cierre de Midway, Warnes Bros se quedó los assets y el equipo que hizo Mortal Kombat. Ese equipo lo renombró primero como WB Chicago y luego como NetherRealm	\N
+206	Digital Pictures	us	1991	f	1996	Disolución	\N	\N	2024-09-15 13:25:46.576+02	2024-09-15 13:25:46.576+02	\N	Digital_Pictures.png	https://en.wikipedia.org/wiki/Digital_Pictures	\N	\N	\N
+207	Toys For Bob	us	1989	t	\N	\N	\N	\N	2024-09-16 15:58:20.874+02	2024-09-16 15:58:20.874+02	\N	ToysForBob.png	https://es.wikipedia.org/wiki/Toys_for_Bob	\N	Adquiridos por Crystal Dynamics (1993–2000)\nIndependientes de 2000 al 2005\nAdquiridos por Activision (2005–2024)\nIndependientes de nuevo desde mayo de 2024	\N
+208	Accolade	us	1984	f	2000	Disuelta por Infogrames	\N	\N	2024-09-16 16:03:43.56+02	2024-09-16 16:03:51.677+02	13	Accolade.png	https://es.wikipedia.org/wiki/Accolade	ADQUISITION	Adquirida por Infogrames en 1999	\N
+219	Minakuchi Engineering	jp	1984	f	2002	Disolución	\N	\N	2024-09-20 10:47:46.659+02	2024-09-20 10:47:46.659+02	\N	Minakuchi_Engineering.jpg	https://en.wikipedia.org/wiki/Minakuchi_Engineering	\N	\N	\N
+12	Atari SA	fr	2009	t	\N	\N	Infogrames Entertainment SA (1983–2009)	\N	2024-04-26 10:47:51.064+02	2024-09-16 16:09:16.666+02	\N	atari.png	https://es.wikipedia.org/wiki/Atari_SA	\N	En 2009 cambió de nombre de Infogrames a Atari SA, al adquirir la totalidad de Atari.\nEn 2013 entró en bancarrota teniendo que vender muchas de sus IPs para poder sobrevivir.	\N
+209	Stardock	us	1991	t	\N	\N	\N	\N	2024-09-16 16:12:46.235+02	2024-09-16 16:17:17.935+02	\N	Stardock.jpg	https://en.wikipedia.org/wiki/Stardock	\N	Adquirió la franquicia Star Control en subasta, tras Atari SA (Infogrames) venderla tras su bancarrota en 2013, que previamente habia adquirido Accolade	\N
+210	Aspect	jp	1991	f	2018	Bancarrota	\N	\N	2024-09-16 16:56:02.638+02	2024-09-16 16:56:02.638+02	\N	Aspect_Co.png	https://es.wikipedia.org/wiki/Aspect	\N	\N	\N
+211	Microids	fr	1985	t	\N	\N	Microïds (1985–2003; 2007–2019)\nMC2-Microïds (2003–2005)\nMC2 (2005–2007)	\N	2024-09-17 16:09:28.647+02	2024-09-17 16:09:28.647+02	\N	Microids.png	https://es.wikipedia.org/wiki/Microids	\N	\N	\N
+220	Sensible Software	gb	1986	f	1999	Disuelta por Codemasters	\N	\N	2024-09-20 16:26:00.71+02	2024-09-20 16:26:09.875+02	174	Sensible_Software.png	https://en.wikipedia.org/wiki/Sensible_Software	ADQUISITION	Comprada en 1999 por Codemaster	\N
+230	Éditions Albert René	fr	1979	t	\N	\N	\N		2024-09-26 16:46:29.937+02	2024-09-26 16:46:29.937+02	\N	editions_albert_rene.jpg	https://en.wikipedia.org/wiki/%C3%89ditions_Albert_Ren%C3%A9	\N	\N	\N
+222	JVCKenwood	jp	2008	t	\N	\N	\N	\N	2024-09-21 11:37:05.165+02	2024-09-21 11:37:05.165+02	\N	JVC_Kenwood.png	https://es.wikipedia.org/wiki/JVCKenwood	\N	\N	\N
+213	Nordic Games	at	2011	f	2016	Cambió de nombre en 2016 al comprar todas las ips de THQ tras su bancarrota.	\N	\N	2024-09-18 15:46:22.018+02	2024-09-18 15:57:27.824+02	212	Nordic_Games.png	https://es.wikipedia.org/wiki/THQ_Nordic#Como_Nordic_Games_GmbH_(2011%E2%80%932016)	DIVISION	Creada como compañia sueca en 1994 tuvo bancarrota en 2004. Se refundó con el mismo nombre y en 2011 compro JoWooD y fundó esta subsidiaria en Austria. La empresa matriz permaneció en Suecia con un nuevo nombre Embracer.	\N
+221	JVC	jp	1927	t	\N	\N	Japan Victor Company	\N	2024-09-21 11:34:35.255+02	2024-09-21 11:37:31.207+02	222	JVC.png	https://es.wikipedia.org/wiki/JVC	MERGE	Fusionada en 2008 con Kenwood para formar JVCKenwood	\N
+214	Embracer Group	se	2011	t	\N	\N		\N	2024-09-18 15:50:19.85+02	2024-09-18 15:59:28.607+02	\N	Embracer_Group.png	https://es.wikipedia.org/wiki/Embracer_Group	\N	Fundada como Nordic Games en 1994. Sufrió una bancarrota en 2004. Volvió a crear la empresa y en 2011 la movió a Austria la publisher con el antiguo nombre y la empresa matriz se renombró a Embracer.	\N
+215	THQ	us	1990	f	2013	Bancarrota	\N	\N	2024-09-18 16:03:47.119+02	2024-09-18 16:03:47.119+02	\N	THQ.png	https://es.wikipedia.org/wiki/THQ	\N	Sus ips fueron compradas por Nordic Games tras su bancarrota. La cual incluso cambió de nombre mas adelante a THQ Nordic para aprovechar la buena reputación de THQ.	\N
+212	THQ Nordic	at	2016	t	\N	\N	Nordic Games GmbH (2011–2016)	\N	2024-09-18 15:41:32.621+02	2024-09-18 16:09:30.945+02	214	THQ_Nordic.png	https://es.wikipedia.org/wiki/THQ_Nordic	DIVISION	Fundada en 2011 como Nordic Games como subsidiaria de Embracer, fue renombrada a THQ tras la adquisición de las ips de THQ por Embracer.	\N
+216	Westwood Studios	us	1985	f	2003	Cerrada por Electronic Arts	\N	\N	2024-09-18 16:28:06.279+02	2024-09-18 16:28:30.517+02	29	Westwood_Studios.png	https://es.wikipedia.org/wiki/Westwood_Studios	ADQUISITION	Propiedad de Virgin Interactive (1992-1998)\nPropiedad de Electronic Arts (1998-2003)	\N
+217	Herbert Properties	us	1965	t	\N	\N	Herbert Limited Partnership	\N	2024-09-18 16:42:09.454+02	2024-09-18 16:42:09.454+02	\N	Herbert_Properties.png		\N	\N	\N
+218	Cryo Interactive	fr	1990	f	2002	Bancarrota	\N	\N	2024-09-18 16:48:08.717+02	2024-09-18 16:48:20.758+02	\N	Cryo_Interactive.jpeg	https://es.wikipedia.org/wiki/Cryo_Interactive	\N	Tras su bancarrota sus assets acabaron primero en DreamCatcher y luego en Microids	\N
+223	Kenwood	jp	1946	t	\N	\N	Kasuga Radio Co., Ltd. (1946–1986)	\N	2024-09-21 11:39:03.951+02	2024-09-21 11:39:11.859+02	222	Kenwood.png	https://es.wikipedia.org/wiki/Kenwood_Corporation	MERGE	Fusionada con JVC en 2011	\N
+224	Dynamix	us	1984	f	2001	Disuelta por Sierra	\N	\N	2024-09-21 12:09:22.322+02	2024-09-21 12:09:30.359+02	25	Dynamix.jpg	https://en.wikipedia.org/wiki/Dynamix	ADQUISITION	Comprada por Sierra en 1990	\N
+225	ICOM Simulations	us	1991	f	1998	Disolución	\N	\N	2024-09-21 13:03:05.748+02	2024-09-21 13:03:05.748+02	\N	ICOM_Simulations.png	https://en.wikipedia.org/wiki/ICOM_Simulations	\N	\N	\N
+226	Looking Glass Studios	us	1990	f	2000	Disolución	\t\nBlue Sky Productions (1990–1992)\nLookingGlass Technologies, Inc. (1992–1997)	\N	2024-09-22 10:46:48.336+02	2024-09-22 10:46:55.112+02	\N	Looking_Glass_Studios.jpg	https://es.wikipedia.org/wiki/Looking_Glass_Studios	\N	\N	\N
+227	Software Creations	gb	1985	f	2004	Disuelta por Acclaim	\N	\N	2024-09-22 12:49:33.017+02	2024-09-22 12:49:42.631+02	186	Software_Creations.png	https://en.wikipedia.org/wiki/Software_Creations	ADQUISITION	Comprada por Acclaim en 2002 	\N
+231	Malibu Comics	us	1986	f	1994	Disuelta por Marvel	\N	\N	2024-09-27 09:04:00.939+02	2024-09-27 09:04:08.778+02	159	Malibu_Comics.png	https://en.wikipedia.org/wiki/Malibu_Comics	ADQUISITION	Fue una editora de comics que tuvo una pequeña sección de desarrollo de software llamado Malibu Interactive.\nComprada por Marvel en 1994	\N
+228	Sony Imagesoft	us	1989	f	1995	Disuelto dentro de Sony Computer Entertainment	\N	\N	2024-09-22 13:44:36.725+02	2024-09-22 13:45:45.475+02	133	Sony_Imagesoft.png	https://es.wikipedia.org/wiki/Sony_Imagesoft	DIVISION	Distribuidora de juegos en USA	\N
+229	Audiogenic	gb	1975	t	\N	\N	\N	\N	2024-09-24 15:45:34.71+02	2024-09-24 15:45:34.71+02	\N	Audiogenic.png	https://en.wikipedia.org/wiki/Audiogenic	\N	\N	\N
 \.
 
 
@@ -1305,6 +1440,7 @@ COPY public."Companies" (id, name, country, founding_year, active, defunct_year,
 COPY public."Franchise_Franchises" (is_main, "createdAt", "updatedAt", id, "subFranchiseId", "parentFranchiseId") FROM stdin;
 \N	2024-08-31 13:49:09.394+02	2024-08-31 13:49:09.394+02	3	149	148
 \N	2024-09-06 16:20:24.227+02	2024-09-06 16:20:24.227+02	4	163	14
+\N	2024-09-14 11:17:16.443+02	2024-09-14 11:17:16.443+02	5	178	14
 \.
 
 
@@ -1414,6 +1550,21 @@ COPY public."Franchise_People" (is_main_for_person, "createdAt", "updatedAt", "P
 \N	2024-09-04 16:50:24.705+02	2024-09-04 16:50:24.705+02	37	155
 \N	2024-09-04 16:50:24.705+02	2024-09-04 16:50:24.705+02	38	155
 \N	2024-09-08 10:48:54.264+02	2024-09-08 10:48:54.264+02	75	167
+\N	2024-09-11 17:23:09.427+02	2024-09-11 17:23:09.427+02	116	174
+\N	2024-09-12 16:28:19.236+02	2024-09-12 16:28:19.236+02	117	176
+\N	2024-09-13 13:26:25.096+02	2024-09-13 13:26:25.096+02	120	177
+\N	2024-09-14 11:16:57.771+02	2024-09-14 11:16:57.771+02	27	178
+\N	2024-09-14 11:16:57.771+02	2024-09-14 11:16:57.771+02	80	178
+\N	2024-09-14 11:16:57.771+02	2024-09-14 11:16:57.771+02	121	178
+\N	2024-09-14 13:25:26.076+02	2024-09-14 13:25:26.076+02	123	179
+\N	2024-09-14 13:25:26.076+02	2024-09-14 13:25:26.076+02	122	179
+\N	2024-09-15 11:56:26.768+02	2024-09-15 11:56:26.768+02	124	182
+\N	2024-09-15 11:56:26.768+02	2024-09-15 11:56:26.768+02	125	182
+\N	2024-09-16 16:15:31.689+02	2024-09-16 16:15:31.689+02	127	183
+\N	2024-09-16 16:15:31.689+02	2024-09-16 16:15:31.689+02	126	183
+\N	2024-09-17 15:56:37.414+02	2024-09-17 15:56:37.414+02	128	184
+\N	2024-09-18 16:08:07.057+02	2024-09-18 16:08:07.057+02	129	185
+\N	2024-09-20 16:31:11.827+02	2024-09-20 16:31:11.827+02	130	188
 \.
 
 
@@ -1445,11 +1596,11 @@ COPY public."Franchises" (id, name, main_img, first_game_date, color, "createdAt
 12	Centipede	centipede.png	1981-08-01	\N	2024-05-23 19:03:45.417+02	2024-05-23 19:04:02.55+02	11	\N	\N	\N
 1	Sonic the Hedgehog	sonic_the_hedgehog.png	1991-06-23	#17569b	2023-12-31 13:13:50.45+01	2024-05-24 18:35:40.99+02	1	\N	\N	t
 16	Q*bert	Qbert.jpeg	1982-10-18	\N	2024-05-30 16:41:09.37+02	2024-06-21 13:20:32.54+02	58	35	\N	\N
+15	Joust	joust.png	1982-07-16	\N	2024-05-26 13:31:53.402+02	2024-09-15 11:52:21.724+02	205	27	\N	\N
 14	Mario	Mario.png	1983-07-14	#ee1c25	2024-05-24 18:46:53.968+02	2024-05-24 18:47:04.982+02	32	\N	https://es.wikipedia.org/wiki/Mario_(franquicia)	t
 13	Donkey Kong	donkeykong.png	1981-06-09	#663605	2024-05-24 18:40:03.405+02	2024-07-31 16:07:56.125+02	32	\N	https://es.wikipedia.org/wiki/Donkey_Kong_(serie)	f
 8	Pac-Man	pacman.png	1980-05-22	#ed6b0e	2024-05-03 08:23:14.569+02	2024-07-28 22:54:45.347+02	19	18	https://en.wikipedia.org/wiki/List_of_Pac-Man_video_games	f
-15	Joust	joust.png	1982-07-16	\N	2024-05-26 13:31:53.402+02	2024-05-26 13:32:42.205+02	27	\N	\N	\N
-38	Gauntlet	gauntlet.jpeg	1985-10-15	\N	2024-06-26 16:42:48.936+02	2024-06-26 16:43:22.232+02	64	11	\N	\N
+38	Gauntlet	gauntlet.jpeg	1985-10-15	\N	2024-06-26 16:42:48.936+02	2024-09-15 11:53:31.09+02	205	11	\N	\N
 17	Pitfall	Pitfall.png	1982-09-20	\N	2024-05-31 14:20:34.79+02	2024-05-31 14:21:27.21+02	21	\N	\N	\N
 18	Robotron	Robotron.jpeg	1982-01-01	\N	2024-06-01 13:07:12.47+02	2024-06-01 13:07:33.985+02	27	\N	\N	\N
 28	Ghostbusters	Ghostbusters.png	1984-10-26	\N	2024-06-21 13:22:34.02+02	2024-06-21 13:22:53.721+02	58	\N	https://en.wikipedia.org/wiki/List_of_Ghostbusters_video_games	\N
@@ -1475,7 +1626,7 @@ COPY public."Franchises" (id, name, main_img, first_game_date, color, "createdAt
 52	Zaxxon	zaxxon.png	1982-01-01	\N	2024-07-06 13:09:41.366+02	2024-07-06 13:09:48.006+02	1	\N	\N	\N
 53	Time Pilot	time-pilot.png	1982-11-01	\N	2024-07-06 13:29:59.438+02	2024-07-06 13:30:05.987+02	30	\N	\N	\N
 57	Punch Out!!	Punch-Out!!.png	1984-02-17	\N	2024-07-07 12:19:19.451+02	2024-07-07 12:21:02.225+02	32	\N	https://es.wikipedia.org/wiki/Punch-Out!!	\N
-55	Spy Hunter	spy_hunter.jpeg	1983-11-01	\N	2024-07-06 20:04:27.123+02	2024-07-06 20:09:19.59+02	37	17	https://es.wikipedia.org/wiki/Spy_Hunter	\N
+55	Spy Hunter	spy_hunter.jpeg	1983-11-01	\N	2024-07-06 20:04:27.123+02	2024-09-15 11:52:52.784+02	205	17	https://es.wikipedia.org/wiki/Spy_Hunter	\N
 56	Xevious	xevious.png	1983-01-01	\N	2024-07-07 11:26:14.84+02	2024-07-07 11:26:38.599+02	19	18	https://en.wikipedia.org/wiki/List_of_Xevious_media	\N
 58	Archon	archon.png	1983-01-01	\N	2024-07-07 12:56:29.762+02	2024-07-07 12:56:55.554+02	81	\N	\N	\N
 59	Bomberman	Bomberman.png	1983-07-01	\N	2024-07-07 18:59:34.459+02	2024-07-07 19:07:54.102+02	30	68	https://es.wikipedia.org/wiki/Bomberman	f
@@ -1484,13 +1635,13 @@ COPY public."Franchises" (id, name, main_img, first_game_date, color, "createdAt
 62	Lode Runner	lode_runner.jpeg	1983-06-23	\N	2024-07-08 16:44:35.479+02	2024-07-08 16:44:57.62+02	89	87	\N	\N
 63	19xx	19xx.png	1984-11-30	\N	2024-07-09 15:33:09.003+02	2024-07-09 15:34:01.994+02	61	\N	\N	\N
 64	Yie Ar Kung-Fu	Yie_Ar_Kung-Fu.jpeg	1984-10-25	\N	2024-07-09 16:58:44.588+02	2024-07-09 16:59:05.834+02	30	\N	\N	\N
-65	Marble Madness	MarbleMadness.png	1984-12-15	\N	2024-07-10 16:37:27.386+02	2024-07-10 16:37:51.26+02	64	11	\N	\N
+65	Marble Madness	MarbleMadness.png	1984-12-15	\N	2024-07-10 16:37:27.386+02	2024-09-15 11:53:54.805+02	205	11	\N	\N
 66	Ballon Fight	ballon_fight.png	1984-11-01	\N	2024-07-10 21:20:24.522+02	2024-07-10 21:21:09.53+02	32	\N	\N	\N
 4	Space Invaders	Space_invaders.png	1978-04-01	#02073f	2024-04-28 11:35:45.283+02	2024-07-23 16:03:32.578+02	14	\N	https://es.wikipedia.org/wiki/Space_Invaders_(serie)	f
 67	Ghosts 'n Goblins	ghostsngoblins.jpeg	1985-09-19	\N	2024-07-11 16:10:27.109+02	2024-07-11 16:17:00.236+02	61	\N	https://en.wikipedia.org/wiki/Ghosts_%27n_Goblins	\N
 69	Space Harrier	Space_Harrier.jpeg	1985-10-02	\N	2024-07-12 13:20:22.041+02	2024-07-12 13:20:27.14+02	1	\N	\N	\N
 70	Excitebike	excitebike.png	1984-11-30	\N	2024-07-15 12:25:39.553+02	2024-07-15 12:25:44.295+02	32	\N	\N	\N
-71	Paperboy	Paperboy.jpeg	1985-02-01	\N	2024-07-16 16:27:24.872+02	2024-07-16 16:55:40.439+02	64	11	\N	\N
+71	Paperboy	Paperboy.jpeg	1985-02-01	\N	2024-07-16 16:27:24.872+02	2024-09-15 11:54:15.037+02	205	11	\N	\N
 72	Ikari	ikari.jpeg	1986-02-19	\N	2024-07-17 16:26:41.768+02	2024-07-17 16:26:49.218+02	96	\N	\N	\N
 91	R-Type	R-Type.jpg	1987-07-01	\N	2024-07-28 11:28:13.517+02	2024-07-28 11:31:31.053+02	92	\N	https://en.wikipedia.org/wiki/List_of_R-Type_video_games	\N
 73	The Legend of Zelda	The_Legend_of_Zelda.png	1986-02-21	#026012	2024-07-17 19:55:06.163+02	2024-07-17 19:55:22.928+02	32	\N	https://es.wikipedia.org/wiki/The_Legend_of_Zelda	t
@@ -1587,8 +1738,35 @@ COPY public."Franchises" (id, name, main_img, first_game_date, color, "createdAt
 163	Yoshi	Yoshi.png	1991-12-14	#6fd251	2024-09-06 16:19:24.239+02	2024-09-06 16:20:08.086+02	32	\N	https://en.wikipedia.org/wiki/List_of_Yoshi_video_games	\N
 164	Ganbare Goemon	Ganbare_Goemon.png	1986-05-01	\N	2024-09-06 16:42:24.897+02	2024-09-06 16:42:37.83+02	30	\N	https://es.wikipedia.org/wiki/Ganbare_Goemon	\N
 165	Lotus	Lotus.png	1990-01-01	\N	2024-09-07 12:08:06.68+02	2024-09-07 12:08:24.538+02	164	163	https://es.wikipedia.org/wiki/Lotus_(serie)	\N
+169	McDonald's	McDonald's.png	1988-01-29	\N	2024-09-10 15:39:17.128+02	2024-09-10 15:41:29.217+02	179	\N	\N	\N
 166	James Pond	james_pond.jpg	1990-12-01	\N	2024-09-08 09:21:39.29+02	2024-09-08 09:22:11.344+02	110	166	\N	\N
 167	ToeJam & Earl	toejam&earl.png	1991-10-01	\N	2024-09-08 10:47:02.61+02	2024-09-08 10:47:25.174+02	173	172	\N	\N
+170	Star Trek	Star_Trek.png	1971-01-01	\N	2024-09-10 16:32:02.417+02	2024-09-10 16:32:21.127+02	120	\N	https://en.wikipedia.org/wiki/List_of_Star_Trek_games#Video_games	\N
+171	Tiny Toon Adventures	Tiny_Toon_Adventures.png	1991-12-01	\N	2024-09-11 10:31:41.552+02	2024-09-11 10:34:17.649+02	64	\N	https://en.wikipedia.org/wiki/List_of_Tiny_Toon_Adventures_video_games	\N
+172	Strike	strike.jpg	1992-03-01	\N	2024-09-11 11:58:50.382+02	2024-09-11 11:58:57.275+02	29	\N	https://en.wikipedia.org/wiki/Strike_(video_game_series)	\N
+173	Terminator	Terminator.png	1990-01-01	\N	2024-09-11 13:05:54.489+02	2024-09-11 13:06:21.5+02	188	\N	https://es.wikipedia.org/wiki/Anexo:Videojuegos_de_Terminator	\N
+174	Shining	shining.jpg	1991-03-29	\N	2024-09-11 17:13:31.55+02	2024-09-11 17:14:33.8+02	1	\N	https://es.wikipedia.org/wiki/Shining_(serie_de_videojuegos)	\N
+175	Puyo Puyo	Puyo_Puyo.png	1991-10-25	\N	2024-09-12 16:07:45.541+02	2024-09-12 16:09:33.488+02	1	193	https://es.wikipedia.org/wiki/Puyo_Puyo_(serie)	\N
+176	Kirby	Kirby.png	1992-04-27	#df6da9	2024-09-12 16:27:56.656+02	2024-09-12 16:34:46.026+02	32	161	https://es.wikipedia.org/wiki/Kirby_(serie)	f
+177	Ecco the Dolphin	Eccothedolphin.jpg	1992-07-31	\N	2024-09-13 13:25:12.652+02	2024-09-13 13:26:14.094+02	1	195	https://es.wikipedia.org/wiki/Ecco_the_Dolphin	\N
+178	Mario Kart	Mario_Kart.png	1992-08-27	#ee1c25	2024-09-14 11:16:26.483+02	2024-09-14 11:17:50.284+02	32	\N	https://es.wikipedia.org/wiki/Mario_Kart	\N
+179	Championship Manager	Championship_Manager.png	1992-05-15	\N	2024-09-14 13:25:14.434+02	2024-09-14 13:25:39.282+02	15	196	https://en.wikipedia.org/wiki/Championship_Manager	\N
+180	Art of Fighting	art_of_fighting.jpg	1992-09-24	\N	2024-09-15 09:25:17.032+02	2024-09-15 09:27:31.836+02	96	\N	https://es.wikipedia.org/wiki/Art_of_Fighting_(serie)	\N
+181	Zool	zool.jpg	1992-10-01	\N	2024-09-15 10:48:07.074+02	2024-09-15 10:48:40.12+02	203	164	\N	\N
+182	Mortal Kombat	Mortal_Kombat.png	1992-10-08	\N	2024-09-15 11:56:11+02	2024-09-15 11:56:48.073+02	204	17	https://es.wikipedia.org/wiki/Mortal_Kombat_(franquicia)	f
+183	Star Control	star_control.jpg	1990-07-01	\N	2024-09-16 16:15:21.989+02	2024-09-16 16:15:46.843+02	209	208	\N	\N
+184	Flashback	flashback.jpg	1992-11-01	\N	2024-09-17 15:56:29.901+02	2024-09-17 16:10:01.599+02	211	148	\N	\N
+185	Alone in the Dark	Alone_in_the_dark.png	1992-11-01	\N	2024-09-18 16:07:58.373+02	2024-09-18 16:08:23.515+02	212	13	https://es.wikipedia.org/wiki/Alone_in_the_Dark_(serie)	\N
+186	Dune	Dune.png	1992-01-01	\N	2024-09-18 16:43:27.431+02	2024-09-18 16:44:20.444+02	217	\N	https://en.wikipedia.org/wiki/List_of_games_based_on_Dune	f
+187	Lethal Enforcers	lethal_enforcers.jpg	1992-10-08	\N	2024-09-20 15:48:25.478+02	2024-09-20 15:48:33.098+02	30	\N	\N	\N
+188	Sensible Soccer	sensible_soccer.jpg	1992-01-01	\N	2024-09-20 16:30:46.704+02	2024-09-20 16:31:00.397+02	174	220	https://en.wikipedia.org/wiki/Sensible_Soccer	\N
+189	Looney Tunes	Looney_Tunes.png	1979-01-01	\N	2024-09-21 12:53:32.473+02	2024-09-21 12:53:46.062+02	64	\N	https://en.wikipedia.org/wiki/List_of_Looney_Tunes_video_games	\N
+190	NHL	Easports_nhl.png	1991-09-01	\N	2024-09-21 13:38:44.345+02	2024-09-21 13:39:00.332+02	112	\N	https://es.wikipedia.org/wiki/NHL_(serie)	\N
+191	Solstice	solstice.jpg	1990-06-01	\N	2024-09-22 12:59:03.208+02	2024-09-22 12:59:14.596+02	227	\N	\N	\N
+192	Lunar	Lunar.png	1992-06-16	\N	2024-09-23 18:37:19.698+02	2024-09-23 18:37:34.073+02	178	\N	https://es.wikipedia.org/wiki/Lunar_(juegos_de_rol)	\N
+193	Alien	alien.png	1982-01-01	\N	2024-09-24 16:45:53.306+02	2024-09-24 16:46:04.709+02	158	\N	https://en.wikipedia.org/wiki/List_of_Alien,_Predator,_and_Alien_vs._Predator_games	\N
+194	Astérix	Asterix.png	1983-01-01	\N	2024-09-26 16:47:41.46+02	2024-09-26 16:51:25.757+02	230	\N	https://en.wikipedia.org/wiki/List_of_Asterix_games#Video_games	\N
+195	Chip 'n Dale: Rescue Rangers	Chip_'n'_Dale_Rescue_Rangers.png	1990-06-08	\N	2024-09-26 17:20:03.145+02	2024-09-26 17:20:09.002+02	74	\N	https://es.wikipedia.org/wiki/Chip_%27n_Dale:_Rescue_Rangers#Videojuegos	\N
 \.
 
 
@@ -1709,6 +1887,39 @@ WINNER	1990	2024-09-05 17:59:34.549+02	2024-09-05 17:59:34.549+02	239	19
 WINNER	1991	2024-09-06 08:49:43.856+02	2024-09-06 08:49:43.856+02	302	20
 WINNER	1991	2024-09-06 08:49:58.863+02	2024-09-06 08:49:58.863+02	302	16
 WINNER	1991	2024-09-06 09:05:28.729+02	2024-09-06 09:05:28.729+02	303	18
+WINNER	1992	2024-09-20 15:56:56.135+02	2024-09-20 15:56:56.135+02	346	8
+WINNER	1992	2024-09-20 15:59:55.726+02	2024-09-20 15:59:55.726+02	377	28
+WINNER	1992	2024-09-20 16:00:26.272+02	2024-09-20 16:00:26.272+02	361	30
+WINNER	1992	2024-09-20 16:00:56.372+02	2024-09-20 16:00:56.372+02	276	1
+WINNER	1992	2024-09-20 16:01:12.664+02	2024-09-20 16:01:12.664+02	276	17
+WINNER	1992	2024-09-20 16:01:24.371+02	2024-09-20 16:01:24.371+02	276	29
+WINNER	1992	2024-09-20 16:13:38.42+02	2024-09-20 16:13:38.42+02	387	31
+WINNER	1992	2024-09-20 16:34:16.243+02	2024-09-20 16:34:16.243+02	388	16
+WINNER	1992	2024-09-21 11:20:18.96+02	2024-09-21 11:20:18.96+02	389	14
+RUNNERUP	1992	2024-09-21 11:21:30.816+02	2024-09-21 11:21:30.816+02	389	44
+WINNER	1992	2024-09-21 11:49:20.261+02	2024-09-21 11:49:20.261+02	390	44
+RUNNERUP	1992	2024-09-21 12:15:03.433+02	2024-09-21 12:15:03.433+02	391	43
+WINNER	1992	2024-09-21 13:08:56.91+02	2024-09-21 13:08:56.91+02	392	43
+WINNER	1992	2024-09-21 13:28:05.756+02	2024-09-21 13:28:05.756+02	394	41
+RUNNERUP	1992	2024-09-21 13:54:50.856+02	2024-09-21 13:54:50.856+02	396	41
+RUNNERUP	1992	2024-09-22 09:55:57.617+02	2024-09-22 09:55:57.617+02	397	39
+RUNNERUP	1992	2024-09-22 10:15:13.008+02	2024-09-22 10:15:13.008+02	398	40
+WINNER	1992	2024-09-22 10:15:59.929+02	2024-09-22 10:15:59.929+02	295	40
+RUNNERUP	1992	2024-09-22 10:16:45.637+02	2024-09-22 10:16:45.637+02	361	38
+WINNER	1992	2024-09-22 10:34:08.738+02	2024-09-22 10:34:08.738+02	399	38
+RUNNERUP	1992	2024-09-22 13:53:48.63+02	2024-09-22 13:53:48.63+02	403	37
+WINNER	1992	2024-09-23 16:05:53.991+02	2024-09-23 16:05:53.991+02	404	37
+WINNER	1992	2024-09-23 16:07:37.074+02	2024-09-23 16:07:37.074+02	359	36
+WINNER	1992	2024-09-23 16:08:18.727+02	2024-09-23 16:08:18.727+02	4	34
+RUNNERUP	1992	2024-09-23 16:21:45.097+02	2024-09-23 16:21:45.097+02	405	32
+WINNER	1992	2024-09-23 16:42:05.334+02	2024-09-23 16:42:05.334+02	407	32
+RUNNERUP	1992	2024-09-23 16:43:06.407+02	2024-09-23 16:43:06.407+02	271	33
+WINNER	1992	2024-09-23 16:43:29.52+02	2024-09-23 16:43:29.52+02	371	33
+RUNNERUP	1992	2024-09-23 16:44:14.657+02	2024-09-23 16:44:14.657+02	361	14
+WINNER	1992	2024-09-23 16:45:03.405+02	2024-09-23 16:45:03.405+02	276	13
+RUNNERUP	1992	2024-09-23 16:45:35.998+02	2024-09-23 16:45:35.998+02	4	13
+WINNER	1992	2024-09-23 16:46:40.086+02	2024-09-23 16:46:40.086+02	276	5
+WINNER	1992	2024-09-25 16:49:56.62+02	2024-09-25 16:49:56.62+02	276	45
 \.
 
 
@@ -1984,6 +2195,113 @@ PLAYABLE	\N	2024-09-08 09:41:14.614+02	2024-09-08 09:41:14.614+02	142	325
 PLAYABLE	\N	2024-09-08 09:48:50.595+02	2024-09-08 09:48:50.595+02	94	326
 PLAYABLE	\N	2024-09-08 11:08:36.5+02	2024-09-08 11:08:36.5+02	143	328
 PLAYABLE	\N	2024-09-08 11:08:36.5+02	2024-09-08 11:08:36.5+02	144	328
+PLAYABLE	\N	2024-09-09 15:39:19.457+02	2024-09-09 15:39:19.457+02	45	330
+PLAYABLE	\N	2024-09-09 16:29:09.454+02	2024-09-09 16:29:09.454+02	45	331
+PLAYABLE	\N	2024-09-09 16:38:00.508+02	2024-09-09 16:38:00.508+02	45	332
+ANTAGONIST	\N	2024-09-11 13:54:49.847+02	2024-09-11 13:54:49.847+02	145	348
+PLAYABLE	\N	2024-09-12 17:03:24.506+02	2024-09-12 17:03:24.506+02	146	356
+ANTAGONIST	\N	2024-09-12 17:03:33.733+02	2024-09-12 17:03:33.733+02	147	356
+PLAYABLE	\N	2024-09-13 10:28:41.993+02	2024-09-13 10:28:41.993+02	148	359
+PLAYABLE	\N	2024-09-13 11:02:03.68+02	2024-09-13 11:02:03.68+02	101	361
+PLAYABLE	\N	2024-09-13 13:37:41.063+02	2024-09-13 13:37:41.063+02	149	363
+PLAYABLE	\N	2024-09-14 11:50:12.155+02	2024-09-14 11:50:12.155+02	10	364
+PLAYABLE	\N	2024-09-14 11:50:12.155+02	2024-09-14 11:50:12.155+02	18	364
+PLAYABLE	\N	2024-09-14 11:50:12.155+02	2024-09-14 11:50:12.155+02	33	364
+PLAYABLE	\N	2024-09-14 11:50:12.155+02	2024-09-14 11:50:12.155+02	34	364
+PLAYABLE	\N	2024-09-14 11:50:12.155+02	2024-09-14 11:50:12.155+02	106	364
+PLAYABLE	\N	2024-09-14 11:50:12.155+02	2024-09-14 11:50:12.155+02	32	364
+PLAYABLE	\N	2024-09-14 11:50:12.155+02	2024-09-14 11:50:12.155+02	17	364
+PLAYABLE	\N	2024-09-15 09:45:38.671+02	2024-09-15 09:45:38.671+02	150	367
+PLAYABLE	\N	2024-09-15 09:45:38.671+02	2024-09-15 09:45:38.671+02	151	367
+SECONDARY	\N	2024-09-15 09:45:49.869+02	2024-09-15 09:45:49.869+02	152	367
+PLAYABLE	\N	2024-09-15 10:57:57.188+02	2024-09-15 10:57:57.188+02	153	369
+PLAYABLE	\N	2024-09-15 12:50:17.823+02	2024-09-15 12:50:17.823+02	154	370
+PLAYABLE	\N	2024-09-15 12:50:17.823+02	2024-09-15 12:50:17.823+02	155	370
+PLAYABLE	\N	2024-09-15 12:50:17.823+02	2024-09-15 12:50:17.823+02	156	370
+PLAYABLE	\N	2024-09-15 12:50:17.823+02	2024-09-15 12:50:17.823+02	157	370
+PLAYABLE	\N	2024-09-15 12:50:17.823+02	2024-09-15 12:50:17.823+02	160	370
+PLAYABLE	\N	2024-09-15 12:50:17.823+02	2024-09-15 12:50:17.823+02	159	370
+PLAYABLE	\N	2024-09-15 12:50:17.823+02	2024-09-15 12:50:17.823+02	158	370
+SECONDARY	\N	2024-09-15 12:50:26.402+02	2024-09-15 12:50:26.402+02	162	370
+VILLAIN	\N	2024-09-15 12:50:39.367+02	2024-09-15 12:50:39.367+02	161	370
+ANTAGONIST	\N	2024-09-15 12:50:49.262+02	2024-09-15 12:50:49.262+02	163	370
+PLAYABLE	\N	2024-09-16 15:35:41.93+02	2024-09-16 15:35:41.93+02	10	372
+ANTAGONIST	\N	2024-09-16 15:35:48.744+02	2024-09-16 15:35:48.744+02	164	372
+PLAYABLE	\N	2024-09-16 17:04:52.9+02	2024-09-16 17:04:52.9+02	1	375
+SECONDARY	\N	2024-09-16 17:05:00.123+02	2024-09-16 17:05:00.123+02	3	375
+ANTAGONIST	\N	2024-09-16 17:05:06.719+02	2024-09-16 17:05:06.719+02	2	375
+PLAYABLE	\N	2024-09-17 16:24:19.411+02	2024-09-17 16:24:19.411+02	165	376
+PLAYABLE	\N	2024-09-18 16:23:35.033+02	2024-09-18 16:23:35.033+02	166	377
+PLAYABLE	\N	2024-09-20 10:41:05.902+02	2024-09-20 10:41:05.902+02	65	380
+ANTAGONIST	\N	2024-09-20 10:42:30.306+02	2024-09-20 10:42:30.306+02	66	380
+PLAYABLE	\N	2024-09-20 10:59:13.486+02	2024-09-20 10:59:13.486+02	65	381
+ANTAGONIST	\N	2024-09-20 10:59:34.101+02	2024-09-20 10:59:34.101+02	66	381
+PLAYABLE	\N	2024-09-20 13:02:47.091+02	2024-09-20 13:02:47.091+02	121	382
+PLAYABLE	\N	2024-09-20 13:02:47.091+02	2024-09-20 13:02:47.091+02	120	382
+PLAYABLE	\N	2024-09-20 13:02:47.091+02	2024-09-20 13:02:47.091+02	122	382
+PLAYABLE	\N	2024-09-20 13:02:47.091+02	2024-09-20 13:02:47.091+02	167	382
+PLAYABLE	\N	2024-09-20 13:55:21.039+02	2024-09-20 13:55:21.039+02	61	384
+PLAYABLE	\N	2024-09-20 13:55:21.039+02	2024-09-20 13:55:21.039+02	62	384
+PLAYABLE	\N	2024-09-20 13:55:21.039+02	2024-09-20 13:55:21.039+02	114	384
+PLAYABLE	\N	2024-09-20 13:55:21.039+02	2024-09-20 13:55:21.039+02	63	384
+PLAYABLE	\N	2024-09-20 13:55:21.039+02	2024-09-20 13:55:21.039+02	117	384
+PLAYABLE	\N	2024-09-20 13:55:21.039+02	2024-09-20 13:55:21.039+02	112	384
+PLAYABLE	\N	2024-09-20 13:55:21.039+02	2024-09-20 13:55:21.039+02	111	384
+PLAYABLE	\N	2024-09-20 13:55:21.039+02	2024-09-20 13:55:21.039+02	119	384
+PLAYABLE	\N	2024-09-20 13:55:21.039+02	2024-09-20 13:55:21.039+02	116	384
+PLAYABLE	\N	2024-09-20 13:55:21.039+02	2024-09-20 13:55:21.039+02	115	384
+PLAYABLE	\N	2024-09-20 13:55:21.039+02	2024-09-20 13:55:21.039+02	118	384
+PLAYABLE	\N	2024-09-20 13:55:21.039+02	2024-09-20 13:55:21.039+02	113	384
+PLAYABLE	\N	2024-09-20 15:38:52.847+02	2024-09-20 15:38:52.847+02	61	385
+PLAYABLE	\N	2024-09-20 15:38:52.847+02	2024-09-20 15:38:52.847+02	62	385
+PLAYABLE	\N	2024-09-20 15:38:52.847+02	2024-09-20 15:38:52.847+02	114	385
+PLAYABLE	\N	2024-09-20 15:38:52.847+02	2024-09-20 15:38:52.847+02	113	385
+PLAYABLE	\N	2024-09-20 15:38:52.847+02	2024-09-20 15:38:52.847+02	111	385
+PLAYABLE	\N	2024-09-20 15:38:52.847+02	2024-09-20 15:38:52.847+02	116	385
+PLAYABLE	\N	2024-09-20 15:38:52.847+02	2024-09-20 15:38:52.847+02	112	385
+PLAYABLE	\N	2024-09-20 15:38:52.847+02	2024-09-20 15:38:52.847+02	63	385
+PLAYABLE	\N	2024-09-20 15:38:52.847+02	2024-09-20 15:38:52.847+02	117	385
+PLAYABLE	\N	2024-09-20 15:38:52.847+02	2024-09-20 15:38:52.847+02	118	385
+PLAYABLE	\N	2024-09-20 15:38:52.847+02	2024-09-20 15:38:52.847+02	115	385
+PLAYABLE	\N	2024-09-20 15:38:52.847+02	2024-09-20 15:38:52.847+02	119	385
+PLAYABLE	\N	2024-09-21 13:08:28.902+02	2024-09-21 13:08:28.902+02	168	392
+ANTAGONIST	\N	2024-09-21 13:08:35.492+02	2024-09-21 13:08:35.492+02	169	392
+PLAYABLE	\N	2024-09-23 16:36:00.193+02	2024-09-23 16:36:00.193+02	67	406
+PLAYABLE	\N	2024-09-23 16:41:45.655+02	2024-09-23 16:41:45.655+02	67	407
+PLAYABLE	\N	2024-09-24 15:50:54.024+02	2024-09-24 15:50:54.024+02	170	409
+SECONDARY	\N	2024-09-24 15:51:29.519+02	2024-09-24 15:51:29.519+02	130	409
+SECONDARY	\N	2024-09-24 15:51:29.519+02	2024-09-24 15:51:29.519+02	131	409
+PLAYABLE	\N	2024-09-24 16:16:38.645+02	2024-09-24 16:16:38.645+02	171	410
+ANTAGONIST	\N	2024-09-24 17:26:02.702+02	2024-09-24 17:26:02.702+02	172	412
+PLAYABLE	\N	2024-09-25 15:31:19.253+02	2024-09-25 15:31:19.253+02	87	413
+PLAYABLE	\N	2024-09-25 15:31:19.253+02	2024-09-25 15:31:19.253+02	88	413
+PLAYABLE	\N	2024-09-25 15:31:19.253+02	2024-09-25 15:31:19.253+02	89	413
+PLAYABLE	\N	2024-09-25 15:31:19.253+02	2024-09-25 15:31:19.253+02	90	413
+ANTAGONIST	\N	2024-09-25 15:31:30.717+02	2024-09-25 15:31:30.717+02	91	413
+PLAYABLE	\N	2024-09-25 15:42:28.181+02	2024-09-25 15:42:28.181+02	87	414
+PLAYABLE	\N	2024-09-25 15:42:28.181+02	2024-09-25 15:42:28.181+02	88	414
+PLAYABLE	\N	2024-09-25 15:42:28.181+02	2024-09-25 15:42:28.181+02	89	414
+PLAYABLE	\N	2024-09-25 15:42:28.181+02	2024-09-25 15:42:28.181+02	90	414
+ANTAGONIST	\N	2024-09-25 15:42:34.446+02	2024-09-25 15:42:34.446+02	91	414
+PLAYABLE	\N	2024-09-25 15:51:45.246+02	2024-09-25 15:51:45.246+02	87	415
+PLAYABLE	\N	2024-09-25 15:51:45.246+02	2024-09-25 15:51:45.246+02	90	415
+PLAYABLE	\N	2024-09-25 15:51:45.246+02	2024-09-25 15:51:45.246+02	89	415
+PLAYABLE	\N	2024-09-25 15:51:45.246+02	2024-09-25 15:51:45.246+02	88	415
+ANTAGONIST	\N	2024-09-25 15:51:52.027+02	2024-09-25 15:51:52.027+02	91	415
+PLAYABLE	\N	2024-09-25 16:00:12.34+02	2024-09-25 16:00:12.34+02	87	416
+PLAYABLE	\N	2024-09-25 16:00:12.34+02	2024-09-25 16:00:12.34+02	88	416
+PLAYABLE	\N	2024-09-25 16:00:12.34+02	2024-09-25 16:00:12.34+02	89	416
+PLAYABLE	\N	2024-09-25 16:00:12.34+02	2024-09-25 16:00:12.34+02	90	416
+ANTAGONIST	\N	2024-09-25 16:00:19.35+02	2024-09-25 16:00:19.35+02	91	416
+PLAYABLE	\N	2024-09-25 16:20:10.564+02	2024-09-25 16:20:10.564+02	109	417
+PLAYABLE	\N	2024-09-25 16:20:10.564+02	2024-09-25 16:20:10.564+02	139	417
+ANTAGONIST	\N	2024-09-25 16:20:17.008+02	2024-09-25 16:20:17.008+02	141	417
+PLAYABLE	\N	2024-09-26 17:00:11.7+02	2024-09-26 17:00:11.7+02	173	424
+PLAYABLE	\N	2024-09-26 17:00:11.7+02	2024-09-26 17:00:11.7+02	174	424
+PLAYABLE	\N	2024-09-26 17:31:59.974+02	2024-09-26 17:31:59.974+02	175	425
+PLAYABLE	\N	2024-09-26 17:31:59.974+02	2024-09-26 17:31:59.974+02	176	425
+PLAYABLE	\N	2024-09-27 09:13:36.74+02	2024-09-27 09:13:36.74+02	52	426
+ANTAGONIST	\N	2024-09-27 09:15:00.664+02	2024-09-27 09:15:00.664+02	177	426
 \.
 
 
@@ -2401,6 +2719,152 @@ DEVELOPER	\N	\N	2024-09-08 10:14:20.396+02	2024-09-08 10:14:20.396+02	1	327
 DEVELOPER	\N	\N	2024-09-08 11:08:06.118+02	2024-09-08 11:08:06.118+02	172	328
 PUBLISHER	\N	\N	2024-09-08 11:08:14.082+02	2024-09-08 11:08:14.082+02	1	328
 DEVELOPER	\N	\N	2024-09-08 12:02:57.056+02	2024-09-08 12:02:57.056+02	174	329
+DEVELOPER	\N	\N	2024-09-09 15:43:58.91+02	2024-09-09 15:43:58.91+02	175	330
+PUBLISHER	\N	\N	2024-09-09 15:44:04.317+02	2024-09-09 15:44:04.317+02	68	330
+DEVELOPER	\N	\N	2024-09-09 16:28:45.645+02	2024-09-09 16:28:45.645+02	176	331
+PUBLISHER	\N	\N	2024-09-09 16:28:50.961+02	2024-09-09 16:28:50.961+02	68	331
+DEVELOPER	\N	\N	2024-09-09 16:37:42.723+02	2024-09-09 16:37:42.723+02	175	332
+PUBLISHER	\N	\N	2024-09-09 16:37:46.848+02	2024-09-09 16:37:46.848+02	68	332
+DEVELOPER	\N	\N	2024-09-09 16:54:35.326+02	2024-09-09 16:54:35.326+02	1	333
+DEVELOPER	\N	\N	2024-09-09 17:01:37.055+02	2024-09-09 17:01:37.055+02	138	334
+PUBLISHER	\N	\N	2024-09-09 17:02:35.805+02	2024-09-09 17:02:35.805+02	1	334
+DEVELOPER	\N	\N	2024-09-09 17:24:49.487+02	2024-09-09 17:24:49.487+02	109	335
+DEVELOPER	\N	\N	2024-09-09 17:34:01.85+02	2024-09-09 17:34:01.85+02	96	336
+DEVELOPER	\N	\N	2024-09-09 17:49:38.664+02	2024-09-09 17:49:38.664+02	177	337
+PUBLISHER	\N	\N	2024-09-09 17:49:44.701+02	2024-09-09 17:49:44.701+02	70	337
+DEVELOPER	\N	\N	2024-09-10 15:25:18.724+02	2024-09-10 15:25:18.724+02	178	338
+PUBLISHER	\N	\N	2024-09-10 15:25:23.656+02	2024-09-10 15:25:23.656+02	1	338
+DEVELOPER	\N	\N	2024-09-10 16:20:52.589+02	2024-09-10 16:20:52.589+02	180	339
+PUBLISHER	\N	\N	2024-09-10 16:20:57.486+02	2024-09-10 16:20:57.486+02	52	339
+DEVELOPER	\N	\N	2024-09-10 16:46:59.809+02	2024-09-10 16:46:59.809+02	183	340
+PUBLISHER	\N	\N	2024-09-10 16:47:08.808+02	2024-09-10 16:47:08.808+02	30	340
+DEVELOPER	\N	\N	2024-09-11 10:44:34.361+02	2024-09-11 10:44:34.361+02	30	341
+DEVELOPER	\N	\N	2024-09-11 10:58:47.348+02	2024-09-11 10:58:47.348+02	30	342
+DEVELOPER	\N	\N	2024-09-11 11:08:39.314+02	2024-09-11 11:08:39.314+02	30	343
+DEVELOPER	\N	\N	2024-09-11 11:18:41.464+02	2024-09-11 11:18:41.464+02	96	344
+DEVELOPER	\N	\N	2024-09-11 11:39:02.587+02	2024-09-11 11:39:02.587+02	30	345
+DEVELOPER	\N	\N	2024-09-11 12:04:58.583+02	2024-09-11 12:04:58.583+02	29	346
+DEVELOPER	\N	\N	2024-09-11 12:17:10.399+02	2024-09-11 12:17:10.399+02	1	347
+DEVELOPER	\N	\N	2024-09-11 13:54:26.807+02	2024-09-11 13:54:26.807+02	184	348
+PUBLISHER	\N	\N	2024-09-11 13:54:31.961+02	2024-09-11 13:54:31.961+02	180	348
+DEVELOPER	\N	\N	2024-09-11 14:12:24.859+02	2024-09-11 14:12:24.859+02	1	349
+DEVELOPER	\N	\N	2024-09-11 17:22:43.675+02	2024-09-11 17:22:43.675+02	189	350
+DEVELOPER	\N	\N	2024-09-11 17:22:43.675+02	2024-09-11 17:22:43.675+02	190	350
+PUBLISHER	\N	\N	2024-09-11 17:22:49.686+02	2024-09-11 17:22:49.686+02	1	350
+DEVELOPER	\N	\N	2024-09-11 17:32:07.873+02	2024-09-11 17:32:07.873+02	189	351
+DEVELOPER	\N	\N	2024-09-11 17:32:07.873+02	2024-09-11 17:32:07.873+02	190	351
+PUBLISHER	\N	\N	2024-09-11 17:32:12.786+02	2024-09-11 17:32:12.786+02	1	351
+DEVELOPER	\N	\N	2024-09-12 15:26:20.199+02	2024-09-12 15:26:20.199+02	192	352
+DEVELOPER	\N	\N	2024-09-12 15:35:57.656+02	2024-09-12 15:35:57.656+02	73	353
+DEVELOPER	\N	\N	2024-09-12 15:43:38.33+02	2024-09-12 15:43:38.33+02	73	354
+DEVELOPER	\N	\N	2024-09-12 16:24:24.389+02	2024-09-12 16:24:24.389+02	193	355
+DEVELOPER	\N	\N	2024-09-12 17:03:04.354+02	2024-09-12 17:03:04.354+02	161	356
+PUBLISHER	\N	\N	2024-09-12 17:03:09.221+02	2024-09-12 17:03:09.221+02	32	356
+DEVELOPER	\N	\N	2024-09-13 07:52:42.471+02	2024-09-13 07:52:42.471+02	78	357
+DEVELOPER	\N	\N	2024-09-13 10:01:43.062+02	2024-09-13 10:01:43.062+02	83	358
+DEVELOPER	\N	\N	2024-09-13 10:28:15.799+02	2024-09-13 10:28:15.799+02	84	359
+PUBLISHER	\N	\N	2024-09-13 10:28:21.843+02	2024-09-13 10:28:21.843+02	150	359
+DEVELOPER	\N	\N	2024-09-13 10:41:00.577+02	2024-09-13 10:41:00.577+02	110	360
+PUBLISHER	\N	\N	2024-09-13 10:41:07.172+02	2024-09-13 10:41:07.172+02	186	360
+DEVELOPER	\N	\N	2024-09-13 11:01:22.099+02	2024-09-13 11:01:22.099+02	107	361
+DEVELOPER	\N	\N	2024-09-13 11:30:42.091+02	2024-09-13 11:30:42.091+02	194	362
+DEVELOPER	\N	\N	2024-09-13 13:37:19.703+02	2024-09-13 13:37:19.703+02	195	363
+PUBLISHER	\N	\N	2024-09-13 13:37:25.749+02	2024-09-13 13:37:25.749+02	1	363
+DEVELOPER	\N	\N	2024-09-14 11:49:27.708+02	2024-09-14 11:49:27.708+02	95	364
+PUBLISHER	\N	\N	2024-09-14 11:49:33.06+02	2024-09-14 11:49:33.06+02	32	364
+DEVELOPER	\N	\N	2024-09-14 12:27:32.399+02	2024-09-14 12:27:32.399+02	99	365
+PUBLISHER	\N	\N	2024-09-14 12:27:40.819+02	2024-09-14 12:27:40.819+02	70	365
+DEVELOPER	\N	\N	2024-09-14 13:32:02.379+02	2024-09-14 13:32:02.379+02	196	366
+PUBLISHER	\N	\N	2024-09-14 13:32:07.931+02	2024-09-14 13:32:07.931+02	197	366
+DEVELOPER	\N	\N	2024-09-15 09:45:20.101+02	2024-09-15 09:45:20.101+02	96	367
+DEVELOPER	\N	\N	2024-09-15 10:08:43.941+02	2024-09-15 10:08:43.941+02	200	368
+PUBLISHER	\N	\N	2024-09-15 10:08:50.054+02	2024-09-15 10:08:50.054+02	1	368
+DEVELOPER	\N	\N	2024-09-15 10:57:33.341+02	2024-09-15 10:57:33.341+02	164	369
+PUBLISHER	\N	\N	2024-09-15 10:57:40.065+02	2024-09-15 10:57:40.065+02	29	369
+DEVELOPER	\N	\N	2024-09-15 12:49:05.028+02	2024-09-15 12:49:05.028+02	17	370
+DEVELOPER	\N	\N	2024-09-15 13:31:41.784+02	2024-09-15 13:31:41.784+02	206	371
+PUBLISHER	\N	\N	2024-09-15 13:31:46.797+02	2024-09-15 13:31:46.797+02	1	371
+DEVELOPER	\N	\N	2024-09-16 15:34:12.277+02	2024-09-16 15:34:12.277+02	31	372
+PUBLISHER	\N	\N	2024-09-16 15:34:20.219+02	2024-09-16 15:34:20.219+02	32	372
+DEVELOPER	\N	\N	2024-09-16 16:28:33.001+02	2024-09-16 16:28:33.001+02	207	373
+PUBLISHER	\N	\N	2024-09-16 16:28:38.801+02	2024-09-16 16:28:38.801+02	208	373
+DEVELOPER	\N	\N	2024-09-16 16:43:03.146+02	2024-09-16 16:43:03.146+02	207	374
+PUBLISHER	\N	\N	2024-09-16 16:43:08.706+02	2024-09-16 16:43:08.706+02	208	374
+DEVELOPER	\N	\N	2024-09-16 17:04:40.452+02	2024-09-16 17:04:40.452+02	210	375
+PUBLISHER	\N	\N	2024-09-16 17:04:44.852+02	2024-09-16 17:04:44.852+02	1	375
+DEVELOPER	\N	\N	2024-09-17 16:21:43.777+02	2024-09-17 16:21:43.777+02	148	376
+PUBLISHER	\N	\N	2024-09-17 16:21:49.933+02	2024-09-17 16:21:49.933+02	60	376
+DEVELOPER	\N	\N	2024-09-18 16:23:20.821+02	2024-09-18 16:23:20.821+02	13	377
+DEVELOPER	\N	\N	2024-09-18 16:55:53.718+02	2024-09-18 16:55:53.718+02	218	378
+PUBLISHER	\N	\N	2024-09-18 16:55:59.489+02	2024-09-18 16:55:59.489+02	180	378
+DEVELOPER	\N	\N	2024-09-18 17:06:31.009+02	2024-09-18 17:06:31.009+02	216	379
+PUBLISHER	\N	\N	2024-09-18 17:06:37.293+02	2024-09-18 17:06:37.293+02	180	379
+DEVELOPER	\N	\N	2024-09-20 10:40:58.485+02	2024-09-20 10:40:58.485+02	61	380
+DEVELOPER	\N	\N	2024-09-20 10:58:56.219+02	2024-09-20 10:58:56.219+02	219	381
+PUBLISHER	\N	\N	2024-09-20 10:59:03.006+02	2024-09-20 10:59:03.006+02	61	381
+DEVELOPER	\N	\N	2024-09-20 13:02:18.324+02	2024-09-20 13:02:18.324+02	96	382
+DEVELOPER	\N	\N	2024-09-20 13:35:12.116+02	2024-09-20 13:35:12.116+02	109	383
+DEVELOPER	\N	\N	2024-09-20 13:52:35.686+02	2024-09-20 13:52:35.686+02	61	384
+DEVELOPER	\N	\N	2024-09-20 15:37:54.701+02	2024-09-20 15:37:54.701+02	61	385
+DEVELOPER	\N	\N	2024-09-20 15:53:19.657+02	2024-09-20 15:53:19.657+02	30	386
+DEVELOPER	\N	\N	2024-09-20 16:12:30.974+02	2024-09-20 16:12:30.974+02	134	387
+PUBLISHER	\N	\N	2024-09-20 16:12:35.494+02	2024-09-20 16:12:35.494+02	60	387
+DEVELOPER	\N	\N	2024-09-20 16:33:44.006+02	2024-09-20 16:33:44.006+02	220	388
+DEVELOPER	\N	\N	2024-09-21 11:19:37.741+02	2024-09-21 11:19:37.741+02	28	389
+DEVELOPER	\N	\N	2024-09-21 11:48:50.849+02	2024-09-21 11:48:50.849+02	107	390
+PUBLISHER	\N	\N	2024-09-21 11:48:55.559+02	2024-09-21 11:48:55.559+02	221	390
+DEVELOPER	\N	\N	2024-09-21 12:14:18.873+02	2024-09-21 12:14:18.873+02	224	391
+PUBLISHER	\N	\N	2024-09-21 12:14:23.629+02	2024-09-21 12:14:23.629+02	25	391
+DEVELOPER	\N	\N	2024-09-21 13:08:06.041+02	2024-09-21 13:08:06.041+02	225	392
+PUBLISHER	\N	\N	2024-09-21 13:08:11.391+02	2024-09-21 13:08:11.391+02	138	392
+DEVELOPER	\N	\N	2024-09-21 13:18:57.802+02	2024-09-21 13:18:57.802+02	29	393
+DEVELOPER	\N	\N	2024-09-21 13:27:21.324+02	2024-09-21 13:27:21.324+02	29	394
+PUBLISHER	\N	\N	2024-09-21 13:27:26.464+02	2024-09-21 13:27:26.464+02	112	394
+DEVELOPER	\N	\N	2024-09-21 13:46:09.747+02	2024-09-21 13:46:09.747+02	29	395
+PUBLISHER	\N	\N	2024-09-21 13:46:14.176+02	2024-09-21 13:46:14.176+02	112	395
+DEVELOPER	\N	\N	2024-09-21 13:54:23.783+02	2024-09-21 13:54:23.783+02	29	396
+PUBLISHER	\N	\N	2024-09-21 13:54:28.572+02	2024-09-21 13:54:28.572+02	112	396
+DEVELOPER	\N	\N	2024-09-22 09:55:20.925+02	2024-09-22 09:55:20.925+02	11	397
+DEVELOPER	\N	\N	2024-09-22 10:14:44.919+02	2024-09-22 10:14:44.919+02	125	398
+DEVELOPER	\N	\N	2024-09-22 10:35:28.66+02	2024-09-22 10:35:28.66+02	28	399
+DEVELOPER	\N	\N	2024-09-22 10:48:53.016+02	2024-09-22 10:48:53.016+02	226	400
+PUBLISHER	\N	\N	2024-09-22 10:49:01.422+02	2024-09-22 10:49:01.422+02	28	400
+DEVELOPER	\N	\N	2024-09-22 10:56:01.485+02	2024-09-22 10:56:01.485+02	28	401
+DEVELOPER	\N	\N	2024-09-22 13:09:05.055+02	2024-09-22 13:09:05.055+02	227	402
+PUBLISHER	\N	\N	2024-09-22 13:09:11.232+02	2024-09-22 13:09:11.232+02	32	402
+DEVELOPER	\N	\N	2024-09-22 13:52:55.673+02	2024-09-22 13:52:55.673+02	227	403
+PUBLISHER	\N	\N	2024-09-22 13:53:01.617+02	2024-09-22 13:53:01.617+02	228	403
+DEVELOPER	\N	\N	2024-09-23 16:05:35.206+02	2024-09-23 16:05:35.206+02	109	404
+DEVELOPER	\N	\N	2024-09-23 16:20:41.585+02	2024-09-23 16:20:41.585+02	41	405
+DEVELOPER	\N	\N	2024-09-23 16:20:41.585+02	2024-09-23 16:20:41.585+02	107	405
+PUBLISHER	\N	\N	2024-09-23 16:20:47.905+02	2024-09-23 16:20:47.905+02	221	405
+DEVELOPER	\N	\N	2024-09-23 16:35:47.627+02	2024-09-23 16:35:47.627+02	1	406
+DEVELOPER	\N	\N	2024-09-23 16:41:29.298+02	2024-09-23 16:41:29.298+02	1	407
+DEVELOPER	\N	\N	2024-09-23 19:02:11.61+02	2024-09-23 19:02:11.61+02	178	408
+DEVELOPER	\N	\N	2024-09-24 15:50:31.521+02	2024-09-24 15:50:31.521+02	229	409
+PUBLISHER	\N	\N	2024-09-24 15:50:36.708+02	2024-09-24 15:50:36.708+02	186	409
+DEVELOPER	\N	\N	2024-09-24 16:16:22.642+02	2024-09-24 16:16:22.642+02	1	410
+DEVELOPER	\N	\N	2024-09-24 16:34:50.443+02	2024-09-24 16:34:50.443+02	127	411
+PUBLISHER	\N	\N	2024-09-24 16:34:55.002+02	2024-09-24 16:34:55.002+02	68	411
+DEVELOPER	\N	\N	2024-09-24 17:25:37.104+02	2024-09-24 17:25:37.104+02	184	412
+PUBLISHER	\N	\N	2024-09-24 17:25:48.522+02	2024-09-24 17:25:48.522+02	186	412
+DEVELOPER	\N	\N	2024-09-25 15:31:01.336+02	2024-09-25 15:31:01.336+02	30	413
+DEVELOPER	\N	\N	2024-09-25 15:42:12.683+02	2024-09-25 15:42:12.683+02	30	414
+DEVELOPER	\N	\N	2024-09-25 15:51:25.858+02	2024-09-25 15:51:25.858+02	30	415
+DEVELOPER	\N	\N	2024-09-25 15:59:45.016+02	2024-09-25 15:59:45.016+02	30	416
+DEVELOPER	\N	\N	2024-09-25 16:19:43.502+02	2024-09-25 16:19:43.502+02	1	417
+DEVELOPER	\N	\N	2024-09-25 16:37:51.834+02	2024-09-25 16:37:51.834+02	1	418
+DEVELOPER	\N	\N	2024-09-25 16:47:35.372+02	2024-09-25 16:47:35.372+02	139	419
+PUBLISHER	\N	\N	2024-09-25 16:47:42.287+02	2024-09-25 16:47:42.287+02	221	419
+DEVELOPER	\N	\N	2024-09-26 15:33:58.177+02	2024-09-26 15:33:58.177+02	126	420
+DEVELOPER	\N	\N	2024-09-26 15:48:55.996+02	2024-09-26 15:48:55.996+02	31	421
+PUBLISHER	\N	\N	2024-09-26 15:49:27.011+02	2024-09-26 15:49:27.011+02	32	421
+DEVELOPER	\N	\N	2024-09-26 16:06:37.041+02	2024-09-26 16:06:37.041+02	61	422
+DEVELOPER	\N	\N	2024-09-26 16:18:31.042+02	2024-09-26 16:18:31.042+02	29	423
+DEVELOPER	\N	\N	2024-09-26 16:59:57.539+02	2024-09-26 16:59:57.539+02	1	424
+DEVELOPER	\N	\N	2024-09-26 17:31:44.864+02	2024-09-26 17:31:44.864+02	61	425
+DEVELOPER	\N	\N	2024-09-27 09:13:18.29+02	2024-09-27 09:13:18.29+02	231	426
+PUBLISHER	\N	\N	2024-09-27 09:13:24.79+02	2024-09-27 09:13:24.79+02	1	426
 \.
 
 
@@ -2413,6 +2877,8 @@ COPY public."Game_Games" (id, type, "createdAt", "updatedAt", "parentGameId", "s
 3	COLLECTION	2024-08-09 09:51:56.136+02	2024-08-09 09:51:56.136+02	51	194
 4	COLLECTION	2024-08-22 17:37:53.21+02	2024-08-22 17:37:53.21+02	152	225
 5	COLLECTION	2024-08-22 17:37:53.21+02	2024-08-22 17:37:53.21+02	224	225
+6	SPINOFF	2024-09-20 13:50:41.538+02	2024-09-20 13:50:41.538+02	276	384
+7	SPINOFF	2024-09-20 15:36:12.804+02	2024-09-20 15:36:12.804+02	276	385
 \.
 
 
@@ -2864,6 +3330,139 @@ COPY public."Game_Genres" (is_main_for_genre, "createdAt", "updatedAt", "GameId"
 \N	2024-09-08 11:07:10.191+02	2024-09-08 11:07:10.191+02	328	19
 \N	2024-09-08 11:07:26.216+02	2024-09-08 11:07:26.216+02	328	38
 \N	2024-09-08 12:02:09.182+02	2024-09-08 12:02:09.182+02	329	52
+\N	2024-09-09 15:42:32.344+02	2024-09-09 15:42:32.344+02	330	2
+\N	2024-09-09 16:28:23.732+02	2024-09-09 16:28:23.732+02	331	2
+\N	2024-09-09 16:37:06.769+02	2024-09-09 16:37:06.769+02	332	2
+\N	2024-09-09 16:53:39.257+02	2024-09-09 16:53:39.257+02	333	8
+\N	2024-09-09 17:01:22.739+02	2024-09-09 17:01:22.739+02	334	8
+\N	2024-09-09 17:23:58.871+02	2024-09-09 17:23:58.871+02	335	54
+\N	2024-09-09 17:32:59.84+02	2024-09-09 17:32:59.84+02	336	73
+\N	2024-09-09 17:48:51.872+02	2024-09-09 17:48:51.872+02	337	57
+\N	2024-09-10 15:24:49.862+02	2024-09-10 15:24:49.862+02	338	41
+\N	2024-09-10 16:20:12.613+02	2024-09-10 16:20:12.613+02	339	2
+\N	2024-09-10 16:42:09.638+02	2024-09-10 16:42:09.638+02	340	22
+\N	2024-09-11 10:44:16.111+02	2024-09-11 10:44:16.111+02	341	2
+\N	2024-09-11 10:58:30.95+02	2024-09-11 10:58:30.95+02	342	2
+\N	2024-09-11 11:08:22.247+02	2024-09-11 11:08:22.247+02	343	2
+\N	2024-09-11 11:18:04.31+02	2024-09-11 11:18:04.31+02	344	72
+\N	2024-09-11 11:38:21.683+02	2024-09-11 11:38:21.683+02	345	41
+\N	2024-09-11 12:03:52.941+02	2024-09-11 12:03:52.941+02	346	53
+\N	2024-09-11 12:03:52.941+02	2024-09-11 12:03:52.941+02	346	8
+\N	2024-09-11 12:16:34.401+02	2024-09-11 12:16:34.401+02	347	2
+\N	2024-09-11 13:51:00.246+02	2024-09-11 13:51:00.246+02	348	41
+\N	2024-09-11 14:11:45.754+02	2024-09-11 14:11:45.754+02	349	54
+\N	2024-09-11 17:19:24.402+02	2024-09-11 17:19:24.402+02	350	54
+\N	2024-09-11 17:19:24.402+02	2024-09-11 17:19:24.402+02	350	21
+\N	2024-09-11 17:30:54.107+02	2024-09-11 17:30:54.107+02	351	82
+\N	2024-09-12 15:26:09.087+02	2024-09-12 15:26:09.087+02	352	38
+\N	2024-09-12 15:26:09.087+02	2024-09-12 15:26:09.087+02	352	37
+\N	2024-09-12 15:35:20.373+02	2024-09-12 15:35:20.373+02	353	21
+\N	2024-09-12 15:35:20.373+02	2024-09-12 15:35:20.373+02	353	20
+\N	2024-09-12 15:43:10.892+02	2024-09-12 15:43:10.892+02	354	21
+\N	2024-09-12 15:43:10.892+02	2024-09-12 15:43:10.892+02	354	20
+\N	2024-09-12 16:23:01.173+02	2024-09-12 16:23:01.173+02	355	27
+\N	2024-09-12 17:02:09.318+02	2024-09-12 17:02:09.318+02	356	2
+\N	2024-09-13 07:53:44.239+02	2024-09-13 07:53:44.239+02	357	8
+\N	2024-09-13 10:01:26.799+02	2024-09-13 10:01:26.799+02	358	38
+\N	2024-09-13 10:01:26.799+02	2024-09-13 10:01:26.799+02	358	63
+\N	2024-09-13 10:27:04.755+02	2024-09-13 10:27:04.755+02	359	30
+\N	2024-09-13 10:40:38.935+02	2024-09-13 10:40:38.935+02	360	76
+\N	2024-09-13 10:40:38.935+02	2024-09-13 10:40:38.935+02	360	58
+\N	2024-09-13 11:00:53.264+02	2024-09-13 11:00:53.264+02	361	22
+\N	2024-09-13 11:30:14.34+02	2024-09-13 11:30:14.34+02	362	8
+\N	2024-09-13 13:36:30.039+02	2024-09-13 13:36:30.039+02	363	38
+\N	2024-09-14 11:48:19.396+02	2024-09-14 11:48:19.396+02	364	88
+\N	2024-09-14 11:48:19.396+02	2024-09-14 11:48:19.396+02	364	52
+\N	2024-09-14 12:26:28.115+02	2024-09-14 12:26:28.115+02	365	54
+\N	2024-09-14 13:31:31.537+02	2024-09-14 13:31:31.537+02	366	89
+\N	2024-09-14 13:31:43.249+02	2024-09-14 13:31:43.249+02	366	72
+\N	2024-09-15 09:44:57.629+02	2024-09-15 09:44:57.629+02	367	48
+\N	2024-09-15 10:07:33.049+02	2024-09-15 10:07:33.049+02	368	76
+\N	2024-09-15 10:07:33.049+02	2024-09-15 10:07:33.049+02	368	58
+\N	2024-09-15 10:56:17.779+02	2024-09-15 10:56:17.779+02	369	2
+\N	2024-09-15 12:47:50.966+02	2024-09-15 12:47:50.966+02	370	48
+\N	2024-09-15 13:30:44.038+02	2024-09-15 13:30:44.038+02	371	90
+\N	2024-09-15 13:30:44.038+02	2024-09-15 13:30:44.038+02	371	29
+\N	2024-09-15 13:30:44.038+02	2024-09-15 13:30:44.038+02	371	75
+\N	2024-09-16 15:33:16.791+02	2024-09-16 15:33:16.791+02	372	2
+\N	2024-09-16 16:27:52.845+02	2024-09-16 16:27:52.845+02	373	35
+\N	2024-09-16 16:27:52.845+02	2024-09-16 16:27:52.845+02	373	6
+\N	2024-09-16 16:42:24.622+02	2024-09-16 16:42:24.622+02	374	22
+\N	2024-09-16 16:42:24.622+02	2024-09-16 16:42:24.622+02	374	35
+\N	2024-09-16 17:03:25.998+02	2024-09-16 17:03:25.998+02	375	2
+\N	2024-09-17 16:20:43.926+02	2024-09-17 16:20:43.926+02	376	79
+\N	2024-09-17 16:20:55.555+02	2024-09-17 16:20:55.555+02	376	38
+\N	2024-09-18 16:22:42.994+02	2024-09-18 16:22:42.994+02	377	91
+\N	2024-09-18 16:55:26.338+02	2024-09-18 16:55:26.338+02	378	22
+\N	2024-09-18 16:55:26.338+02	2024-09-18 16:55:26.338+02	378	44
+\N	2024-09-18 17:05:15.777+02	2024-09-18 17:05:15.777+02	379	44
+\N	2024-09-20 10:40:23.594+02	2024-09-20 10:40:23.594+02	380	38
+\N	2024-09-20 10:40:23.594+02	2024-09-20 10:40:23.594+02	380	2
+\N	2024-09-20 10:58:18.36+02	2024-09-20 10:58:18.36+02	381	2
+\N	2024-09-20 10:58:18.36+02	2024-09-20 10:58:18.36+02	381	38
+\N	2024-09-20 13:01:20.881+02	2024-09-20 13:01:20.881+02	382	48
+\N	2024-09-20 13:34:37.467+02	2024-09-20 13:34:37.467+02	383	54
+\N	2024-09-20 13:51:07.76+02	2024-09-20 13:51:07.76+02	384	48
+\N	2024-09-20 15:35:57.316+02	2024-09-20 15:35:57.316+02	385	48
+\N	2024-09-20 15:52:33.821+02	2024-09-20 15:52:33.821+02	386	39
+\N	2024-09-20 15:52:48.108+02	2024-09-20 15:52:48.108+02	386	59
+\N	2024-09-20 16:12:04.372+02	2024-09-20 16:12:04.372+02	387	72
+\N	2024-09-20 16:33:25.776+02	2024-09-20 16:33:25.776+02	388	72
+\N	2024-09-21 11:18:41.999+02	2024-09-21 11:18:41.999+02	389	35
+\N	2024-09-21 11:19:12.451+02	2024-09-21 11:19:12.451+02	389	6
+\N	2024-09-21 11:48:28.308+02	2024-09-21 11:48:28.308+02	390	41
+\N	2024-09-21 12:13:30.751+02	2024-09-21 12:13:30.751+02	391	22
+\N	2024-09-21 13:07:44.391+02	2024-09-21 13:07:44.391+02	392	2
+\N	2024-09-21 13:18:38.512+02	2024-09-21 13:18:38.512+02	393	73
+\N	2024-09-21 13:27:07.22+02	2024-09-21 13:27:07.22+02	394	73
+\N	2024-09-21 13:45:53.986+02	2024-09-21 13:45:53.986+02	395	92
+\N	2024-09-21 13:54:09.737+02	2024-09-21 13:54:09.737+02	396	92
+\N	2024-09-22 09:51:47.859+02	2024-09-22 09:51:47.859+02	397	93
+\N	2024-09-22 10:13:20.307+02	2024-09-22 10:13:20.307+02	398	46
+\N	2024-09-22 10:33:06.652+02	2024-09-22 10:33:06.652+02	399	20
+\N	2024-09-22 10:33:06.652+02	2024-09-22 10:33:06.652+02	399	71
+\N	2024-09-22 10:47:28.603+02	2024-09-22 10:47:28.603+02	400	20
+\N	2024-09-22 10:47:28.603+02	2024-09-22 10:47:28.603+02	400	21
+\N	2024-09-22 10:55:43.8+02	2024-09-22 10:55:43.8+02	401	20
+\N	2024-09-22 13:01:58.367+02	2024-09-22 13:01:58.367+02	402	28
+\N	2024-09-22 13:01:58.367+02	2024-09-22 13:01:58.367+02	402	27
+\N	2024-09-22 13:52:15.543+02	2024-09-22 13:52:15.543+02	403	28
+\N	2024-09-22 13:52:15.543+02	2024-09-22 13:52:15.543+02	403	27
+\N	2024-09-23 16:05:14.77+02	2024-09-23 16:05:14.77+02	404	54
+\N	2024-09-23 16:19:55.274+02	2024-09-23 16:19:55.274+02	405	2
+\N	2024-09-23 16:19:55.274+02	2024-09-23 16:19:55.274+02	405	38
+\N	2024-09-23 16:35:29.07+02	2024-09-23 16:35:29.07+02	406	2
+\N	2024-09-23 16:35:29.07+02	2024-09-23 16:35:29.07+02	406	49
+\N	2024-09-23 16:41:11.461+02	2024-09-23 16:41:11.461+02	407	2
+\N	2024-09-23 16:41:11.461+02	2024-09-23 16:41:11.461+02	407	49
+\N	2024-09-23 19:01:23.449+02	2024-09-23 19:01:23.449+02	408	54
+\N	2024-09-24 15:49:40.927+02	2024-09-24 15:49:40.927+02	409	2
+\N	2024-09-24 15:49:40.927+02	2024-09-24 15:49:40.927+02	409	27
+\N	2024-09-24 16:15:38.052+02	2024-09-24 16:15:38.052+02	410	2
+\N	2024-09-24 16:34:31.819+02	2024-09-24 16:34:31.819+02	411	8
+\N	2024-09-24 17:24:31.436+02	2024-09-24 17:24:31.436+02	412	2
+\N	2024-09-24 17:24:31.436+02	2024-09-24 17:24:31.436+02	412	41
+\N	2024-09-25 15:30:29.02+02	2024-09-25 15:30:29.02+02	413	25
+\N	2024-09-25 15:41:32.594+02	2024-09-25 15:41:32.594+02	414	25
+\N	2024-09-25 15:51:13.186+02	2024-09-25 15:51:13.186+02	415	2
+\N	2024-09-25 15:51:13.186+02	2024-09-25 15:51:13.186+02	415	25
+\N	2024-09-25 15:58:51.764+02	2024-09-25 15:58:51.764+02	416	25
+\N	2024-09-25 16:19:18.757+02	2024-09-25 16:19:18.757+02	417	2
+\N	2024-09-25 16:37:13.957+02	2024-09-25 16:37:13.957+02	418	25
+\N	2024-09-25 16:46:56.488+02	2024-09-25 16:46:56.488+02	419	2
+\N	2024-09-26 15:32:06.44+02	2024-09-26 15:32:06.44+02	420	54
+\N	2024-09-26 15:32:21.98+02	2024-09-26 15:32:21.98+02	420	84
+\N	2024-09-26 15:38:50.492+02	2024-09-26 15:38:50.492+02	398	10
+\N	2024-09-26 15:39:35.222+02	2024-09-26 15:39:35.222+02	364	34
+\N	2024-09-26 15:48:30.49+02	2024-09-26 15:48:30.49+02	421	94
+\N	2024-09-26 16:05:58.242+02	2024-09-26 16:05:58.242+02	422	25
+\N	2024-09-26 16:18:03.597+02	2024-09-26 16:18:03.597+02	423	66
+\N	2024-09-26 16:18:03.597+02	2024-09-26 16:18:03.597+02	423	52
+\N	2024-09-26 16:18:03.597+02	2024-09-26 16:18:03.597+02	423	34
+\N	2024-09-26 16:59:34.528+02	2024-09-26 16:59:34.528+02	424	2
+\N	2024-09-26 17:30:57.455+02	2024-09-26 17:30:57.455+02	425	2
+\N	2024-09-27 09:12:38.224+02	2024-09-27 09:12:38.224+02	426	38
+\N	2024-09-27 09:12:38.224+02	2024-09-27 09:12:38.224+02	426	2
 \.
 
 
@@ -3070,6 +3669,43 @@ COPY public."Game_People" (is_main_for_person, "createdAt", "updatedAt", "Person
 \N	2024-09-06 11:10:49.717+02	2024-09-06 11:10:49.717+02	66	309
 \N	2024-09-06 16:34:43.444+02	2024-09-06 16:34:43.444+02	113	314
 \N	2024-09-08 11:07:39.944+02	2024-09-08 11:07:39.944+02	75	328
+\N	2024-09-09 17:24:33.888+02	2024-09-09 17:24:33.888+02	99	335
+\N	2024-09-11 13:54:08.213+02	2024-09-11 13:54:08.213+02	115	348
+\N	2024-09-11 17:22:12.991+02	2024-09-11 17:22:12.991+02	116	350
+\N	2024-09-11 17:31:30.785+02	2024-09-11 17:31:30.785+02	116	351
+\N	2024-09-12 15:35:43.083+02	2024-09-12 15:35:43.083+02	51	353
+\N	2024-09-12 15:35:50.812+02	2024-09-12 15:35:50.812+02	52	353
+\N	2024-09-12 15:43:26.668+02	2024-09-12 15:43:26.668+02	51	354
+\N	2024-09-12 15:43:26.668+02	2024-09-12 15:43:26.668+02	52	354
+\N	2024-09-12 17:02:44.775+02	2024-09-12 17:02:44.775+02	117	356
+\N	2024-09-13 10:27:30.549+02	2024-09-13 10:27:30.549+02	119	359
+\N	2024-09-14 11:49:09.024+02	2024-09-14 11:49:09.024+02	80	364
+\N	2024-09-14 11:49:09.024+02	2024-09-14 11:49:09.024+02	121	364
+\N	2024-09-14 13:31:56.217+02	2024-09-14 13:31:56.217+02	123	366
+\N	2024-09-14 13:31:56.217+02	2024-09-14 13:31:56.217+02	122	366
+\N	2024-09-15 10:07:48.206+02	2024-09-15 10:07:48.206+02	66	368
+\N	2024-09-15 12:48:03.347+02	2024-09-15 12:48:03.347+02	124	370
+\N	2024-09-15 12:48:03.347+02	2024-09-15 12:48:03.347+02	125	370
+\N	2024-09-16 15:33:40.861+02	2024-09-16 15:33:40.861+02	74	372
+\N	2024-09-16 16:28:15.384+02	2024-09-16 16:28:15.384+02	127	373
+\N	2024-09-16 16:28:15.384+02	2024-09-16 16:28:15.384+02	126	373
+\N	2024-09-16 16:43:14.762+02	2024-09-16 16:43:14.762+02	127	374
+\N	2024-09-16 16:43:14.762+02	2024-09-16 16:43:14.762+02	126	374
+\N	2024-09-17 16:21:38.469+02	2024-09-17 16:21:38.469+02	128	376
+\N	2024-09-18 16:23:04.788+02	2024-09-18 16:23:04.788+02	129	377
+\N	2024-09-20 13:34:54.491+02	2024-09-20 13:34:54.491+02	88	383
+\N	2024-09-20 13:51:53.766+02	2024-09-20 13:51:53.766+02	56	384
+\N	2024-09-20 15:37:13.049+02	2024-09-20 15:37:13.049+02	56	385
+\N	2024-09-20 16:12:09.842+02	2024-09-20 16:12:09.842+02	98	387
+\N	2024-09-20 16:33:32.451+02	2024-09-20 16:33:32.451+02	130	388
+\N	2024-09-21 11:19:24.044+02	2024-09-21 11:19:24.044+02	101	389
+\N	2024-09-21 12:13:43.349+02	2024-09-21 12:13:43.349+02	131	391
+\N	2024-09-22 10:14:31.101+02	2024-09-22 10:14:31.101+02	96	398
+\N	2024-09-22 10:33:25.2+02	2024-09-22 10:33:25.2+02	24	399
+\N	2024-09-22 10:48:40.732+02	2024-09-22 10:48:40.732+02	24	400
+\N	2024-09-22 10:55:56.33+02	2024-09-22 10:55:56.33+02	24	401
+\N	2024-09-26 15:33:40.603+02	2024-09-26 15:33:40.603+02	104	420
+\N	2024-09-26 17:31:15.984+02	2024-09-26 17:31:15.984+02	46	425
 \.
 
 
@@ -3871,6 +4507,198 @@ COPY public."Game_Platforms" (is_main_for_platform, "createdAt", "updatedAt", "G
 \N	2024-09-08 12:02:44.552+02	2024-09-08 12:02:44.552+02	329	2
 \N	2024-09-08 12:02:44.552+02	2024-09-08 12:02:44.552+02	329	26
 \N	2024-09-08 12:02:51.928+02	2024-09-08 12:02:51.928+02	329	4
+\N	2024-09-09 15:44:26.226+02	2024-09-09 15:44:26.226+02	330	12
+\N	2024-09-09 15:44:26.226+02	2024-09-09 15:44:26.226+02	330	22
+\N	2024-09-09 16:28:38.85+02	2024-09-09 16:28:38.85+02	331	26
+\N	2024-09-09 16:37:28.169+02	2024-09-09 16:37:28.169+02	332	12
+\N	2024-09-09 16:37:28.169+02	2024-09-09 16:37:28.169+02	332	22
+\N	2024-09-09 16:54:29.186+02	2024-09-09 16:54:29.186+02	333	14
+\N	2024-09-09 16:54:29.186+02	2024-09-09 16:54:29.186+02	333	5
+\N	2024-09-09 16:54:29.186+02	2024-09-09 16:54:29.186+02	333	4
+\N	2024-09-09 17:01:31.84+02	2024-09-09 17:01:31.84+02	334	2
+\N	2024-09-09 17:24:43.796+02	2024-09-09 17:24:43.796+02	335	26
+\N	2024-09-09 17:33:34.454+02	2024-09-09 17:33:34.454+02	336	5
+\N	2024-09-09 17:33:34.454+02	2024-09-09 17:33:34.454+02	336	28
+\N	2024-09-09 17:49:23.964+02	2024-09-09 17:49:23.964+02	337	26
+\N	2024-09-10 15:25:35.241+02	2024-09-10 15:25:35.241+02	338	2
+\N	2024-09-10 15:26:28.226+02	2024-09-10 15:26:28.226+02	13	22
+\N	2024-09-10 16:20:31.435+02	2024-09-10 16:20:31.435+02	339	12
+\N	2024-09-10 16:20:31.435+02	2024-09-10 16:20:31.435+02	339	22
+\N	2024-09-10 16:20:31.435+02	2024-09-10 16:20:31.435+02	339	4
+\N	2024-09-10 16:22:03.089+02	2024-09-10 16:22:03.089+02	29	22
+\N	2024-09-11 10:44:55.585+02	2024-09-11 10:44:55.585+02	341	12
+\N	2024-09-11 10:58:41.448+02	2024-09-11 10:58:41.448+02	342	22
+\N	2024-09-11 11:08:33.695+02	2024-09-11 11:08:33.695+02	343	12
+\N	2024-09-11 11:18:21.839+02	2024-09-11 11:18:21.839+02	344	5
+\N	2024-09-11 11:18:21.839+02	2024-09-11 11:18:21.839+02	344	28
+\N	2024-09-11 11:38:49.983+02	2024-09-11 11:38:49.983+02	345	26
+\N	2024-09-11 11:38:49.983+02	2024-09-11 11:38:49.983+02	345	22
+\N	2024-09-11 12:04:50.971+02	2024-09-11 12:04:50.971+02	346	2
+\N	2024-09-11 12:04:50.971+02	2024-09-11 12:04:50.971+02	346	22
+\N	2024-09-11 12:04:50.971+02	2024-09-11 12:04:50.971+02	346	25
+\N	2024-09-11 12:04:50.971+02	2024-09-11 12:04:50.971+02	346	14
+\N	2024-09-11 12:04:50.971+02	2024-09-11 12:04:50.971+02	346	26
+\N	2024-09-11 12:04:50.971+02	2024-09-11 12:04:50.971+02	346	4
+\N	2024-09-11 12:04:50.971+02	2024-09-11 12:04:50.971+02	346	23
+\N	2024-09-11 12:17:04.573+02	2024-09-11 12:17:04.573+02	347	2
+\N	2024-09-11 13:51:33.302+02	2024-09-11 13:51:33.302+02	348	25
+\N	2024-09-11 13:51:33.302+02	2024-09-11 13:51:33.302+02	348	2
+\N	2024-09-11 13:51:33.302+02	2024-09-11 13:51:33.302+02	348	14
+\N	2024-09-11 14:12:01.604+02	2024-09-11 14:12:01.604+02	349	2
+\N	2024-09-11 17:22:33.255+02	2024-09-11 17:22:33.255+02	350	2
+\N	2024-09-11 17:31:56.451+02	2024-09-11 17:31:56.451+02	351	2
+\N	2024-09-12 15:26:41.792+02	2024-09-12 15:26:41.792+02	352	2
+\N	2024-09-12 15:26:41.792+02	2024-09-12 15:26:41.792+02	352	22
+\N	2024-09-12 15:26:41.792+02	2024-09-12 15:26:41.792+02	352	25
+\N	2024-09-12 15:26:41.792+02	2024-09-12 15:26:41.792+02	352	12
+\N	2024-09-12 15:26:41.792+02	2024-09-12 15:26:41.792+02	352	26
+\N	2024-09-12 15:26:41.792+02	2024-09-12 15:26:41.792+02	352	4
+\N	2024-09-12 15:36:25.771+02	2024-09-12 15:36:25.771+02	353	4
+\N	2024-09-12 15:43:32.837+02	2024-09-12 15:43:32.837+02	354	4
+\N	2024-09-12 16:24:14.345+02	2024-09-12 16:24:14.345+02	355	5
+\N	2024-09-12 16:24:14.345+02	2024-09-12 16:24:14.345+02	355	2
+\N	2024-09-12 16:24:14.345+02	2024-09-12 16:24:14.345+02	355	19
+\N	2024-09-12 16:24:14.345+02	2024-09-12 16:24:14.345+02	355	21
+\N	2024-09-12 16:24:14.345+02	2024-09-12 16:24:14.345+02	355	24
+\N	2024-09-12 16:24:14.345+02	2024-09-12 16:24:14.345+02	355	4
+\N	2024-09-12 16:24:14.345+02	2024-09-12 16:24:14.345+02	355	26
+\N	2024-09-12 16:24:14.345+02	2024-09-12 16:24:14.345+02	355	25
+\N	2024-09-12 17:02:57.884+02	2024-09-12 17:02:57.884+02	356	22
+\N	2024-09-13 07:54:01.431+02	2024-09-13 07:54:01.431+02	357	5
+\N	2024-09-13 07:54:01.431+02	2024-09-13 07:54:01.431+02	357	28
+\N	2024-09-13 10:01:38.371+02	2024-09-13 10:01:38.371+02	358	4
+\N	2024-09-13 10:28:04.643+02	2024-09-13 10:28:04.643+02	359	4
+\N	2024-09-13 10:28:04.643+02	2024-09-13 10:28:04.643+02	359	26
+\N	2024-09-13 10:40:50.978+02	2024-09-13 10:40:50.978+02	360	2
+\N	2024-09-13 10:40:50.978+02	2024-09-13 10:40:50.978+02	360	22
+\N	2024-09-13 10:40:50.978+02	2024-09-13 10:40:50.978+02	360	12
+\N	2024-09-13 11:01:07.081+02	2024-09-13 11:01:07.081+02	361	4
+\N	2024-09-13 11:30:35.447+02	2024-09-13 11:30:35.447+02	362	5
+\N	2024-09-13 11:30:35.447+02	2024-09-13 11:30:35.447+02	362	28
+\N	2024-09-13 13:37:09.691+02	2024-09-13 13:37:09.691+02	363	2
+\N	2024-09-13 13:37:09.691+02	2024-09-13 13:37:09.691+02	363	29
+\N	2024-09-13 13:37:58.049+02	2024-09-13 13:37:58.049+02	363	25
+\N	2024-09-14 11:49:18.455+02	2024-09-14 11:49:18.455+02	364	26
+\N	2024-09-14 12:27:06.591+02	2024-09-14 12:27:06.591+02	365	26
+\N	2024-09-15 09:45:12.34+02	2024-09-15 09:45:12.34+02	367	5
+\N	2024-09-15 09:45:12.34+02	2024-09-15 09:45:12.34+02	367	28
+\N	2024-09-15 10:07:58.554+02	2024-09-15 10:07:58.554+02	368	5
+\N	2024-09-15 10:07:58.554+02	2024-09-15 10:07:58.554+02	368	2
+\N	2024-09-15 10:56:49.926+02	2024-09-15 10:56:49.926+02	369	4
+\N	2024-09-15 10:56:49.926+02	2024-09-15 10:56:49.926+02	369	2
+\N	2024-09-15 10:56:49.926+02	2024-09-15 10:56:49.926+02	369	26
+\N	2024-09-15 10:56:49.926+02	2024-09-15 10:56:49.926+02	369	22
+\N	2024-09-15 10:56:49.926+02	2024-09-15 10:56:49.926+02	369	25
+\N	2024-09-15 10:57:14.681+02	2024-09-15 10:57:14.681+02	369	14
+\N	2024-09-15 12:48:47.865+02	2024-09-15 12:48:47.865+02	370	5
+\N	2024-09-15 12:48:47.865+02	2024-09-15 12:48:47.865+02	370	2
+\N	2024-09-15 12:48:47.865+02	2024-09-15 12:48:47.865+02	370	4
+\N	2024-09-15 12:48:47.865+02	2024-09-15 12:48:47.865+02	370	22
+\N	2024-09-15 12:48:47.865+02	2024-09-15 12:48:47.865+02	370	25
+\N	2024-09-15 12:48:47.865+02	2024-09-15 12:48:47.865+02	370	14
+\N	2024-09-15 12:48:47.865+02	2024-09-15 12:48:47.865+02	370	26
+\N	2024-09-15 13:31:33.172+02	2024-09-15 13:31:33.172+02	371	4
+\N	2024-09-15 13:31:33.172+02	2024-09-15 13:31:33.172+02	371	29
+\N	2024-09-16 15:34:48.812+02	2024-09-16 15:34:48.812+02	372	22
+\N	2024-09-16 16:28:25.25+02	2024-09-16 16:28:25.25+02	373	4
+\N	2024-09-16 16:28:25.25+02	2024-09-16 16:28:25.25+02	373	2
+\N	2024-09-16 16:42:49.603+02	2024-09-16 16:42:49.603+02	374	4
+\N	2024-09-16 17:04:34.634+02	2024-09-16 17:04:34.634+02	375	14
+\N	2024-09-16 17:04:34.634+02	2024-09-16 17:04:34.634+02	375	25
+\N	2024-09-17 16:22:30.593+02	2024-09-17 16:22:30.593+02	376	4
+\N	2024-09-17 16:22:30.593+02	2024-09-17 16:22:30.593+02	376	2
+\N	2024-09-17 16:22:30.593+02	2024-09-17 16:22:30.593+02	376	26
+\N	2024-09-17 16:23:12.249+02	2024-09-17 16:23:12.249+02	376	29
+\N	2024-09-17 16:23:40.006+02	2024-09-17 16:23:40.006+02	376	30
+\N	2024-09-18 16:23:11.668+02	2024-09-18 16:23:11.668+02	377	4
+\N	2024-09-18 16:55:45.898+02	2024-09-18 16:55:45.898+02	378	4
+\N	2024-09-18 16:55:45.898+02	2024-09-18 16:55:45.898+02	378	29
+\N	2024-09-18 17:06:11.616+02	2024-09-18 17:06:11.616+02	379	4
+\N	2024-09-18 17:06:11.616+02	2024-09-18 17:06:11.616+02	379	2
+\N	2024-09-20 10:40:51.282+02	2024-09-20 10:40:51.282+02	380	12
+\N	2024-09-20 10:58:37.306+02	2024-09-20 10:58:37.306+02	381	22
+\N	2024-09-20 13:02:08.43+02	2024-09-20 13:02:08.43+02	382	5
+\N	2024-09-20 13:02:08.43+02	2024-09-20 13:02:08.43+02	382	28
+\N	2024-09-20 13:02:08.43+02	2024-09-20 13:02:08.43+02	382	26
+\N	2024-09-20 13:02:08.43+02	2024-09-20 13:02:08.43+02	382	24
+\N	2024-09-20 13:35:06.122+02	2024-09-20 13:35:06.122+02	383	26
+\N	2024-09-20 13:52:00.569+02	2024-09-20 13:52:00.569+02	384	5
+\N	2024-09-20 13:52:26.79+02	2024-09-20 13:52:26.79+02	384	2
+\N	2024-09-20 13:52:26.79+02	2024-09-20 13:52:26.79+02	384	4
+\N	2024-09-20 13:52:26.79+02	2024-09-20 13:52:26.79+02	384	21
+\N	2024-09-20 15:37:22.132+02	2024-09-20 15:37:22.132+02	385	5
+\N	2024-09-20 15:37:22.132+02	2024-09-20 15:37:22.132+02	385	26
+\N	2024-09-20 15:53:07.434+02	2024-09-20 15:53:07.434+02	386	5
+\N	2024-09-20 15:53:07.434+02	2024-09-20 15:53:07.434+02	386	26
+\N	2024-09-20 15:53:07.434+02	2024-09-20 15:53:07.434+02	386	2
+\N	2024-09-20 15:53:07.434+02	2024-09-20 15:53:07.434+02	386	29
+\N	2024-09-20 16:12:21.506+02	2024-09-20 16:12:21.506+02	387	2
+\N	2024-09-20 16:12:21.506+02	2024-09-20 16:12:21.506+02	387	26
+\N	2024-09-20 16:12:21.506+02	2024-09-20 16:12:21.506+02	387	25
+\N	2024-09-20 16:12:21.506+02	2024-09-20 16:12:21.506+02	387	22
+\N	2024-09-20 16:33:38.097+02	2024-09-20 16:33:38.097+02	388	4
+\N	2024-09-21 11:19:56.786+02	2024-09-21 11:19:56.786+02	389	4
+\N	2024-09-21 11:48:45.753+02	2024-09-21 11:48:45.753+02	390	26
+\N	2024-09-21 12:13:58.289+02	2024-09-21 12:13:58.289+02	391	4
+\N	2024-09-21 12:13:58.289+02	2024-09-21 12:13:58.289+02	391	29
+\N	2024-09-21 13:07:58.933+02	2024-09-21 13:07:58.933+02	392	26
+\N	2024-09-21 13:18:51.583+02	2024-09-21 13:18:51.583+02	393	2
+\N	2024-09-21 13:27:15.323+02	2024-09-21 13:27:15.323+02	394	2
+\N	2024-09-21 13:27:15.323+02	2024-09-21 13:27:15.323+02	394	26
+\N	2024-09-21 13:46:04.526+02	2024-09-21 13:46:04.526+02	395	2
+\N	2024-09-21 13:54:18.462+02	2024-09-21 13:54:18.462+02	396	2
+\N	2024-09-21 13:54:18.462+02	2024-09-21 13:54:18.462+02	396	26
+\N	2024-09-22 09:55:06.905+02	2024-09-22 09:55:06.905+02	397	5
+\N	2024-09-22 09:55:06.905+02	2024-09-22 09:55:06.905+02	397	14
+\N	2024-09-22 09:55:06.905+02	2024-09-22 09:55:06.905+02	397	22
+\N	2024-09-22 09:55:06.905+02	2024-09-22 09:55:06.905+02	397	12
+\N	2024-09-22 09:55:06.905+02	2024-09-22 09:55:06.905+02	397	4
+\N	2024-09-22 10:14:37.532+02	2024-09-22 10:14:37.532+02	398	4
+\N	2024-09-22 10:33:44.826+02	2024-09-22 10:33:44.826+02	399	4
+\N	2024-09-22 10:48:47.984+02	2024-09-22 10:48:47.984+02	400	4
+\N	2024-09-22 10:56:05.802+02	2024-09-22 10:56:05.802+02	401	4
+\N	2024-09-22 13:02:18.772+02	2024-09-22 13:02:18.772+02	402	12
+\N	2024-09-22 13:52:49.203+02	2024-09-22 13:52:49.203+02	403	26
+\N	2024-09-23 16:05:27.708+02	2024-09-23 16:05:27.708+02	404	26
+\N	2024-09-23 16:20:28.433+02	2024-09-23 16:20:28.433+02	405	12
+\N	2024-09-23 16:20:28.433+02	2024-09-23 16:20:28.433+02	405	25
+\N	2024-09-23 16:20:28.433+02	2024-09-23 16:20:28.433+02	405	22
+\N	2024-09-23 16:20:28.433+02	2024-09-23 16:20:28.433+02	405	14
+\N	2024-09-23 16:35:41.682+02	2024-09-23 16:35:41.682+02	406	25
+\N	2024-09-23 16:41:23.892+02	2024-09-23 16:41:23.892+02	407	25
+\N	2024-09-23 19:02:04.344+02	2024-09-23 19:02:04.344+02	408	29
+\N	2024-09-24 15:50:14.493+02	2024-09-24 15:50:14.493+02	409	2
+\N	2024-09-24 15:50:14.493+02	2024-09-24 15:50:14.493+02	409	26
+\N	2024-09-24 15:50:14.493+02	2024-09-24 15:50:14.493+02	409	4
+\N	2024-09-24 15:50:14.493+02	2024-09-24 15:50:14.493+02	409	12
+\N	2024-09-24 15:50:14.493+02	2024-09-24 15:50:14.493+02	409	14
+\N	2024-09-24 16:16:16.657+02	2024-09-24 16:16:16.657+02	410	2
+\N	2024-09-24 16:16:16.657+02	2024-09-24 16:16:16.657+02	410	25
+\N	2024-09-24 16:16:16.657+02	2024-09-24 16:16:16.657+02	410	14
+\N	2024-09-24 16:34:44.968+02	2024-09-24 16:34:44.968+02	411	21
+\N	2024-09-24 17:25:27.721+02	2024-09-24 17:25:27.721+02	412	2
+\N	2024-09-24 17:25:27.721+02	2024-09-24 17:25:27.721+02	412	26
+\N	2024-09-24 17:25:27.721+02	2024-09-24 17:25:27.721+02	412	4
+\N	2024-09-25 15:30:52.154+02	2024-09-25 15:30:52.154+02	413	12
+\N	2024-09-25 15:41:47.753+02	2024-09-25 15:41:47.753+02	414	5
+\N	2024-09-25 15:41:47.753+02	2024-09-25 15:41:47.753+02	414	26
+\N	2024-09-25 15:59:39.585+02	2024-09-25 15:59:39.585+02	416	2
+\N	2024-09-25 16:19:35.035+02	2024-09-25 16:19:35.035+02	417	2
+\N	2024-09-25 16:37:45.747+02	2024-09-25 16:37:45.747+02	418	2
+\N	2024-09-25 16:37:45.747+02	2024-09-25 16:37:45.747+02	418	14
+\N	2024-09-25 16:37:45.747+02	2024-09-25 16:37:45.747+02	418	25
+\N	2024-09-25 16:47:05.358+02	2024-09-25 16:47:05.358+02	419	29
+\N	2024-09-26 15:33:20.651+02	2024-09-26 15:33:20.651+02	420	26
+\N	2024-09-26 15:49:17.715+02	2024-09-26 15:49:17.715+02	421	26
+\N	2024-09-26 16:06:23.289+02	2024-09-26 16:06:23.289+02	422	5
+\N	2024-09-26 16:06:23.289+02	2024-09-26 16:06:23.289+02	422	26
+\N	2024-09-26 16:18:23.532+02	2024-09-26 16:18:23.532+02	423	2
+\N	2024-09-26 16:59:52.333+02	2024-09-26 16:59:52.333+02	424	14
+\N	2024-09-26 17:31:35.834+02	2024-09-26 17:31:35.834+02	425	12
+\N	2024-09-27 09:13:12.045+02	2024-09-27 09:13:12.045+02	426	2
+\N	2024-09-27 09:13:12.045+02	2024-09-27 09:13:12.045+02	426	29
+\N	2024-09-27 09:13:12.045+02	2024-09-27 09:13:12.045+02	426	25
+\N	2024-09-27 09:13:12.045+02	2024-09-27 09:13:12.045+02	426	14
 \.
 
 
@@ -4136,6 +4964,94 @@ COPY public."Game_Themes" (is_main_for_theme, "createdAt", "updatedAt", "GameId"
 \N	2024-09-08 09:49:27.086+02	2024-09-08 09:49:27.086+02	326	30
 \N	2024-09-08 10:12:28.062+02	2024-09-08 10:12:28.062+02	327	47
 \N	2024-09-08 11:07:32.211+02	2024-09-08 11:07:32.211+02	328	7
+\N	2024-09-09 15:43:29.248+02	2024-09-09 15:43:29.248+02	330	30
+\N	2024-09-09 16:28:32.12+02	2024-09-09 16:28:32.12+02	331	30
+\N	2024-09-09 16:37:20.139+02	2024-09-09 16:37:20.139+02	332	30
+\N	2024-09-09 16:37:20.139+02	2024-09-09 16:37:20.139+02	332	7
+\N	2024-09-09 17:49:02.634+02	2024-09-09 17:49:02.634+02	337	5
+\N	2024-09-10 15:24:59.432+02	2024-09-10 15:24:59.432+02	338	5
+\N	2024-09-10 16:46:10.139+02	2024-09-10 16:46:10.139+02	340	48
+\N	2024-09-10 16:46:16.712+02	2024-09-10 16:46:16.712+02	340	12
+\N	2024-09-11 10:44:21.994+02	2024-09-11 10:44:21.994+02	341	43
+\N	2024-09-11 10:58:36.277+02	2024-09-11 10:58:36.277+02	342	43
+\N	2024-09-11 11:08:27.272+02	2024-09-11 11:08:27.272+02	343	43
+\N	2024-09-11 11:18:09.967+02	2024-09-11 11:18:09.967+02	344	41
+\N	2024-09-11 11:38:30.639+02	2024-09-11 11:38:30.639+02	345	7
+\N	2024-09-11 12:03:59.169+02	2024-09-11 12:03:59.169+02	346	21
+\N	2024-09-11 13:51:09.788+02	2024-09-11 13:51:09.788+02	348	17
+\N	2024-09-11 13:51:09.788+02	2024-09-11 13:51:09.788+02	348	14
+\N	2024-09-11 13:51:17.44+02	2024-09-11 13:51:17.44+02	348	15
+\N	2024-09-11 14:11:50.873+02	2024-09-11 14:11:50.873+02	349	41
+\N	2024-09-11 17:19:33.522+02	2024-09-11 17:19:33.522+02	350	5
+\N	2024-09-11 17:31:07.877+02	2024-09-11 17:31:07.877+02	351	5
+\N	2024-09-12 15:35:29.441+02	2024-09-12 15:35:29.441+02	353	5
+\N	2024-09-12 15:43:18.316+02	2024-09-12 15:43:18.316+02	354	5
+\N	2024-09-13 07:53:49.574+02	2024-09-13 07:53:49.574+02	357	37
+\N	2024-09-13 10:01:31.227+02	2024-09-13 10:01:31.227+02	358	19
+\N	2024-09-13 10:27:15.618+02	2024-09-13 10:27:15.618+02	359	19
+\N	2024-09-13 11:30:26.219+02	2024-09-13 11:30:26.219+02	362	12
+\N	2024-09-13 13:36:36.607+02	2024-09-13 13:36:36.607+02	363	7
+\N	2024-09-13 13:36:43.791+02	2024-09-13 13:36:43.791+02	363	41
+\N	2024-09-14 12:26:38.318+02	2024-09-14 12:26:38.318+02	365	5
+\N	2024-09-15 10:56:30.306+02	2024-09-15 10:56:30.306+02	369	37
+\N	2024-09-15 12:47:55.891+02	2024-09-15 12:47:55.891+02	370	29
+\N	2024-09-15 13:30:53.215+02	2024-09-15 13:30:53.215+02	371	31
+\N	2024-09-16 16:28:02.058+02	2024-09-16 16:28:02.058+02	373	12
+\N	2024-09-16 16:28:02.058+02	2024-09-16 16:28:02.058+02	373	7
+\N	2024-09-16 16:42:42.15+02	2024-09-16 16:42:42.15+02	374	7
+\N	2024-09-16 16:42:42.15+02	2024-09-16 16:42:42.15+02	374	12
+\N	2024-09-17 16:21:03.513+02	2024-09-17 16:21:03.513+02	376	45
+\N	2024-09-17 16:21:31.197+02	2024-09-17 16:21:31.197+02	376	7
+\N	2024-09-18 16:22:57.834+02	2024-09-18 16:22:57.834+02	377	9
+\N	2024-09-18 16:55:34.187+02	2024-09-18 16:55:34.187+02	378	12
+\N	2024-09-18 16:55:34.187+02	2024-09-18 16:55:34.187+02	378	18
+\N	2024-09-18 17:05:23.69+02	2024-09-18 17:05:23.69+02	379	12
+\N	2024-09-18 17:05:23.69+02	2024-09-18 17:05:23.69+02	379	18
+\N	2024-09-20 10:40:40.651+02	2024-09-20 10:40:40.651+02	380	41
+\N	2024-09-20 10:40:40.651+02	2024-09-20 10:40:40.651+02	380	14
+\N	2024-09-20 10:58:26.741+02	2024-09-20 10:58:26.741+02	381	41
+\N	2024-09-20 10:58:26.741+02	2024-09-20 10:58:26.741+02	381	14
+\N	2024-09-20 13:34:47.772+02	2024-09-20 13:34:47.772+02	383	5
+\N	2024-09-20 15:52:54.072+02	2024-09-20 15:52:54.072+02	386	42
+\N	2024-09-21 11:19:05.284+02	2024-09-21 11:19:05.284+02	389	12
+\N	2024-09-21 11:48:39.371+02	2024-09-21 11:48:39.371+02	390	17
+\N	2024-09-21 11:48:39.371+02	2024-09-21 11:48:39.371+02	390	12
+\N	2024-09-21 11:48:39.371+02	2024-09-21 11:48:39.371+02	390	7
+\N	2024-09-21 13:07:49.359+02	2024-09-21 13:07:49.359+02	392	43
+\N	2024-09-22 09:54:16.068+02	2024-09-22 09:54:16.068+02	397	49
+\N	2024-09-22 10:13:33.08+02	2024-09-22 10:13:33.08+02	398	13
+\N	2024-09-22 10:33:12.752+02	2024-09-22 10:33:12.752+02	399	5
+\N	2024-09-22 10:47:42.209+02	2024-09-22 10:47:42.209+02	400	5
+\N	2024-09-22 10:55:50.468+02	2024-09-22 10:55:50.468+02	401	5
+\N	2024-09-22 13:02:02.814+02	2024-09-22 13:02:02.814+02	402	5
+\N	2024-09-22 13:52:37.757+02	2024-09-22 13:52:37.757+02	403	5
+\N	2024-09-23 16:05:22.202+02	2024-09-23 16:05:22.202+02	404	5
+\N	2024-09-23 16:20:02.607+02	2024-09-23 16:20:02.607+02	405	17
+\N	2024-09-23 16:20:02.607+02	2024-09-23 16:20:02.607+02	405	12
+\N	2024-09-23 16:35:34.773+02	2024-09-23 16:35:34.773+02	406	37
+\N	2024-09-23 16:41:16.497+02	2024-09-23 16:41:16.497+02	407	37
+\N	2024-09-23 19:01:30.614+02	2024-09-23 19:01:30.614+02	408	5
+\N	2024-09-24 15:49:45.456+02	2024-09-24 15:49:45.456+02	409	43
+\N	2024-09-24 16:15:44.307+02	2024-09-24 16:15:44.307+02	410	43
+\N	2024-09-24 16:34:36.956+02	2024-09-24 16:34:36.956+02	411	14
+\N	2024-09-24 17:24:40.739+02	2024-09-24 17:24:40.739+02	412	17
+\N	2024-09-24 17:24:40.739+02	2024-09-24 17:24:40.739+02	412	7
+\N	2024-09-25 15:30:38.612+02	2024-09-25 15:30:38.612+02	413	43
+\N	2024-09-25 15:30:38.612+02	2024-09-25 15:30:38.612+02	413	37
+\N	2024-09-25 15:41:39.82+02	2024-09-25 15:41:39.82+02	414	43
+\N	2024-09-25 15:41:39.82+02	2024-09-25 15:41:39.82+02	414	37
+\N	2024-09-25 15:51:05.916+02	2024-09-25 15:51:05.916+02	415	43
+\N	2024-09-25 15:51:05.916+02	2024-09-25 15:51:05.916+02	415	37
+\N	2024-09-25 15:58:58.738+02	2024-09-25 15:58:58.738+02	416	43
+\N	2024-09-25 15:58:58.738+02	2024-09-25 15:58:58.738+02	416	37
+\N	2024-09-25 16:19:28.586+02	2024-09-25 16:19:28.586+02	417	43
+\N	2024-09-25 16:37:18.765+02	2024-09-25 16:37:18.765+02	418	36
+\N	2024-09-26 15:32:12.977+02	2024-09-26 15:32:12.977+02	420	29
+\N	2024-09-26 16:06:03.24+02	2024-09-26 16:06:03.24+02	422	41
+\N	2024-09-26 16:59:41.291+02	2024-09-26 16:59:41.291+02	424	24
+\N	2024-09-26 17:31:02.187+02	2024-09-26 17:31:02.187+02	425	43
+\N	2024-09-27 09:12:43.317+02	2024-09-27 09:12:43.317+02	426	17
+\N	2024-09-27 09:12:51.804+02	2024-09-27 09:12:51.804+02	426	25
 \.
 
 
@@ -4261,7 +5177,6 @@ COPY public."Games" (id, name, main_img, logo, back_cover, release_date, score, 
 118	Sabre Wulf	sabreman/sabre_wulf/cover.jpg	sabreman/sabre_wulf/logo.png	sabreman/sabre_wulf/back.jpeg	1984-01-01	\N	GLOBAL	20	1	\N	\N	NOT_PLAYED	2024-07-10 20:50:11.566+02	2024-07-10 20:50:47.113+02	29	30	\N	https://es.wikipedia.org/wiki/Sabre_Wulf	https://www.youtube.com/embed/cJ_0KixP1ds	\N
 119	Ice Climber	ice_climber/cover.jpg	ice_climber/logo.png	ice_climber/back.jpeg	1985-01-30	\N	PAL-ES	60	1-2	\N	\N	NOT_PLAYED	2024-07-10 21:08:58.342+02	2024-07-10 21:08:58.342+02	\N	\N	\N	https://es.wikipedia.org/wiki/Ice_Climber	https://www.youtube.com/embed/3YGJLbasFDg	\N
 121	Pitfall II: Lost Caverns	pitfall/pitfall_ii/cover.png	pitfall/pitfall_ii/logo.png	pitfall/pitfall_ii/back.jpg	1984-02-17	\N	GLOBAL	80	1	\N	\N	NOT_PLAYED	2024-07-11 15:29:58.515+02	2024-07-11 15:31:08.309+02	17	17	\N	https://en.wikipedia.org/wiki/Pitfall_II:_Lost_Caverns	https://www.youtube.com/embed/ZZIMaJnzPzw	\N
-122	Ultima III: Exodus	ultima/ultima_iii/cover.jpg	ultima/ultima_iii/logo.jpeg	ultima/ultima_iii/back.jpeg	1983-08-23	\N	GLOBAL	60	1	\N	\N	NOT_PLAYED	2024-07-11 15:43:54.264+02	2024-07-11 15:44:58.406+02	10	11	\N	https://es.wikipedia.org/wiki/Ultima_III:_Exodus	https://www.youtube.com/embed/XFHpuc4yqzk	\N
 123	One on One: Dr. J vs. Larry Bird	one_on_one_basketball/cover.jpg	one_on_one_basketball/logo.jpg	one_on_one_basketball/back.jpg	1984-01-01	\N	GLOBAL	15	1-2	\N	\N	NOT_PLAYED	2024-07-11 15:53:40.838+02	2024-07-11 15:53:40.838+02	\N	\N	\N	https://en.wikipedia.org/wiki/One_on_One:_Dr._J_vs._Larry_Bird	https://www.youtube.com/embed/URobcuTcBFU	\N
 124	Ghosts 'n Goblins	ghosts_n_goblins/ghosts_n_goblins/cover.jpeg	ghosts_n_goblins/ghosts_n_goblins/logo.jpeg	ghosts_n_goblins/ghosts_n_goblins/back.jpeg	1985-09-19	\N	PAL-EUR	140	1	Makaimura (Demon World Village) (jp)	\N	PLAYED	2024-07-11 16:30:33.147+02	2024-07-11 16:31:54.721+02	67	71	\N	https://es.wikipedia.org/wiki/Ghosts_%27n_Goblins	https://www.youtube.com/embed/SugLAqaPhqA	\N
 111	Kung-Fu Master	kung-fu_master/cover.jpg	kung-fu_master/logo.jpeg	kung-fu_master/back.jpg	1984-12-01	85	GLOBAL	50	1 (2 alternando)	Spartan X (jp)	\N	NOT_PLAYED	2024-07-09 16:47:52.849+02	2024-07-19 16:10:13.078+02	\N	\N	\N	https://es.wikipedia.org/wiki/Kung-Fu_Master_(videojuego)	https://www.youtube.com/embed/EgO4HtWIJjQ	\N
@@ -4269,7 +5184,7 @@ COPY public."Games" (id, name, main_img, logo, back_cover, release_date, score, 
 129	Paperboy	paperboy/paperboy/cover.jpeg	paperboy/paperboy/logo.jpeg	paperboy/paperboy/back.jpeg	1985-02-01	83	PAL-EUR	60	1	\N	\N	NOT_PLAYED	2024-07-16 16:57:02.862+02	2024-07-18 16:03:30.529+02	71	76	\N	https://es.wikipedia.org/wiki/Paperboy_(videojuego)	https://www.youtube.com/embed/l6DEL9GY-VU	\N
 126	Space Harrier	space_harrier/space_harrier/cover.png	space_harrier/space_harrier/logo.jpeg	space_harrier/space_harrier/back.jpg	1985-10-02	82	PAL-EUR	25	1	\N	\N	NOT_PLAYED	2024-07-12 13:40:18.479+02	2024-07-18 16:25:34.928+02	69	73	\N	https://es.wikipedia.org/wiki/Space_Harrier	https://www.youtube.com/embed/Hzgrb-mjLaM	\N
 127	Excitebike	excitebike/excitebike/cover.jpeg	excitebike/excitebike/logo.png	excitebike/excitebike/back.jpeg	1984-11-28	82	PAL-ES	60	1-2	\N	\N	NOT_PLAYED	2024-07-15 12:31:47.657+02	2024-07-18 16:11:49.153+02	70	75	\N	https://es.wikipedia.org/wiki/Excitebike	https://www.youtube.com/embed/pkAtNjRSZds	\N
-130	Ultima IV: Quest of the Avatar	ultima/ultima_iv/cover.jpeg	ultima/ultima_iv/logo.jpeg	ultima/ultima_iv/back.jpeg	1985-09-16	\N	GLOBAL	90	1	\N	\N	NOT_PLAYED	2024-07-16 22:57:34.835+02	2024-07-16 22:58:32.703+02	10	11	\N	https://es.wikipedia.org/wiki/Ultima_IV:_Quest_of_the_Avatar	https://www.youtube.com/embed/bHfAE5tXHv4	\N
+130	Ultima IV: Quest of the Avatar	ultima/ultima_iv/cover.jpeg	ultima/ultima_iv/logo.jpeg	ultima/ultima_iv/back.jpeg	1985-09-16	\N	GLOBAL	90	1	\N	\N	NOT_PLAYED	2024-07-16 22:57:34.835+02	2024-09-22 10:57:28.175+02	10	11	\N	https://es.wikipedia.org/wiki/Ultima_IV:_Quest_of_the_Avatar	https://www.youtube.com/embed/bHfAE5tXHv4	\N
 131	Ikari Warriors	ikari/ikari_warriors/cover.jpeg	ikari/ikari_warriors/logo.jpg	ikari/ikari_warriors/back.jpeg	1986-02-19	\N	PAL-EUR	60	1-2	Ikari (jp)	\N	NOT_PLAYED	2024-07-17 16:38:44.624+02	2024-07-17 16:39:52.836+02	72	77	\N	https://es.wikipedia.org/wiki/Ikari_Warriors	https://www.youtube.com/embed/8ECiZUWoz8c	\N
 245	Pang	pang/pang/cover.png	pang/pang/logo.png	pang/pang/back.jpg	1989-11-01	\N	GLOBAL	30	1-2	Buster Bros. (USA)	\N	PLAYED	2024-08-25 13:41:54.944+02	2024-08-25 13:42:57.822+02	141	155	\N	https://es.wikipedia.org/wiki/Pang	https://www.youtube.com/embed/UyhP6uLk9Fg	\N
 136	Super Mario Bros.: The Lost Levels	mario/super_mario_bros_lost_levels/cover.jpg	mario/super_mario_bros_lost_levels/logo.png	mario/super_mario_bros_lost_levels/back.jpeg	1986-06-03	\N	NTSC-J	55	1	Super Mario Bros. 2 (jp)	\N	NOT_PLAYED	2024-07-21 11:14:51.814+02	2024-07-21 11:15:24.024+02	14	82	#ee1c25	https://es.wikipedia.org/wiki/Super_Mario_Bros.:_The_Lost_Levels	https://www.youtube.com/embed/YhG9MYcmyqs	\N
@@ -4323,7 +5238,7 @@ COPY public."Games" (id, name, main_img, logo, back_cover, release_date, score, 
 179	Altered Beast	altered_beast/altered_beast/cover.jpg	altered_beast/altered_beast/logo.jpg	altered_beast/altered_beast/back.jpg	1988-06-14	80	PAL-EUR	35	1-2	\N	\N	NOT_PLAYED	2024-08-03 13:07:44.899+02	2024-08-03 13:08:38.043+02	109	116	\N	https://es.wikipedia.org/wiki/Altered_Beast	https://www.youtube.com/embed/jFiTLTSwAgw	\N
 180	Bionic Commando	bionic_commando/bionic_commando/cover.jpg	bionic_commando/bionic_commando/logo.jpg	bionic_commando/bionic_commando/back.jpg	1988-07-20	\N	PAL-EUR	80	1	Hitler's Resurrection: Top Secret (jp)	\N	NOT_PLAYED	2024-08-03 13:43:09.141+02	2024-08-03 13:44:13.246+02	110	117	\N	https://es.wikipedia.org/wiki/Bionic_Commando	https://www.youtube.com/embed/Ckob2RoIXNU	\N
 181	Ghouls 'n Ghosts	ghosts_n_goblins/ghouls_n_ghosts/cover.jpg	ghosts_n_goblins/ghouls_n_ghosts/logo.jpg	ghosts_n_goblins/ghouls_n_ghosts/back.jpg	1988-10-05	91	PAL-EUR	75	1	Dai Makaimura (Great Demon World Village) (jp)	\N	NOT_PLAYED	2024-08-04 12:04:53.214+02	2024-08-04 12:06:20.534+02	67	71	\N	https://es.wikipedia.org/wiki/Ghouls_%27n_Ghosts	https://www.youtube.com/embed/odPJN_lZJgY	\N
-182	Ultima V: Warriors of Destiny	ultima/ultima_v/cover.jpg	ultima/ultima_v/logo.jpg	ultima/ultima_v/back.jpg	1988-03-01	\N	GLOBAL	105	1	\N	\N	NOT_PLAYED	2024-08-04 12:20:57.576+02	2024-08-04 12:21:07.698+02	10	11	\N	https://es.wikipedia.org/wiki/Ultima_V:_Warriors_of_Destiny	https://www.youtube.com/embed/r7fxWLvUDJU	\N
+182	Ultima V: Warriors of Destiny	ultima/ultima_v/cover.jpg	ultima/ultima_v/logo.jpg	ultima/ultima_v/back.jpg	1988-03-01	\N	GLOBAL	105	1	\N	\N	NOT_PLAYED	2024-08-04 12:20:57.576+02	2024-09-22 10:58:11.827+02	10	11	\N	https://es.wikipedia.org/wiki/Ultima_V:_Warriors_of_Destiny	https://www.youtube.com/embed/r7fxWLvUDJU	\N
 183	Super Mario Bros. 2	mario/super_mario_bros_2/cover.jpg	mario/super_mario_bros_2/logo.jpg	mario/super_mario_bros_2/back.jpg	1988-10-09	89	PAL-ES	120	1	Super Mario USA (jp)	\N	PLAYED	2024-08-04 13:41:12.718+02	2024-08-04 13:42:43.01+02	14	74	#ee1c25	https://es.wikipedia.org/wiki/Super_Mario_Bros._2	https://www.youtube.com/embed/BZSjpVEdH6Y	\N
 188	Ninja Gaiden	ninja_gaiden/ninja_gaiden/cover.jpg	ninja_gaiden/ninja_gaiden/logo.jpeg	ninja_gaiden/ninja_gaiden/back.jpg	1988-12-09	75	PAL-EUR	120	1	Shadow Warriors (EUR)	\N	NOT_PLAYED	2024-08-06 16:43:23.918+02	2024-08-06 16:45:29.57+02	113	120	\N	https://es.wikipedia.org/wiki/Ninja_Gaiden_(videojuego)	https://www.youtube.com/embed/V822oMzJQSg	\N
 184	Super Mario Bros. 3	mario/super_mario_bros_3/cover.jpg	mario/super_mario_bros_3/logo.png	mario/super_mario_bros_3/back.jpg	1988-10-23	97	PAL-ES	80	1 (2 alternando)	\N	\N	PLAYED	2024-08-04 21:03:28.891+02	2024-08-04 21:03:55.401+02	14	74	#ee1c25	https://es.wikipedia.org/wiki/Super_Mario_Bros._3	https://www.youtube.com/embed/U3zzaoB9yiw	\N
@@ -4368,7 +5283,6 @@ COPY public."Games" (id, name, main_img, logo, back_cover, release_date, score, 
 224	Ys II	ys/ys_ii/cover.jpg	ys/ys_ii/logo.jpeg	ys/ys_ii/back.jpg	1988-04-22	\N	NTSC-J	60	1	Ys II: Ancient Ys Vanished – The Final Chapter	\N	NOT_PLAYED	2024-08-22 17:27:34.419+02	2024-08-22 17:28:04.248+02	90	96	\N	https://es.wikipedia.org/wiki/Ys_II:_Ancient_Ys_Vanished_%E2%80%93_The_Final_Chapter	https://www.youtube.com/embed/Feyvm2kNoqs	\N
 225	Ys Book I & II	ys/ys_book_i_ii/cover.jpg	ys/ys_book_i_ii/logo.jpeg	ys/ys_book_i_ii/back.png	1989-12-21	\N	NTSC	250	1	Ys I & II (jp)	\N	NOT_PLAYED	2024-08-22 17:35:19.249+02	2024-08-22 17:38:28.231+02	90	143	\N	https://es.wikipedia.org/wiki/Ys_I_y_II	https://www.youtube.com/embed/KrH2uvC-zog	\N
 226	Railroad Tycoon	railroad_tycoon/railroad_tycoon/cover.jpg	railroad_tycoon/railroad_tycoon/logo.png	railroad_tycoon/railroad_tycoon/back.jpg	1990-01-01	\N	GLOBAL	60	1	\N	\N	NOT_PLAYED	2024-08-23 10:51:55.64+02	2024-08-23 10:52:59.75+02	135	144	\N	https://es.wikipedia.org/wiki/Railroad_Tycoon	https://www.youtube.com/embed/bekpo1o6rh4	\N
-232	Ultima VI: The False Prophet	ultima/ultima_vi/cover.jpg	ultima/ultima_vi/logo.png	ultima/ultima_vi/back.jpg	1990-06-01	\N	GLOBAL	120	1	\N	\N	NOT_PLAYED	2024-08-23 16:31:16.094+02	2024-08-23 16:32:04.895+02	10	11	\N	https://es.wikipedia.org/wiki/Ultima_VI:_The_False_Prophet	https://www.youtube.com/embed/7nBWuV_E6Eg	\N
 227	Teenage Mutant Ninja Turtles: Fall of the Foot Clan	teenage_mutant_ninja_turtles/fall_of_the_foot_clan/cover.jpg	teenage_mutant_ninja_turtles/fall_of_the_foot_clan/logo.png	teenage_mutant_ninja_turtles/fall_of_the_foot_clan/back.jpg	1990-08-02	\N	PAL-ES	250	1	Teenage Mutant Hero Turtles: Fall of the Foot Clan (EUR)	\N	NOT_PLAYED	2024-08-23 12:50:15.11+02	2024-08-23 12:50:40.222+02	119	145	#38761d	https://es.wikipedia.org/wiki/Teenage_Mutant_Ninja_Turtles:_Fall_of_the_Foot_Clan	https://www.youtube.com/embed/r1sPSAEm2Yo	\N
 228	G-LOC: Air Battle	after_burner/g_loc/cover.jpg	after_burner/g_loc/logo.jpg	after_burner/g_loc/back.jpg	1990-04-01	80	PAL-EUR	20	1	\N	\N	NOT_PLAYED	2024-08-23 13:05:45.186+02	2024-08-23 13:05:53.88+02	103	146	\N	https://es.wikipedia.org/wiki/G-LOC:_Air_Battle	https://www.youtube.com/embed/58JKeizTZF0	\N
 229	Snake's Revenge	metal_gear/snake_revenge/cover.jpg	metal_gear/snake_revenge/logo.jpg	metal_gear/snake_revenge/back.jpg	1990-04-01	\N	PAL-EUR	100	1	\N	\N	NOT_PLAYED	2024-08-23 13:20:29.839+02	2024-08-23 13:21:07.115+02	93	147	#505050	https://es.wikipedia.org/wiki/Snake%27s_Revenge	https://www.youtube.com/embed/-Rivs_6U69w	\N
@@ -4420,6 +5334,7 @@ COPY public."Games" (id, name, main_img, logo, back_cover, release_date, score, 
 278	Neverwinter Nights	goldern_box_dungeon_&_dragons/neverwinter_nights/cover.jpg	goldern_box_dungeon_&_dragons/neverwinter_nights/logo.jpg	goldern_box_dungeon_&_dragons/neverwinter_nights/back.jpg	1991-03-01	\N	GLOBAL	600	Online	\N	\N	NOT_PLAYED	2024-08-31 14:05:33.129+02	2024-08-31 14:07:02.735+02	149	165	\N	https://en.wikipedia.org/wiki/Neverwinter_Nights_(1991_video_game)	https://www.youtube.com/embed/WwFv_LerIAg	\N
 276	Street Fighter II	street_fighter/street_fighter_ii/cover.jpg	street_fighter/street_fighter_ii/logo.jpg	street_fighter/street_fighter_ii/back.jpg	1991-03-01	94	PAL-ES	120	1-2	Street Fighter II: The World Warrior (Arcade)	\N	COMPLETED	2024-08-30 13:34:55.695+02	2024-08-30 13:35:26.633+02	95	101	#ff7600	https://es.wikipedia.org/wiki/Street_Fighter_II:_The_World_Warrior	https://www.youtube.com/embed/xI284D4y1q4	\N
 277	Lemmings	lemmings/lemmings/cover.jpg	lemmings/lemmings/logo.jpg	lemmings/lemmings/back.jpg	1991-02-14	83	PAL-EUR	20	\N	\N	t	PLAYED	2024-08-31 11:40:49.785+02	2024-08-31 11:43:11.75+02	147	164	\N	https://es.wikipedia.org/wiki/Lemmings	https://www.youtube.com/embed/lDuhw6y2AiI	\N
+355	Puyo Puyo	puyo_puyo/puyo_puyo/cover.jpg	puyo_puyo/puyo_puyo/logo.png	puyo_puyo/puyo_puyo/back.jpg	1991-10-25	\N	NTSC-J	25	1-2	\N	\N	NOT_PLAYED	2024-09-12 16:22:53.342+02	2024-09-12 16:24:31.796+02	175	200	\N	https://es.wikipedia.org/wiki/Puyo_Puyo	https://www.youtube.com/embed/nyYFwOJQUuo	\N
 280	Starblade	starblade/cover.jpg	starblade/logo.jpg	starblade/back.jpg	1991-09-01	\N	\N	\N	1	\N	\N	NOT_PLAYED	2024-09-01 10:26:16.061+02	2024-09-01 10:26:16.061+02	\N	\N	\N	https://es.wikipedia.org/wiki/Starblade	https://www.youtube.com/embed/AEeLaDga56A	\N
 281	Road Rash	road_rash/road_rash/cover.jpg	road_rash/road_rash/logo.png	road_rash/road_rash/back.jpg	1991-09-01	91	PAL-EUR	25	1-2	\N	\N	NOT_PLAYED	2024-09-01 10:42:04.066+02	2024-09-01 10:43:16.917+02	150	166	\N	https://es.wikipedia.org/wiki/Road_Rash_(videojuego_de_1991)	https://www.youtube.com/embed/OdhrDE5L7ds	\N
 283	Another World	another_world/another_world/cover.jpg	another_world/another_world/logo.png	another_world/another_world/back.jpg	1991-11-01	87	PAL-EUR	35	1	Out of this World (USA)	\N	NOT_PLAYED	2024-09-01 12:40:45.117+02	2024-09-01 12:46:55.814+02	151	167	\N	https://es.wikipedia.org/wiki/Another_World	https://www.youtube.com/embed/utrxk5_PeEY	\N
@@ -4442,7 +5357,6 @@ COPY public."Games" (id, name, main_img, logo, back_cover, release_date, score, 
 297	Battletoads	battletoads/battletoads/cover.jpg	battletoads/battletoads/logo.png	battletoads/battletoads/back.jpg	1991-06-01	90	PAL-EUR	130	1-2	\N	\N	NOT_PLAYED	2024-09-04 17:21:48.974+02	2024-09-04 17:21:48.974+02	\N	\N	\N	https://es.wikipedia.org/wiki/Battletoads	https://www.youtube.com/embed/iqyeq7iC5YY	\N
 299	Duke Nukem	duke_nukem/duke_nukem/cover.jpg	duke_nukem/duke_nukem/logo.jpg	duke_nukem/duke_nukem/back.jpg	1991-07-01	\N	GLOBAL	\N	1	Duke Nukum (temporal)	\N	NOT_PLAYED	2024-09-05 17:11:49.18+02	2024-09-05 17:12:46.185+02	156	174	\N	https://es.wikipedia.org/wiki/Duke_Nukem_(videojuego)	https://www.youtube.com/embed/kYzZcko3F50	\N
 300	Streets of Rage	streets_of_rage/streets_of_rage/cover.jpg	streets_of_rage/streets_of_rage/logo.png	streets_of_rage/streets_of_rage/back.jpg	1991-08-02	90	PAL-EUR	50	1-2	Bare Knuckle: Furious Iron Fist (jp)	\N	PLAYED	2024-09-05 17:35:59.389+02	2024-09-05 17:37:54.482+02	157	175	\N	https://es.wikipedia.org/wiki/Streets_of_Rage_(videojuego)	https://www.youtube.com/embed/UrVMYd7MUzM	\N
-301	Sonic the Hedgehog (8 bits)	sonic/sonic_8bits/cover.jpg	sonic/sonic_8bits/logo.png	sonic/sonic_8bits/back.jpg	1991-10-25	\N	PAL-EUR	20	1	\N	t	NOT_PLAYED	2024-09-05 17:53:34.22+02	2024-09-05 17:54:23.7+02	1	3	\N	https://es.wikipedia.org/wiki/Sonic_the_Hedgehog_(videojuego_de_8_bits)	https://www.youtube.com/embed/SQPvA0OvR24	\N
 302	Heimdall	heimdall/heimdall/cover.jpg	heimdall/heimdall/logo.jpg	heimdall/heimdall/back.jpg	1991-01-01	\N	GLOBAL	31	1	\N	\N	NOT_PLAYED	2024-09-06 08:47:56.863+02	2024-09-06 08:49:22.876+02	158	176	\N	https://en.wikipedia.org/wiki/Heimdall_(video_game)	https://www.youtube.com/embed/opF8L-bCays	\N
 303	Toki	toki/toki/cover.jpg	toki/toki/logo.png	toki/toki/back.jpg	1989-12-08	\N	PAL-EUR	30	1-2	JuJu Densetsu (jp)	\N	NOT_PLAYED	2024-09-06 09:04:15.244+02	2024-09-06 09:04:15.244+02	\N	\N	\N	https://es.wikipedia.org/wiki/Toki_(videojuego)	https://www.youtube.com/embed/3Px16r5VKyk	\N
 304	Raiden	raiden/raiden/cover.jpg	raiden/raiden/logo.png	raiden/raiden/back.jpg	1990-04-01	84	NTSC	150	1	\N	\N	NOT_PLAYED	2024-09-06 09:29:03.673+02	2024-09-06 09:30:03.169+02	159	177	\N	https://es.wikipedia.org/wiki/Raiden_(videojuego)	https://www.youtube.com/embed/KeajSN7g9ro	\N
@@ -4452,6 +5366,7 @@ COPY public."Games" (id, name, main_img, logo, back_cover, release_date, score, 
 308	Mercs	wolf_of_the_battlefield/mercs/cover.jpg	wolf_of_the_battlefield/mercs/logo.jpg	wolf_of_the_battlefield/mercs/back.jpg	1990-03-01	81	PAL-EUR	40	1	Wolf of the Battlefield II (jp)	\N	NOT_PLAYED	2024-09-06 10:56:18.786+02	2024-09-06 10:57:27.792+02	33	34	\N	https://es.wikipedia.org/wiki/Mercs	https://www.youtube.com/embed/_2bR0dP_zb4	\N
 309	Turbo OutRun	outrun/turbo_outrun/cover.jpg	outrun/turbo_outrun/logo.jpg	outrun/turbo_outrun/back.jpg	1989-02-11	\N	PAL-EUR	50	1	\N	\N	NOT_PLAYED	2024-09-06 11:10:23.786+02	2024-09-06 11:23:38.429+02	80	86	\N	https://es.wikipedia.org/wiki/Turbo_Out_Run	https://www.youtube.com/embed/oWL_jA67fZg	\N
 310	OutRun 3-D	outrun/outrun_3d/cover.jpg	outrun/outrun_3d/logo.png	outrun/outrun_3d/back.jpg	1988-09-01	\N	PAL-EUR	130	1	\N	\N	NOT_PLAYED	2024-09-06 11:22:27.108+02	2024-09-06 11:23:07.314+02	80	86	\N	https://es.wikipedia.org/wiki/Out_Run_3-D	https://www.youtube.com/embed/D0r0QlITxMk	\N
+301	Sonic the Hedgehog (8 bits)	sonic/sonic_8bits/cover.jpg	sonic/sonic_8bits/logo.png	sonic/sonic_8bits/back.jpg	1991-10-25	\N	PAL-EUR	20	1	\N	t	NOT_PLAYED	2024-09-05 17:53:34.22+02	2024-09-16 17:03:54.99+02	1	3	#17569b	https://es.wikipedia.org/wiki/Sonic_the_Hedgehog_(videojuego_de_8_bits)	https://www.youtube.com/embed/SQPvA0OvR24	\N
 311	Battle OutRun	outrun/battle_outrun/cover.jpg	outrun/battle_outrun/logo.jpg	outrun/battle_outrun/back.jpg	1989-09-04	\N	PAL-EUR	35	1	\N	\N	NOT_PLAYED	2024-09-06 11:30:32.587+02	2024-09-06 11:31:39.129+02	80	86	\N	https://es.wikipedia.org/wiki/Battle_Out_Run	https://www.youtube.com/embed/NAJsVAPMd8s	\N
 312	The Simpsons	the_simpsons/the_simpsons/cover.jpg	the_simpsons/the_simpsons/logo.png	the_simpsons/the_simpsons/back.jpg	1991-03-04	\N	\N	\N	1-4	\N	\N	NOT_PLAYED	2024-09-06 13:04:16.128+02	2024-09-06 13:05:04.593+02	161	180	\N	https://es.wikipedia.org/wiki/The_Simpsons_(videojuego)	https://www.youtube.com/embed/3mZKoejwKOs	\N
 313	Spider-Man	spider-man/spider-man/cover.jpg	spider-man/spider-man/logo.png	spider-man/spider-man/back.jpg	1982-11-01	\N	GLOBAL	35	1	\N	\N	NOT_PLAYED	2024-09-06 13:38:46.91+02	2024-09-06 13:39:54.945+02	162	181	#ac0202	https://es.wikipedia.org/wiki/Spider-Man_(videojuego_de_1982)	https://www.youtube.com/embed/895ek96vHHY	\N
@@ -4471,6 +5386,104 @@ COPY public."Games" (id, name, main_img, logo, back_cover, release_date, score, 
 326	Bonk's Revenge	bonk/bonk_revenge/cover.jpg	bonk/bonk_revenge/logo.jpg	bonk/bonk_revenge/back.jpg	1991-07-19	\N	NTSC	150	\N	PC Genjin 2 (jp)	\N	NOT_PLAYED	2024-09-08 09:48:02.226+02	2024-09-08 09:49:19.846+02	126	134	\N	https://es.wikipedia.org/wiki/Bonk%27s_Revenge	https://www.youtube.com/embed/TjHJnt-g2Ds	\N
 327	Bonanza Bros.	bonanza_bros/cover.jpg	bonanza_bros/logo.png	bonanza_bros/back.jpg	1990-06-18	80	PAL-EUR	50	1-2	\N	t	COMPLETED	2024-09-08 10:07:09.426+02	2024-09-08 10:07:09.426+02	\N	\N	\N	https://es.wikipedia.org/wiki/Bonanza_Bros.	https://www.youtube.com/embed/EX9qBRJIOes	\N
 328	ToeJam & Earl	toejam_&_earl/toejam_&_earl/cover.jpg	toejam_&_earl/toejam_&_earl/logo.png	toejam_&_earl/toejam_&_earl/back.jpg	1991-10-01	89	PAL-EUR	35	1-2	\N	\N	NOT_PLAYED	2024-09-08 11:06:57.681+02	2024-09-08 11:08:24.243+02	167	188	\N	https://en.wikipedia.org/wiki/ToeJam_%26_Earl	https://www.youtube.com/embed/29TaGhYZZlA	\N
+330	Adventure Island II	adventure_island/adventure_island_ii/cover.jpg	adventure_island/adventure_island_ii/logo.png	adventure_island/adventure_island_ii/back.jpg	1991-02-01	\N	PAL-ES	100	1	Adventure Island (game boy)	\N	NOT_PLAYED	2024-09-09 15:38:58.298+02	2024-09-09 15:39:09.039+02	81	87	\N	https://es.wikipedia.org/wiki/Adventure_Island_II	https://www.youtube.com/embed/wnSygDpZNUU	\N
+331	Super Adventure Island	adventure_island/super_adventure_island/cover.png	adventure_island/super_adventure_island/logo.jpg	adventure_island/super_adventure_island/back.jpg	1992-01-11	72	PAL-ES	100	1	\N	\N	NOT_PLAYED	2024-09-09 16:28:13.006+02	2024-09-09 16:28:58.57+02	81	190	\N	https://es.wikipedia.org/wiki/Super_Adventure_Island	https://www.youtube.com/embed/rJXyhLoJBNo	\N
+356	Kirby's Dream Land	kirby/kirbys_dream_land/cover.jpg	kirby/kirbys_dream_land/logo.png	kirby/kirbys_dream_land/back.jpg	1992-04-27	\N	PAL-ES	100	1	\N	\N	PLAYED	2024-09-12 17:01:47.926+02	2024-09-12 17:02:36.187+02	176	201	#df6da9	https://es.wikipedia.org/wiki/Kirby%27s_Dream_Land	https://www.youtube.com/embed/i2zzwooB_NM	\N
+332	Adventure Island 3	adventure_island/adventur_island_3/cover.jpg	adventure_island/adventur_island_3/logo.jpg	adventure_island/adventur_island_3/back.jpg	1992-07-31	\N	NTSC	230	1	Adventure Island II: Aliens in Paradise (Game Boy)	\N	NOT_PLAYED	2024-09-09 16:36:54.532+02	2024-09-09 16:37:54.819+02	81	87	\N	https://es.wikipedia.org/wiki/Adventure_Island_3	https://www.youtube.com/embed/UGCbrm5xXnY	\N
+333	Fantasy Zone II	fantasy_zone/fantasy_zone_ii/cover.jpg	fantasy_zone/fantasy_zone_ii/logo.jpg	fantasy_zone/fantasy_zone_ii/back.jpg	1987-10-17	\N	PAL-EUR	70	1	Fantasy Zone II: The Tears of Opa-Opa (jp)	\N	NOT_PLAYED	2024-09-09 16:53:25.023+02	2024-09-09 16:54:41.581+02	105	112	\N	https://es.wikipedia.org/wiki/Fantasy_Zone_II:_The_Tears_of_Opa-Opa	https://www.youtube.com/embed/iP6EHTkr-C0	\N
+334	Super Fantasy Zone	fantasy_zone/super_fantasy_zone/cover.jpg	fantasy_zone/super_fantasy_zone/logo.jpg	fantasy_zone/super_fantasy_zone/back.jpg	1992-01-14	\N	PAL-EUR	75	1	\N	\N	NOT_PLAYED	2024-09-09 17:01:13.088+02	2024-09-09 17:01:52.02+02	105	112	\N	https://es.wikipedia.org/wiki/Super_Fantasy_Zone	https://www.youtube.com/embed/s4fMmZozwJs	\N
+335	Romancing SaGa	saga/romancing_saga/cover.jpg	saga/romancing_saga/logo.jpg	saga/romancing_saga/back.jpg	1992-01-28	\N	NTSC-J	25	1	\N	\N	NOT_PLAYED	2024-09-09 17:23:41.774+02	2024-09-09 17:24:56.839+02	134	191	\N	https://es.wikipedia.org/wiki/Romancing_SaGa	https://www.youtube.com/embed/-_SiH0XeWo0	\N
+336	Football Frenzy	football_frenzy/cover.jpg	football_frenzy/logo.png	football_frenzy/back.jpg	1992-01-31	85	NTSC	300	1-2		\N	NOT_PLAYED	2024-09-09 17:32:48.612+02	2024-09-09 17:32:48.612+02	\N	\N	\N	https://es.wikipedia.org/wiki/Football_Frenzy	https://www.youtube.com/embed/lRHVlzNq2e4	\N
+337	Soul Blazer	soul_blazer/cover.jpg	soul_blazer/logo.jpg	soul_blazer/back.jpg	1992-01-31	86	PAL-EUR	220	1	Soul Blader (jp)	\N	NOT_PLAYED	2024-09-09 17:48:15.921+02	2024-09-09 17:48:15.921+02	\N	\N	\N	https://es.wikipedia.org/wiki/Soul_Blazer	https://www.youtube.com/embed/clPT-KSffOw	\N
+338	Alisia Dragoon	alisia_dragoon/cover.jpg	alisia_dragoon/logo.png	alisia_dragoon/back.jpg	1992-02-01	84	PAL-EUR	60	1	\N	\N	NOT_PLAYED	2024-09-10 15:22:07.566+02	2024-09-10 15:22:07.566+02	\N	\N	\N	https://en.wikipedia.org/wiki/Alisia_Dragoon	https://www.youtube.com/embed/ZIIRtWPYBtg	\N
+339	McDonaldland	mcdonalds/mcdonaldland/cover.jpg	mcdonalds/mcdonaldland/logo.jpg	mcdonalds/mcdonaldland/back.jpg	1992-02-01	75	PAL-ES	60	1-2	M.C. Kids (USA)	\N	NOT_PLAYED	2024-09-10 16:19:53.759+02	2024-09-10 16:21:06.887+02	169	192	\N	https://es.wikipedia.org/wiki/M.C._Kids	https://www.youtube.com/embed/7nKywTkMnAs	\N
+340	Star Trek: 25th Anniversary	star_trek/star_trek_25_anniversary/cover.jpg	star_trek/star_trek_25_anniversary/logo.png	star_trek/star_trek_25_anniversary/back.jpg	1992-02-01	\N	PAL-EUR	100	1	\N	\N	NOT_PLAYED	2024-09-10 16:41:58.187+02	2024-09-10 16:47:24.963+02	170	193	\N	https://es.wikipedia.org/wiki/Star_Trek_25th_Anniversary	https://www.youtube.com/embed/zH0CXmisRzo	\N
+341	Tiny Toon Adventures	tiny_toon/tiny_toon_adventure/cover.jpg	tiny_toon/tiny_toon_adventure/logo.png	tiny_toon/tiny_toon_adventure/back.jpg	1991-12-01	76	PAL-EUR	55	1	\N	\N	NOT_PLAYED	2024-09-11 10:43:55.773+02	2024-09-11 10:45:03.742+02	171	194	\N	https://es.wikipedia.org/wiki/Tiny_Toon_Adventures_(videojuego)	https://www.youtube.com/embed/ZQGm0gSAVSk	\N
+342	Tiny Toon Adventures: Babs' Big Break	tiny_toon/tiny_toon_babs_big_break/cover.jpg	tiny_toon/tiny_toon_babs_big_break/logo.jpg	tiny_toon/tiny_toon_babs_big_break/back.jpg	1992-02-01	74	PAL-ES	50	1	\N	\N	NOT_PLAYED	2024-09-11 10:58:15.668+02	2024-09-11 10:58:54.961+02	171	195	\N	https://es.wikipedia.org/wiki/Tiny_Toon_Adventures:_Babs%27_Big_Break	https://www.youtube.com/embed/dHvsf2Xx4tI	\N
+343	Tiny Toon Adventures 2: Trouble in Wackyland	tiny_toon/tiny_toons_adventure_2_trouble/cover.jpg	tiny_toon/tiny_toons_adventure_2_trouble/logo.jpg	tiny_toon/tiny_toons_adventure_2_trouble/back.jpg	1992-11-27	68	PAL-EUR	120	1	\N	\N	NOT_PLAYED	2024-09-11 11:08:13.196+02	2024-09-11 11:08:47.636+02	171	194	\N	https://es.wikipedia.org/wiki/Tiny_Toon_Adventures_2:_Trouble_in_Wackyland	https://www.youtube.com/embed/g8B-JjzbthI	\N
+344	Soccer Brawl	soccer_brawl/cover.jpg	soccer_brawl/logo.jpg	soccer_brawl/back.jpg	1992-02-14	86	NTSC	340	1-2	\N	\N	NOT_PLAYED	2024-09-11 11:17:52.927+02	2024-09-11 11:17:52.927+02	\N	\N	\N	https://es.wikipedia.org/wiki/Soccer_Brawl	https://www.youtube.com/embed/vzqEA36njwA	\N
+345	Contra III: The Alien Wars	contra/contra_III_alien_wars/cover.jpg	contra/contra_III_alien_wars/logo.jpg	contra/contra_III_alien_wars/back.jpg	1992-02-28	92	PAL-ES	140	1-2	Super Probotector: Alien Rebels (EUR)	\N	NOT_PLAYED	2024-09-11 11:38:07.726+02	2024-09-11 11:39:14.521+02	88	94	\N	https://es.wikipedia.org/wiki/Contra_III:_The_Alien_Wars	https://www.youtube.com/embed/DoQBfWT4v28	\N
+346	Desert Strike	strike/desert_strike/cover.jpg	strike/desert_strike/logo.png	strike/desert_strike/back.jpg	1992-03-01	91	PAL-EUR	25	1	\N	\N	NOT_PLAYED	2024-09-11 12:03:12.829+02	2024-09-11 12:05:11.012+02	172	196	\N	https://es.wikipedia.org/wiki/Desert_Strike	https://www.youtube.com/embed/RYVDt8XhTBM	\N
+347	Kid Chameleon	kid_chameleon/cover.jpg	kid_chameleon/logo.jpg	kid_chameleon/back.jpg	1992-03-01	78	PAL-EUR	50	1	Chameleon Kid (jp)	\N	NOT_PLAYED	2024-09-11 12:16:03.058+02	2024-09-11 12:16:03.058+02	\N	\N	\N	https://es.wikipedia.org/wiki/Kid_Chameleon	https://www.youtube.com/embed/vcOj1JeM6Pk	\N
+349	Phantasy Star III	phantasy_star/phantasy_star_iii/cover.jpg	phantasy_star/phantasy_star_iii/logo.jpg	phantasy_star/phantasy_star_iii/back.jpg	1990-04-21	86	PAL-EUR	120	1	Phantasy Star III: Generations of Doom	\N	NOT_PLAYED	2024-09-11 14:10:45.107+02	2024-09-11 14:11:01.136+02	100	107	\N	https://es.wikipedia.org/wiki/Phantasy_Star_III	https://www.youtube.com/embed/sshSGJSWpzk	\N
+348	The Terminator	terminator/the_terminator/cover.jpg	terminator/the_terminator/logo.jpg	terminator/the_terminator/back.jpg	1992-02-01	78	PAL-EUR	40	\N	\N	t	NOT_PLAYED	2024-09-11 13:50:44.941+02	2024-09-11 13:54:41.446+02	173	197	\N	https://en.wikipedia.org/wiki/The_Terminator_(Sega_video_game)	https://www.youtube.com/embed/RdMVAI8pUvA	\N
+350	Shining in the Darkness	shining/shining_in_the_darkness/cover.jpg	shining/shining_in_the_darkness/logo.png	shining/shining_in_the_darkness/back.jpg	1991-03-29	\N	PAL-EUR	60	1	\N	\N	NOT_PLAYED	2024-09-11 17:18:37.226+02	2024-09-11 17:23:00.144+02	174	198	\N	https://es.wikipedia.org/wiki/Shining_in_the_Darkness	https://www.youtube.com/embed/J3P5JJ35-Og	\N
+351	Shining Force	shining/shining_force/cover.jpg	shining/shining_force/logo.jpg	shining/shining_force/back.jpg	1992-03-20	90	PAL-EUR	160	1	Shining Force: The Legacy of Great Intention	\N	NOT_PLAYED	2024-09-11 17:30:42.941+02	2024-09-11 17:32:24.1+02	174	199	\N	https://es.wikipedia.org/wiki/Shining_Force	https://www.youtube.com/embed/eXOmHRyqwpg	\N
+352	Paperboy 2	paperboy/paperboy_2/cover.jpg	paperboy/paperboy_2/logo.png	paperboy/paperboy_2/back.jpg	1991-01-01	\N	PAL-EUR	35	1-2	\N	\N	NOT_PLAYED	2024-09-12 15:25:37.42+02	2024-09-12 15:25:51.789+02	71	76	\N	https://es.wikipedia.org/wiki/Paperboy_2	https://www.youtube.com/embed/w6ZmtnQ9o90	\N
+353	Wizardry II: The Knight of Diamonds	wizardry/wizardry_ii/cover.jpg	wizardry/wizardry_ii/logo.png	wizardry/wizardry_ii/back.jpg	1982-01-01	\N	GLOBAL	130	1	\N	\N	NOT_PLAYED	2024-09-12 15:35:07.101+02	2024-09-12 15:36:04.923+02	44	45	\N	https://en.wikipedia.org/wiki/Wizardry_II:_The_Knight_of_Diamonds	https://www.youtube.com/embed/Ax6BsFj2PpU	\N
+354	Wizardry III: Legacy of Llylgamyn	wizardry/wizardry_iii/cover.jpg	wizardry/wizardry_iii/logo.png	wizardry/wizardry_iii/back.jpg	1983-01-01	\N	GLOBAL	80	1	\N	\N	NOT_PLAYED	2024-09-12 15:42:51.317+02	2024-09-12 15:43:44.692+02	44	45	\N	https://en.wikipedia.org/wiki/Wizardry_III:_Legacy_of_Llylgamyn	https://www.youtube.com/embed/_cWa5HqhWdg	\N
+357	Ninja Commando	ninja_commando/cover.jpg	ninja_commando/logo.jpg	ninja_commando/back.jpg	1992-04-30	81	NTSC	1500	1-2	\N	\N	NOT_PLAYED	2024-09-13 07:50:57.508+02	2024-09-13 07:50:57.508+02	\N	\N	\N	https://es.wikipedia.org/wiki/Ninja_Commando	https://www.youtube.com/embed/eoyQdxJgD0I	\N
+358	Beyond Castle Wolfenstein	wolfenstein/beyond_castle_wolfenstein/cover.jpg	wolfenstein/beyond_castle_wolfenstein/logo.jpg	wolfenstein/beyond_castle_wolfenstein/back.jpg	1984-07-01	\N	GLOBAL	60	1	\N	\N	NOT_PLAYED	2024-09-13 10:01:11.393+02	2024-09-13 10:01:51.861+02	60	62	\N	https://en.wikipedia.org/wiki/Beyond_Castle_Wolfenstein	https://www.youtube.com/embed/Bf7z8kjza2c	\N
+359	Wolfenstein 3D	wolfenstein/wolfenstein_3d/cover.jpg	wolfenstein/wolfenstein_3d/logo.jpg	wolfenstein/wolfenstein_3d/back.jpg	1992-05-05	\N	GLOBAL	450	1	\N	\N	PLAYED	2024-09-13 10:26:46.56+02	2024-09-13 10:28:29.943+02	60	202	\N	https://es.wikipedia.org/wiki/Wolfenstein_3D	https://www.youtube.com/embed/x8o0a5ntxfc	\N
+360	Ferrari Grand Prix Challenge 	ferrari_grand_prix_challenge/cover.jpg	ferrari_grand_prix_challenge/logo.png	ferrari_grand_prix_challenge/back.jpg	1992-05-12	\N	PAL-EUR	20	1	Nakajima Satoru Kanshuu F1 Hero MD (jp)	\N	NOT_PLAYED	2024-09-13 10:39:13.129+02	2024-09-13 10:39:13.129+02	\N	\N	\N	https://es.wikipedia.org/wiki/F-1_Hero_MD	https://www.youtube.com/embed/0kzwiVDimWs	\N
+361	Indiana Jones and the Fate of Atlantis	indiana_jones/fate_of_atlantic/cover.jpg	indiana_jones/fate_of_atlantic/logo.jpg	indiana_jones/fate_of_atlantic/back.jpg	1992-06-01	90	GLOBAL	200	1	\N	\N	NOT_PLAYED	2024-09-13 11:00:41.698+02	2024-09-13 11:01:34.178+02	131	139	\N	https://es.wikipedia.org/wiki/Indiana_Jones_and_the_Fate_of_Atlantis	https://www.youtube.com/embed/LZZXJ3zCRDQ	\N
+362	Andro Dunos	andro_dunos/andro_dunos/cover.jpg	andro_dunos/andro_dunos/logo.jpg	andro_dunos/andro_dunos/back.jpg	1992-06-01	70	NTSC	1300	1-2	\N	\N	NOT_PLAYED	2024-09-13 11:29:15.941+02	2024-09-13 11:30:04.136+02	\N	\N	\N	https://es.wikipedia.org/wiki/Andro_Dunos	https://www.youtube.com/embed/7tJ258dgXsM	\N
+363	Ecco the Dolphin	ecco_the_dolphin/ecco_the_dolphin/cover.jpg	ecco_the_dolphin/ecco_the_dolphin/logo.jpg	ecco_the_dolphin/ecco_the_dolphin/back.jpg	1992-07-31	89	PAL-EUR	15	1	\N	\N	PLAYED	2024-09-13 13:35:57.374+02	2024-09-13 13:37:33.048+02	177	203	\N	https://es.wikipedia.org/wiki/Ecco_the_Dolphin_(videojuego)	https://www.youtube.com/embed/WcAHjSKcwOs	\N
+369	Zool	zool/zool/cover.jpg	zool/zool/logo.jpg	zool/zool/back.jpg	1992-10-01	69	PAL-EUR	20	1	Zool: Ninja of the Nth Dimension	\N	NOT_PLAYED	2024-09-15 10:56:06.595+02	2024-09-15 10:57:51.002+02	181	207	\N	https://es.wikipedia.org/wiki/Zool	https://www.youtube.com/embed/Xz99maNBLOM	\N
+364	Super Mario Kart	mario_kart/super_mario_kart/cover.jpg	mario_kart/super_mario_kart/logo.png	mario_kart/super_mario_kart/back.jpg	1992-08-27	94	PAL-ES	100	1-2	\N	\N	PLAYED	2024-09-14 11:39:31.679+02	2024-09-14 11:48:37.533+02	178	204	#ee1c25	https://es.wikipedia.org/wiki/Super_Mario_Kart	https://www.youtube.com/embed/6KzhEGPUNIk	\N
+365	Dragon Quest V	dragon_quest/dragon_quest_v/cover.jpg	dragon_quest/dragon_quest_v/logo.jpg	dragon_quest/dragon_quest_v/back.jpg	1992-09-27	\N	NTSC-J	20	1	Dragon Quest V: La prometida celestial	\N	NOT_PLAYED	2024-09-14 12:24:51.788+02	2024-09-14 12:25:36.808+02	76	81	#af382f	https://es.wikipedia.org/wiki/Dragon_Quest_V:_La_prometida_celestial	https://www.youtube.com/embed/bIWvEFPdEmM	\N
+366	Championship Manager	championship_manager/championship_manager/cover.jpg	championship_manager/championship_manager/logo.png	championship_manager/championship_manager/back.jpg	1992-05-15	\N	GLOBAL	\N	1	\N	\N	NOT_PLAYED	2024-09-14 13:31:21.865+02	2024-09-14 13:32:17.757+02	179	205	\N	https://es.wikipedia.org/wiki/Championship_Manager	https://www.youtube.com/embed/VneBdWhS2AM	\N
+367	Art of Fighting	art_of_fighting/art_of_fighting/cover.jpg	art_of_fighting/art_of_fighting/logo.jpg	art_of_fighting/art_of_fighting/back.jpg	1992-09-24	\N	NTSC	260	1-2	\N	\N	NOT_PLAYED	2024-09-15 09:44:44.071+02	2024-09-15 09:45:27.588+02	180	206	\N	https://es.wikipedia.org/wiki/Art_of_Fighting	https://www.youtube.com/embed/6Jmt9gvSg-Q	\N
+368	Virtua Racing	virtua_racing/cover.jpg	virtua_racing/logo.jpg	virtua_racing/back.jpg	1992-08-01	90	PAL-ES	35	1-2	\N	\N	NOT_PLAYED	2024-09-15 10:07:11.291+02	2024-09-15 10:07:11.291+02	\N	\N	\N	https://es.wikipedia.org/wiki/Virtua_Racing	https://www.youtube.com/embed/ssPfEPaTaGo	\N
+370	Mortal Kombat	mortal_kombat/mortal_kombat/cover.jpg	mortal_kombat/mortal_kombat/logo.png	mortal_kombat/mortal_kombat/back.jpg	1992-10-08	84	PAL-EUR	30	1-2	\N	\N	NOT_PLAYED	2024-09-15 12:47:09.249+02	2024-09-15 12:49:19.798+02	182	208	\N	https://es.wikipedia.org/wiki/Mortal_Kombat_(videojuego_de_1992)	https://www.youtube.com/embed/6Y9nupdAedA	\N
+371	Night Trap	night_trap/cover.jpg	night_trap/logo.jpg	night_trap/back.jpg	1992-10-15	79	PAL-EUR	60	1	\N	\N	NOT_PLAYED	2024-09-15 13:30:19.904+02	2024-09-15 13:30:19.904+02	\N	\N	\N	https://es.wikipedia.org/wiki/Night_Trap	https://www.youtube.com/embed/plV5l_uKzDo	\N
+372	Super Mario Land 2: 6 Golden Coins	mario/super_mario_land_2/cover.jpg	mario/super_mario_land_2/logo.png	mario/super_mario_land_2/back.jpg	1992-10-21	80	PAL-ES	250	1	\N	\N	NOT_PLAYED	2024-09-16 15:32:58.349+02	2024-09-16 15:35:01.396+02	14	125	#ee1c25	https://es.wikipedia.org/wiki/Super_Mario_Land_2:_6_Golden_Coins	https://www.youtube.com/embed/V2GxRfjsM30	\N
+373	Star Control	star_control/star_control/cover.jpg	star_control/star_control/logo.jpg	star_control/star_control/back.jpg	1990-07-01	81	PAL-ES	30	1-2	\N	\N	NOT_PLAYED	2024-09-16 16:27:23.498+02	2024-09-16 16:28:47.246+02	183	209	\N	https://en.wikipedia.org/wiki/Star_Control	https://www.youtube.com/embed/MsWIYQfMpPw	\N
+374	Star Control II	star_control/star_control_ii/cover.jpg	star_control/star_control_ii/logo.jpg	star_control/star_control_ii/back.jpg	1992-11-01	89	GLOBAL	90	1-2	Star Control II: The Ur-Quan Masters	\N	NOT_PLAYED	2024-09-16 16:41:50.13+02	2024-09-16 16:43:52.229+02	183	209	\N	https://en.wikipedia.org/wiki/Star_Control_II	https://www.youtube.com/embed/qnV8yQ-OQ0c	\N
+375	Sonic the Hedgehog 2 (8 bits)	sonic/sonic_2_8bits/cover.jpg	sonic/sonic_2_8bits/logo.jpg	sonic/sonic_2_8bits/back.jpg	1992-10-29	90	PAL-EUR	20	1	\N	\N	NOT_PLAYED	2024-09-16 17:03:17.881+02	2024-09-16 17:04:05.27+02	1	3	#17569b	https://es.wikipedia.org/wiki/Sonic_the_Hedgehog_2_(8_bits)	https://www.youtube.com/embed/B6RtXmMN9Og	\N
+377	Alone in the Dark	alone_in_the_dark/alone_in_the_dark/cover.jpg	alone_in_the_dark/alone_in_the_dark/logo.png	alone_in_the_dark/alone_in_the_dark/back.jpg	1992-11-01	\N	GLOBAL	70	1	\N	\N	PLAYED	2024-09-18 16:22:32.151+02	2024-09-18 16:23:29.033+02	185	211	\N	https://es.wikipedia.org/wiki/Alone_in_the_Dark_(videojuego)	https://www.youtube.com/embed/zsGaVrMr9N8	\N
+376	Flashback	flashback/flashback/cover.jpg	flashback/flashback/logo.jpg	flashback/flashback/back.jpg	1992-11-01	87	PAL-EUR	25	1	Flashback: The Quest for Identity	\N	COMPLETED	2024-09-17 16:17:39.46+02	2024-09-17 16:24:07.94+02	184	210	\N	https://es.wikipedia.org/wiki/Flashback:_The_Quest_for_Identity	https://www.youtube.com/embed/ZyY9Sz13d0A	\N
+378	Dune	dune/dune/cover.jpg	dune/dune/logo.png	dune/dune/back.jpg	1992-01-01	\N	GLOBAL	200	1	\N	\N	NOT_PLAYED	2024-09-18 16:54:34.2+02	2024-09-18 16:56:07.805+02	186	212	\N	https://es.wikipedia.org/wiki/Dune_(videojuego)	https://www.youtube.com/embed/2_B4WPnf-AY	\N
+379	Dune II	dune/dune_ii/cover.jpg	dune/dune_ii/logo.png	dune/dune_ii/back.jpg	1992-12-01	90	GLOBAL	150	1	Dune II: Battle for Arrakis	\N	NOT_PLAYED	2024-09-18 17:05:02.922+02	2024-09-18 17:06:45.323+02	186	212	\N	https://es.wikipedia.org/wiki/Dune_II	https://www.youtube.com/embed/gOscXf0Fpmk	\N
+380	Mega Man 5	mega_man/mega_man_5/cover.jpg	mega_man/mega_man_5/logo.jpg	mega_man/mega_man_5/back.jpg	1992-12-04	79	PAL-ES	600	1	Rockman 5: Blues's Trap!? (jp)	\N	NOT_PLAYED	2024-09-20 10:39:17.669+02	2024-09-20 10:39:50.245+02	98	105	#0400f8	https://es.wikipedia.org/wiki/Mega_Man_5	https://www.youtube.com/embed/ha-sgyWudFc	\N
+381	Mega Man III	mega_man/mega_man_iii/cover.jpg	mega_man/mega_man_iii/logo.jpg	mega_man/mega_man_iii/back.jpg	1992-12-11	82	PAL-ES	500	1	Rockman World 3 (jp)	\N	NOT_PLAYED	2024-09-20 10:56:39.737+02	2024-09-20 10:58:07.163+02	98	170	#0400f8	https://es.wikipedia.org/wiki/Mega_Man_III_(Game_Boy)	https://www.youtube.com/embed/-K6Qfg5yU_w	\N
+382	Fatal Fury 2	fatal_fury/fatal_fury_2/cover.jpg	fatal_fury/fatal_fury_2/logo.png	fatal_fury/fatal_fury_2/back.jpg	1992-12-10	81	NTSC	200	1-2	Legend of the Hungry Wolf 2: The New Battle (jp)	\N	NOT_PLAYED	2024-09-20 13:01:12.259+02	2024-09-20 13:02:27.466+02	152	168	\N	https://es.wikipedia.org/wiki/Fatal_Fury_2	https://www.youtube.com/embed/HbWPpkTN4tY	\N
+389	Wing Commander II: Vengeance of the Kilrathi	wing_commander/wing_commander_ii/cover.jpg	wing_commander/wing_commander_ii/logo.jpg	wing_commander/wing_commander_ii/back.jpg	1991-09-04	\N	GLOBAL	50	1	\N	\N	NOT_PLAYED	2024-09-21 11:16:51.949+02	2024-09-21 11:18:51.363+02	137	150	\N	https://en.wikipedia.org/wiki/Wing_Commander_II:_Vengeance_of_the_Kilrathi	https://www.youtube.com/embed/E9bsZDVA4YA	Special Operations 1 (1991)\nSpecial Operations 2 (1992)
+383	Final Fantasy V	final_fantasy/final_fantasy_v/cover.jpg	final_fantasy/final_fantasy_v/logo.png	final_fantasy/final_fantasy_v/back.jpg	1992-12-06	\N	NTSC-J	35	1	\N	\N	NOT_PLAYED	2024-09-20 13:33:38.726+02	2024-09-20 13:34:20.741+02	99	106	#5499b5	https://es.wikipedia.org/wiki/Final_Fantasy_V	https://www.youtube.com/embed/Z0RtcAi94bQ	\N
+384	Street Fighter II': Champion Edition	street_fighter/street_fighter_ii/champion_edition/cover.jpg	street_fighter/street_fighter_ii/champion_edition/logo.jpg	street_fighter/street_fighter_ii/champion_edition/back.jpg	1992-03-01	91	PAL-EUR	30	1-2	 Street Fighter II Dash (jp)	\N	NOT_PLAYED	2024-09-20 13:50:26.95+02	2024-09-20 13:51:19.156+02	95	213	#ff7600	https://es.wikipedia.org/wiki/Street_Fighter_II%27:_Champion_Edition	https://www.youtube.com/embed/KJne-82X4L0	\N
+390	Super Star Wars	star_wars/super_star_wars/cover.jpg	star_wars/super_star_wars/logo.jpg	star_wars/super_star_wars/back.jpg	1992-11-01	92	PAL-ES	80	1	\N	\N	NOT_PLAYED	2024-09-21 11:47:42.011+02	2024-09-21 11:49:05.396+02	47	216	\N	https://es.wikipedia.org/wiki/Super_Star_Wars	https://www.youtube.com/embed/NnsGbd8WMNg	\N
+385	Street Fighter II Turbo	street_fighter/street_fighter_ii/turbo/cover.jpg	street_fighter/street_fighter_ii/turbo/logo.jpg	street_fighter/street_fighter_ii/turbo/back.jpg	1992-12-10	\N	PAL-ES	120	1-2	Street Fighter II': Hyper Fighting	\N	PLAYED	2024-09-20 15:35:40.516+02	2024-09-20 15:38:04.614+02	95	213	#ff7600	https://es.wikipedia.org/wiki/Street_Fighter_II%27:_Hyper_Fighting	https://www.youtube.com/embed/oNvaXjmn6J8	\N
+386	Lethal Enforcers	lethal_enforcers/lethal_enforcers/cover.jpg	lethal_enforcers/lethal_enforcers/logo.jpg	lethal_enforcers/lethal_enforcers/back.jpg	1992-10-08	81	PAL-EUR	105	1-2	\N	\N	NOT_PLAYED	2024-09-20 15:52:22.645+02	2024-09-20 15:53:26.51+02	187	214	\N	https://es.wikipedia.org/wiki/Lethal_Enforcers	https://www.youtube.com/embed/5A_5-zWvybY	\N
+387	Super Kick Off	kick_off/super_kick_off/cover.jpg	kick_off/super_kick_off/logo.jpg	kick_off/super_kick_off/back.jpg	1991-12-01	\N	PAL-EUR	15	1-2	\N	\N	NOT_PLAYED	2024-09-20 16:11:54.286+02	2024-09-20 16:12:42.452+02	133	141	\N	https://en.wikipedia.org/wiki/Kick_Off_(series)#Super_Kick_Off	https://www.youtube.com/embed/YtZ6j8TPWHQ	\N
+388	Sensible Soccer	sensible_soccer/sensible_soccer/cover.jpg	sensible_soccer/sensible_soccer/logo.jpg	sensible_soccer/sensible_soccer/back.jpg	1992-01-01	\N	GLOBAL	20	1-2	\N	\N	NOT_PLAYED	2024-09-20 16:33:10.908+02	2024-09-20 16:33:52.593+02	188	215	\N	https://en.wikipedia.org/wiki/Sensible_Soccer	https://www.youtube.com/embed/8DrTZ92M1sg	\N
+391	The Adventures of Willy Beamish	the_adventures_of_willy_beamish/cover.jpg	the_adventures_of_willy_beamish/logo.jpg	the_adventures_of_willy_beamish/back.jpg	1991-01-01	\N	GLOBAL	150	1	\N	\N	NOT_PLAYED	2024-09-21 12:13:23.342+02	2024-09-21 12:13:23.342+02	\N	\N	\N	https://es.wikipedia.org/wiki/The_Adventures_of_Willy_Beamish	https://www.youtube.com/embed/3d8xcy2Fteo	\N
+392	Road Runner's Death Valley Rally	looney_tunes/road_runner_death_valley/cover.jpg	looney_tunes/road_runner_death_valley/logo.png	looney_tunes/road_runner_death_valley/back.jpg	1992-11-01	65	PAL-EUR	60	1	Looney Tunes: Road Runner (EUR)	\N	NOT_PLAYED	2024-09-21 13:07:20.74+02	2024-09-21 13:08:19.136+02	189	217	\N	https://es.wikipedia.org/wiki/Road_Runner%27s_Death_Valley_Rally	https://www.youtube.com/embed/4Y7WLHsycv8	\N
+393	John Madden Football '92	madden_nfl/madden_92/cover.jpg	madden_nfl/madden_92/logo.jpg	madden_nfl/madden_92/back.jpg	1991-12-01	\N	PAL-EUR	20	1-2	\N	\N	NOT_PLAYED	2024-09-21 13:18:27.759+02	2024-09-21 13:19:05.779+02	108	160	\N	https://en.wikipedia.org/wiki/John_Madden_Football_%2792	https://www.youtube.com/embed/gKUvVVa1VG4	\N
+394	John Madden Football '93	madden_nfl/madden_93/cover.jpg	madden_nfl/madden_93/logo.jpg	madden_nfl/madden_93/back.jpg	1992-12-14	90	PAL-EUR	15	1-2	\N	\N	NOT_PLAYED	2024-09-21 13:26:58.141+02	2024-09-21 13:27:47.526+02	108	160	\N	https://en.wikipedia.org/wiki/John_Madden_Football_%2793	https://www.youtube.com/embed/CHg66U6rR8o	\N
+395	NHL Hockey	nhl_ea/nhl_ea/cover.jpg	nhl_ea/nhl_ea/logo.png	nhl_ea/nhl_ea/back.jpg	1991-09-01	\N	PAL-EUR	15	1-2	EA Hockey (EUR /jp)	\N	NOT_PLAYED	2024-09-21 13:45:40.045+02	2024-09-21 13:46:22.904+02	190	218	\N	https://en.wikipedia.org/wiki/NHL_Hockey	https://www.youtube.com/embed/WWie6FtTRi8	\N
+396	NHLPA Hockey '93	nhl_ea/nhlpa_93/cover.jpg	nhl_ea/nhlpa_93/logo.jpg	nhl_ea/nhlpa_93/back.jpg	1992-09-01	\N	PAL-EUR	15	1-2	\N	\N	NOT_PLAYED	2024-09-21 13:53:43.822+02	2024-09-21 13:54:34.747+02	190	218	\N	https://en.wikipedia.org/wiki/NHLPA_Hockey_%2793	https://www.youtube.com/embed/laDkE6O41CA	\N
+397	Rampart	rampart/cover.jpg	rampart/logo.jpg	rampart/back.jpg	1991-02-01	\N	PAL-EUR	20	1-2	\N	\N	NOT_PLAYED	2024-09-22 09:51:37.676+02	2024-09-22 09:51:37.676+02	\N	\N	\N	https://en.wikipedia.org/wiki/Rampart_(video_game)	https://www.youtube.com/embed/iHSH_v_r4uM	\N
+398	SimAnt	simant/cover.jpg	simant/logo.png	simant/back.jpg	1991-01-01	\N	GLOBAL	20	1	SimAnt: The Electronic Ant Colony	\N	NOT_PLAYED	2024-09-22 10:12:37.167+02	2024-09-22 10:12:37.167+02	\N	\N	\N	https://es.wikipedia.org/wiki/SimAnt	https://www.youtube.com/embed/1ucLyqEboGM	\N
+400	Ultima Underworld: The Stygian Abyss	ultima/ultima_underworld/cover.jpg	ultima/ultima_underworld/logo.jpg	ultima/ultima_underworld/back.jpg	1992-03-01	\N	PAL-ES	100	1	\N	\N	NOT_PLAYED	2024-09-22 10:43:56.21+02	2024-09-22 10:49:08.09+02	10	219	\N	https://es.wikipedia.org/wiki/Ultima_Underworld:_The_Stygian_Abyss	https://www.youtube.com/embed/ee4PUcpGSn8	\N
+401	Ultima II: The Revenge of the Enchantress	ultima/ultima_ii/cover.jpg	ultima/ultima_ii/logo.png	ultima/ultima_ii/back.jpg	1982-08-24	\N	GLOBAL	100	1	\N	\N	NOT_PLAYED	2024-09-22 10:55:31.952+02	2024-09-22 10:56:16.764+02	10	11	\N	https://es.wikipedia.org/wiki/Ultima_II:_The_Revenge_of_the_Enchantress	https://www.youtube.com/embed/AxGMhmR94lI	\N
+122	Ultima III: Exodus	ultima/ultima_iii/cover.jpg	ultima/ultima_iii/logo.jpeg	ultima/ultima_iii/back.jpeg	1983-08-23	\N	GLOBAL	60	1	\N	\N	NOT_PLAYED	2024-07-11 15:43:54.264+02	2024-09-22 10:56:49.65+02	10	11	\N	https://es.wikipedia.org/wiki/Ultima_III:_Exodus	https://www.youtube.com/embed/XFHpuc4yqzk	\N
+399	Ultima VII: The Black Gate	ultima/ultima_vii_black_gate/cover.jpg	ultima/ultima_vii_black_gate/logo.jpg	ultima/ultima_vii_black_gate/back.jpg	1992-04-16	\N	GLOBAL	100	1	\N	\N	NOT_PLAYED	2024-09-22 10:32:28.808+02	2024-09-22 10:58:44.327+02	10	11	\N	https://es.wikipedia.org/wiki/Ultima_VII:_The_Black_Gate	https://www.youtube.com/embed/flpiaHUxUMk	Forge of Virtue
+232	Ultima VI: The False Prophet	ultima/ultima_vi/cover.jpg	ultima/ultima_vi/logo.png	ultima/ultima_vi/back.jpg	1990-06-01	\N	GLOBAL	120	1	\N	\N	NOT_PLAYED	2024-08-23 16:31:16.094+02	2024-09-22 10:58:25.78+02	10	11	\N	https://es.wikipedia.org/wiki/Ultima_VI:_The_False_Prophet	https://www.youtube.com/embed/7nBWuV_E6Eg	\N
+402	Solstice	solstice/solstice/cover.jpg	solstice/solstice/logo.jpg	solstice/solstice/back.jpg	1990-06-01	82	PAL-ES	50	1	Solstice: The Quest for the Staff of Demnos	\N	NOT_PLAYED	2024-09-22 13:01:24.651+02	2024-09-22 13:09:19.851+02	191	220	\N	https://en.wikipedia.org/wiki/Solstice_(1990_video_game)	https://www.youtube.com/embed/lIebtjMyxKI	\N
+403	Equinox	solstice/equinox/cover.jpg	solstice/equinox/logo.jpg	solstice/equinox/back.jpg	1992-11-12	86	PAL-ES	100	1	Solstice II (jp)	\N	NOT_PLAYED	2024-09-22 13:51:32.772+02	2024-09-22 13:53:10.884+02	191	220	\N	https://en.wikipedia.org/wiki/Equinox_(1993_video_game)	https://www.youtube.com/embed/M69aTnmXgv8	\N
+412	Alien 3	alien/alien_3/cover.png	alien/alien_3/logo.jpg	alien/alien_3/back.jpg	1992-10-01	\N	PAL-EUR	35	1	\N	\N	NOT_PLAYED	2024-09-24 17:24:12.718+02	2024-09-24 17:25:55.079+02	193	228	\N	https://en.wikipedia.org/wiki/Alien_3_(video_game)	https://www.youtube.com/embed/hCDZPutaXk4	\N
+404	Mystic Quest Legend	final_fantasy/mystic_quest/cover.jpg	final_fantasy/mystic_quest/logo.jpg	final_fantasy/mystic_quest/back.jpg	1992-10-05	80	PAL-EUR	80	1	Final Fantasy Mystic Quest (USA)	\N	NOT_PLAYED	2024-09-23 16:04:16.631+02	2024-09-23 16:04:43.902+02	99	221	#5499b5	https://es.wikipedia.org/wiki/Final_Fantasy_Mystic_Quest	https://www.youtube.com/embed/OvDTBDEJEQo	\N
+405	Star Wars	star_wars/star_wars_91/cover.jpg	star_wars/star_wars_91/logo.jpg	star_wars/star_wars_91/back.jpg	1991-11-15	\N	PAL-ES	80	1	\N	\N	NOT_PLAYED	2024-09-23 16:19:36.742+02	2024-09-23 16:21:16.596+02	47	222	\N	https://es.wikipedia.org/wiki/Star_Wars_(videojuego_de_1991)	https://www.youtube.com/embed/52Y8qi7SVTA	\N
+406	The G.G. Shinobi	shinobi/gg_shinobi/cover.jpg	shinobi/gg_shinobi/logo.jpg	shinobi/gg_shinobi/back.jpg	1991-04-26	\N	PAL-EUR	40	1	Shinobi (EUR)	\N	NOT_PLAYED	2024-09-23 16:35:09.984+02	2024-09-23 16:35:54.384+02	104	223	\N	https://en.wikipedia.org/wiki/The_G.G._Shinobi	https://www.youtube.com/embed/NuKsHfXqbAU	\N
+407	The G.G. Shinobi II: The Silent Fury	shinobi/gg_shinobi_II/cover.jpg	shinobi/gg_shinobi_II/logo.jpg	shinobi/gg_shinobi_II/back.jpg	1992-12-11	\N	PAL-EUR	80	1	Shinobi II: The Silent Fury (EUR)	\N	NOT_PLAYED	2024-09-23 16:40:54.962+02	2024-09-23 16:41:36.051+02	104	223	\N	https://en.wikipedia.org/wiki/The_G.G._Shinobi_II:_The_Silent_Fury	https://www.youtube.com/embed/0m3YpC2xlxg	\N
+408	Lunar: The Silver Star	lunar/lunar_silver_star/cover.jpg	lunar/lunar_silver_star/logo.jpg	lunar/lunar_silver_star/back.jpg	1992-06-16	86	NTSC	200	1	\N	\N	NOT_PLAYED	2024-09-23 19:01:12.898+02	2024-09-23 19:02:18.588+02	192	224	\N	https://en.wikipedia.org/wiki/Lunar:_The_Silver_Star	https://www.youtube.com/embed/xeq9fPOxz6o	\N
+409	Krusty's Fun House	the_simpsons/krusty_fun_house/cover.jpg	the_simpsons/krusty_fun_house/logo.png	the_simpsons/krusty_fun_house/back.jpg	1992-06-01	\N	PAL-EUR	35	1	Krusty's Super Fun House	\N	NOT_PLAYED	2024-09-24 15:49:25.456+02	2024-09-24 15:50:46.187+02	161	225	\N	https://es.wikipedia.org/wiki/Krusty%27s_Fun_House	https://www.youtube.com/embed/sBiEw0TgVUU	\N
+410	Taz-Mania	looney_tunes/taz-mania/cover.jpg	looney_tunes/taz-mania/logo.jpg	looney_tunes/taz-mania/back.jpg	1992-07-01	82	PAL-EUR	20	1	\N	t	NOT_PLAYED	2024-09-24 16:15:29.634+02	2024-09-24 16:16:33.508+02	189	226	\N	https://en.wikipedia.org/wiki/Taz-Mania_(video_game)	https://www.youtube.com/embed/ERPUC1ri19g	\N
+411	Air Zonk	bonk/air_zonk/cover.jpg	bonk/air_zonk/logo.png	bonk/air_zonk/back.jpg	1992-12-12	76	NTSC	450	1	PC Denjin Punkic Cyborg! (jp)	\N	NOT_PLAYED	2024-09-24 16:34:23.714+02	2024-09-24 16:35:02.016+02	126	227	\N	https://es.wikipedia.org/wiki/Air_Zonk	https://www.youtube.com/embed/Q8bm3-bxVDQ	\N
+413	Teenage Mutant Ninja Turtles III: The Manhattan Project	teenage_mutant_ninja_turtles/tmnt_iii_manhattan/cover.jpg	teenage_mutant_ninja_turtles/tmnt_iii_manhattan/logo.jpg	teenage_mutant_ninja_turtles/tmnt_iii_manhattan/back.jpg	1991-12-13	\N	NTSC	300	1-2	Teenage Mutant Ninja Turtles 2: The Manhattan Project (jp)	\N	NOT_PLAYED	2024-09-25 15:29:24.884+02	2024-09-25 15:30:22.443+02	119	127	#38761d	https://es.wikipedia.org/wiki/Teenage_Mutant_Ninja_Turtles_III:_The_Manhattan_Project	https://www.youtube.com/embed/3ym1QmBNrX4	\N
+414	Teenage Mutant Ninja Turtles IV: Turtles in Time	teenage_mutant_ninja_turtles/tmnt_iv_turtles_in_time/cover.jpg	teenage_mutant_ninja_turtles/tmnt_iv_turtles_in_time/logo.jpg	teenage_mutant_ninja_turtles/tmnt_iv_turtles_in_time/back.jpg	1991-12-20	85	PAL-ES	600	1-2	Teenage Mutant Hero Turtles IV: Turtles in Time (EUR)	\N	NOT_PLAYED	2024-09-25 15:40:40.239+02	2024-09-25 15:41:09.111+02	119	127	#38761d	https://es.wikipedia.org/wiki/Teenage_Mutant_Ninja_Turtles:_Turtles_in_Time	https://www.youtube.com/embed/JnBjDrJufHg	\N
+415	Teenage Mutant Ninja Turtles II: Back from the Sewers	teenage_mutant_ninja_turtles/tmnt_2_back_sewers/cover.jpg	teenage_mutant_ninja_turtles/tmnt_2_back_sewers/logo.png	teenage_mutant_ninja_turtles/tmnt_2_back_sewers/back.jpg	1991-09-18	\N	PAL-EUR	350	1	Teenage Mutant Hero Turtles II: Back from the Sewers (EUR)	\N	NOT_PLAYED	2024-09-25 15:49:30.291+02	2024-09-25 15:49:56.193+02	119	145	#38761d	https://es.wikipedia.org/wiki/Teenage_Mutant_Ninja_Turtles_II:_Back_from_the_Sewers	https://www.youtube.com/embed/gBQASho7GTE	\N
+416	Teenage Mutant Ninja Turtles: The Hyperstone Heist	teenage_mutant_ninja_turtles/tmnt_hyperstone/cover.jpg	teenage_mutant_ninja_turtles/tmnt_hyperstone/logo.jpg	teenage_mutant_ninja_turtles/tmnt_hyperstone/back.jpg	1992-12-11	85	PAL-EUR	200	1-2	Teenage Mutant Hero Turtles: The Hyperstone Heist (EUR)	\N	NOT_PLAYED	2024-09-25 15:58:36.772+02	2024-09-25 15:59:55.467+02	119	229	#38761d	https://en.wikipedia.org/wiki/Teenage_Mutant_Ninja_Turtles:_The_Hyperstone_Heist	https://www.youtube.com/embed/m7BAlYwbLgA	\N
+417	World of Illusion	mickey_mouse_&_friends/world_of_illusion/cover.jpg	mickey_mouse_&_friends/world_of_illusion/logo.jpg	mickey_mouse_&_friends/world_of_illusion/back.jpg	1992-12-18	\N	PAL-EUR	25	1-2	World of Illusion Starring Mickey Mouse and Donald Duck	\N	NOT_PLAYED	2024-09-25 16:19:11.444+02	2024-09-25 16:19:57.463+02	142	158	#f20505	https://es.wikipedia.org/wiki/World_of_Illusion_Starring_Mickey_Mouse_and_Donald_Duck	https://www.youtube.com/embed/F1GDvDX6y3g	\N
+418	Streets of Rage 2	streets_of_rage/streets_of_rage_2/cover.jpg	streets_of_rage/streets_of_rage_2/logo.jpg	streets_of_rage/streets_of_rage_2/back.jpg	1992-12-20	92	PAL-EUR	60	1-2	Bare Knuckle II: The Requiem of the Deadly Battle (jp)	\N	NOT_PLAYED	2024-09-25 16:36:41.613+02	2024-09-25 16:36:52.961+02	157	175	\N	https://es.wikipedia.org/wiki/Streets_of_Rage_2	https://www.youtube.com/embed/9uUnZMxgpbo	\N
+419	Wonder Dog	wonder_dog/cover.jpg	wonder_dog/logo.jpg	wonder_dog/back.jpg	1992-09-25	72	PAL-EUR	70	1	\N	\N	NOT_PLAYED	2024-09-25 16:46:45.535+02	2024-09-25 16:46:45.535+02	\N	\N	\N	https://en.wikipedia.org/wiki/Wonder_Dog_(video_game)	https://www.youtube.com/embed/zcAMtNMOAcA	\N
+420	Shin Megami Tensei	shin_megami_tensei/shin_megami_tensei/cover.jpg	shin_megami_tensei/shin_megami_tensei/logo.jpg	shin_megami_tensei/shin_megami_tensei/back.jpg	1992-10-30	\N	NTSC-J	55	1	\N	\N	NOT_PLAYED	2024-09-26 15:31:52.493+02	2024-09-26 15:32:59.508+02	143	230	\N	https://en.wikipedia.org/wiki/Shin_Megami_Tensei_(video_game)	https://www.youtube.com/embed/Ph0IOnW0Mhs	\N
+421	Mario Paint	mario/mario_paint/cover.jpg	mario/mario_paint/logo.jpg	mario/mario_paint/back.jpg	1992-07-14	73	PAL-ES	150	1	\N	\N	NOT_PLAYED	2024-09-26 15:47:48.291+02	2024-09-26 15:49:37.876+02	14	231	#ee1c25	https://es.wikipedia.org/wiki/Mario_Paint	https://www.youtube.com/embed/MX3HERvqHwI	\N
+422	Captain Commando	captain_commando/cover.jpg	captain_commando/logo.jpg	captain_commando/back.jpg	1991-11-01	\N	PAL-EUR	1400	1-2	\N	\N	NOT_PLAYED	2024-09-26 16:05:48.288+02	2024-09-26 16:05:48.288+02	\N	\N	\N	https://es.wikipedia.org/wiki/Captain_Commando_(videojuego)	https://www.youtube.com/embed/ta2UnwzcPLg	\N
+423	Road Rash II	road_rash/road_rash_ii/cover.jpg	road_rash/road_rash_ii/logo.jpg	road_rash/road_rash_ii/back.jpg	1992-12-04	90	PAL-EUR	25	1-2	\N	\N	NOT_PLAYED	2024-09-26 16:17:49.737+02	2024-09-26 16:18:41.194+02	150	166	\N	https://es.wikipedia.org/wiki/Road_Rash_II	https://www.youtube.com/embed/Qdi_PL7v3Tg	\N
+424	Astérix	asterix/asterix_91/cover.jpg	asterix/asterix_91/logo.jpg	asterix/asterix_91/back.jpg	1991-01-01	90	PAL-EUR	20	1-2	\N	\N	NOT_PLAYED	2024-09-26 16:59:26.22+02	2024-09-26 17:00:04.612+02	194	232	\N	https://en.wikipedia.org/wiki/Asterix_(1991_video_game)	https://www.youtube.com/embed/PSCO0oEHJ3k	\N
+425	Chip 'n Dale Rescue Rangers	chip_n_dale/rescue_rangers/cover.jpg	chip_n_dale/rescue_rangers/logo.jpg	chip_n_dale/rescue_rangers/back.jpg	1990-06-08	82	PAL-ES	60	1-2	\N	\N	PLAYED	2024-09-26 17:30:48.524+02	2024-09-26 17:31:53.132+02	195	233	\N	https://es.wikipedia.org/wiki/Chip_%27n_Dale:_Rescue_Rangers_(videojuego)	https://www.youtube.com/embed/k5E_c4hI83k	\N
+426	Batman Returns (Sega)	batman/batman_returns_sega/cover.jpg	batman/batman_returns_sega/logo.jpg	batman/batman_returns_sega/back.jpg	1992-10-01	\N	PAL-EUR	30	1	\N	\N	NOT_PLAYED	2024-09-27 09:12:02.104+02	2024-09-27 09:14:50.966+02	87	234	#505c7c	https://es.wikipedia.org/wiki/Batman_Returns_(videojuego)	https://www.youtube.com/embed/ibnSxNnc0q4	\N
 \.
 
 
@@ -4565,6 +5578,13 @@ COPY public."Genres" (id, name, main_img, "createdAt", "updatedAt", "parentId", 
 85	Golf	sports/golf.jpg	2024-08-30 07:51:09.201+02	2024-08-30 07:51:09.201+02	13	\N
 86	Visual Novel	adventure/visual_novel.jpg	2024-08-30 09:15:15.521+02	2024-08-30 09:15:15.521+02	11	\N
 87	MMORPG	rpg/mmo.jpg	2024-08-31 13:58:03.648+02	2024-08-31 13:58:03.648+02	18	\N
+88	Karts	racing/karts.jpg	2024-09-14 11:22:18.326+02	2024-09-14 11:22:18.326+02	51	\N
+89	Gestión deportiva	simulator/sports_manager.jpg	2024-09-14 12:47:38.427+02	2024-09-14 12:47:38.427+02	36	\N
+90	Vigilancia	simulator/surveillance.jpg	2024-09-15 13:09:33.62+02	2024-09-15 13:09:33.62+02	36	\N
+91	Survival horror	horror/survival-horror.jpg	2024-09-18 15:36:47.768+02	2024-09-18 15:36:47.768+02	74	\N
+92	Hockey sobre hielo	sports/ice-hockey.jpeg	2024-09-21 13:36:37.936+02	2024-09-21 13:36:37.936+02	13	\N
+93	Tower Defense	strategy/tower-defense.jpeg	2024-09-22 09:48:26.724+02	2024-09-22 09:48:26.724+02	42	\N
+94	Dibujo	educative/draw.jpg	2024-09-26 15:38:35.909+02	2024-09-26 15:38:35.909+02	9	\N
 \.
 
 
@@ -4596,8 +5616,8 @@ COPY public."People" (id, name, main_img, "createdAt", "updatedAt", nationality,
 25	Shigeru Yokoyama	Shigeru_Yokoyama.jpeg	2024-05-19 12:22:39.154+02	2024-05-19 12:22:39.154+02	jp	1940-01-01	\N	\N
 26	Dona Bailey	Dona_Bailey.jpg	2024-05-23 18:54:29.679+02	2024-05-23 18:54:29.679+02	us	1955-01-01	https://es.wikipedia.org/wiki/Dona_Bailey	\N
 27	Shigeru Miyamoto	Shigeru_Miyamoto.jpeg	2024-05-24 13:14:25.989+02	2024-05-24 13:32:07.447+02	jp	1952-11-16	https://es.wikipedia.org/wiki/Shigeru_Miyamoto	t
+22	Tōru Iwatani	Toru_Iwatani.png	2024-05-02 16:21:33.668+02	2024-09-12 15:59:04.905+02	jp	1955-01-25	https://es.wikipedia.org/wiki/T%C5%8Dru_Iwatani	f
 32	Gunpei Yokoi	Gunpei_Yokoi.jpg	2024-06-04 16:33:36.603+02	2024-07-17 19:52:25.322+02	jp	1941-09-10	https://es.wikipedia.org/wiki/Gunpei_Yokoi	f
-22	Tōru Iwatani	Toru_Iwatani.png	2024-05-02 16:21:33.668+02	2024-05-24 13:34:20.153+02	jp	1955-01-25	https://es.wikipedia.org/wiki/T%C5%8Dru_Iwatani	t
 1	Yūji Naka	Yuji_Naka.jpeg	2023-12-29 17:09:32.911+01	2024-05-24 13:34:39.254+02	jp	1965-09-17	https://es.wikipedia.org/wiki/Y%C5%ABji_Naka	t
 28	John Newcomer	person.png	2024-05-26 13:29:39.47+02	2024-05-26 13:29:39.47+02	us	1954-01-01	https://en.wikipedia.org/wiki/John_Newcomer	\N
 29	Warren Davis	Warren_Davis.jpg	2024-05-30 16:20:42.058+02	2024-05-30 16:20:42.058+02	us	1952-01-01	https://es.wikipedia.org/wiki/Warren_Davis_(actor)	\N
@@ -4684,6 +5704,23 @@ COPY public."People" (id, name, main_img, "createdAt", "updatedAt", nationality,
 112	Shin-ichiro Tomie	person.png	2024-09-03 17:27:38.746+02	2024-09-03 17:27:38.746+02	jp	1961-01-01	https://en.wikipedia.org/wiki/Shin-ichiro_Tomie	\N
 113	Satoshi Tajiri	satoshi-tajiri.jpg	2024-09-06 13:57:10.795+02	2024-09-06 13:57:10.795+02	jp	1965-08-28	https://es.wikipedia.org/wiki/Satoshi_Tajiri	t
 75	Greg Johnson	person.png	2024-07-21 13:42:12.029+02	2024-09-08 10:49:01.19+02	us	1960-01-01	https://en.wikipedia.org/wiki/Greg_Johnson_(game_designer)	\N
+115	David Perry	David_Perry.jpg	2024-09-11 13:53:32.32+02	2024-09-11 13:53:32.32+02	gb	1967-04-01	https://es.wikipedia.org/wiki/David_Perry	\N
+116	Hiroyuki Takahashi	Hiroyuki_Takahashi.jpg	2024-09-11 17:21:56.256+02	2024-09-11 17:21:56.256+02	jp	1957-10-30	https://en.wikipedia.org/wiki/Hiroyuki_Takahashi_(game_producer)	\N
+117	Masahiro Sakurai	Masahiro_Sakurai.jpg	2024-09-12 15:58:48.587+02	2024-09-12 15:58:48.587+02	jp	1970-08-03	https://es.wikipedia.org/wiki/Masahiro_Sakurai	t
+118	John Carmack	John_Carmack.jpeg	2024-09-13 10:05:14.234+02	2024-09-13 10:05:24.203+02	us	1970-08-21	https://es.wikipedia.org/wiki/John_Carmack	f
+119	Tom Hall	Tom_Hall.jpg	2024-09-13 10:07:21.708+02	2024-09-13 10:07:21.708+02	us	1964-09-02	https://en.wikipedia.org/wiki/Tom_Hall	\N
+120	Ed Annunziata	person.png	2024-09-13 13:18:58.782+02	2024-09-13 13:18:58.782+02	us	1960-01-01	https://en.wikipedia.org/wiki/Ed_Annunziata	\N
+121	Hideki Konno	Hideki_Konno.jpg	2024-09-14 11:13:09.815+02	2024-09-14 11:13:09.815+02	jp	1965-05-13	https://es.wikipedia.org/wiki/Hideki_Konno	\N
+122	Paul Collyer	person.png	2024-09-14 12:37:22.696+02	2024-09-14 12:37:22.696+02	gb	1960-01-01	https://en.wikipedia.org/wiki/Collyer_brothers_(game_designers)	\N
+123	Oliver Collyer	person.png	2024-09-14 12:37:48.25+02	2024-09-14 12:37:48.25+02	gb	1960-01-01	https://en.wikipedia.org/wiki/Collyer_brothers_(game_designers)	\N
+124	Ed Boon	Ed_Boon.jpg	2024-09-15 11:39:02.516+02	2024-09-15 11:39:02.516+02	us	1964-02-22	https://es.wikipedia.org/wiki/Ed_Boon	\N
+125	John Tobias	John_Tobias.jpg	2024-09-15 11:40:57.9+02	2024-09-15 11:40:57.9+02	us	1969-08-24	https://es.wikipedia.org/wiki/John_Tobias	\N
+126	Fred Ford	person.png	2024-09-16 15:51:20.785+02	2024-09-16 15:51:20.785+02	us	1960-01-01	https://en.wikipedia.org/wiki/Fred_Ford_(programmer)	\N
+127	Paul Reiche III	Paulreiche.jpg	2024-09-16 15:52:50.064+02	2024-09-16 15:52:50.064+02	us	1960-01-01	https://en.wikipedia.org/wiki/Paul_Reiche_III	\N
+128	Paul Cuisset	person.png	2024-09-17 15:53:49.497+02	2024-09-17 15:53:49.497+02	fr	1964-01-01	https://en.wikipedia.org/wiki/Paul_Cuisset	\N
+129	Frédérick Raynal	Frédérick_Raynal.jpg	2024-09-18 16:06:04.123+02	2024-09-18 16:06:04.123+02	fr	1966-05-15	https://es.wikipedia.org/wiki/Fr%C3%A9d%C3%A9rick_Raynal	\N
+130	Jon Hare	Jon_Hare.jpg	2024-09-20 16:24:19.46+02	2024-09-20 16:24:19.46+02	gb	1966-01-20	https://en.wikipedia.org/wiki/Jon_Hare	\N
+131	Jeff Tunnell	person.png	2024-09-21 12:10:36.046+02	2024-09-21 12:10:36.046+02	us	1960-01-01	https://en.wikipedia.org/wiki/Jeff_Tunnell	\N
 \.
 
 
@@ -4746,6 +5783,7 @@ COPY public."Platforms" (id, name, mini_logo, img, release_date, gen, specs, typ
 24	PC Engine CD-ROM² System	nec/pc-engine-cdrom2/mini-logo.png	nec/pc-engine-cdrom2/platform-img.jpg	1988-01-01	4	CD-Rom	peripheral	TurboGrafx-CD/CD-ROM² (USA)	\N	2024-08-22 17:18:00.926+02	2024-08-22 17:20:02.886+02	72	nec/pc-engine-cdrom2/logo.png	\N	\N
 26	Super Nintendo	nintendo/snes/mini-logo.png	nintendo/snes/platform_img.jpg	1990-11-21	4	16 bits\nCartuchos	desktop	Super Famicom (jp)	#908a99	2024-08-24 13:53:47.323+02	2024-08-24 13:55:32.854+02	32	nintendo/snes/logo.png	https://es.wikipedia.org/wiki/Super_Nintendo	t
 29	Mega CD	sega/mega_cd/logo.png	sega/mega_cd/platform-img.jpg	1991-12-12	4	CD-ROM	peripheral	Sega CD (USA)	\N	2024-09-02 16:24:10.848+02	2024-09-02 16:24:10.848+02	\N	sega/mega_cd/logo.png	https://es.wikipedia.org/wiki/Sega_CD	\N
+30	Philips CD-i	philips/cd-i/mini-logo.jpg	philips/cd-i/platform-img.jpg	1991-01-01	4	CD-ROM\n16 bits	desktop	\N	\N	2024-09-08 20:28:50.32+02	2024-09-08 20:29:32.973+02	10	philips/cd-i/logo.png	https://es.wikipedia.org/wiki/CD-i	\N
 28	Neo-Geo AES	snk/neo-geo-aes/mini-logo.png	snk/neo-geo-aes/platform-img.jpg	1990-04-26	4	16 bits\nCartuchos ROM	desktop	\N	\N	2024-09-01 13:40:35.396+02	2024-09-01 13:53:48.501+02	96	snk/neo-geo-aes/logo.jpg	https://es.wikipedia.org/wiki/Neo-Geo#Sistema_AES	f
 \.
 
@@ -4842,7 +5880,6 @@ COPY public."Series" (id, name, is_main, "createdAt", "updatedAt", franchise_id)
 84	2D	t	2024-07-21 12:52:28.335+02	2024-07-21 12:52:28.335+02	78
 85	Principal	t	2024-07-21 13:43:22.93+02	2024-07-21 13:43:22.93+02	79
 86	Principal	t	2024-07-22 15:22:32.142+02	2024-07-22 15:22:32.142+02	80
-87	Principal	t	2024-07-22 15:50:39.406+02	2024-07-22 15:50:39.406+02	81
 88	Principal	t	2024-07-22 16:38:36.574+02	2024-07-22 16:38:36.574+02	82
 89	Principal	t	2024-07-23 16:03:03.972+02	2024-07-23 16:03:03.972+02	83
 90	Principal	t	2024-07-23 16:32:05.827+02	2024-07-23 16:32:05.827+02	84
@@ -4872,6 +5909,7 @@ COPY public."Series" (id, name, is_main, "createdAt", "updatedAt", franchise_id)
 117	Principal	t	2024-08-03 13:28:36.077+02	2024-08-03 13:28:36.077+02	110
 118	Principal	t	2024-08-05 16:14:58.125+02	2024-08-05 16:14:58.125+02	111
 119	Principal	t	2024-08-05 16:54:54.574+02	2024-08-05 16:54:54.574+02	112
+87	NES	t	2024-07-22 15:50:39.406+02	2024-09-09 16:11:07.295+02	81
 120	Primera Trilogía	t	2024-08-06 16:30:01.175+02	2024-08-06 16:30:01.175+02	113
 121	Trilogia	t	2024-08-07 16:14:58.96+02	2024-08-07 16:14:58.96+02	114
 122	Principal	t	2024-08-08 16:00:54.716+02	2024-08-08 16:00:54.716+02	115
@@ -4943,6 +5981,51 @@ COPY public."Series" (id, name, is_main, "createdAt", "updatedAt", franchise_id)
 187	Principal	t	2024-09-08 09:22:32.387+02	2024-09-08 09:22:32.387+02	166
 188	Principal	t	2024-09-08 10:47:12.494+02	2024-09-08 10:47:12.494+02	167
 189	Principal	t	2024-09-08 11:50:13.92+02	2024-09-08 11:50:13.92+02	168
+190	SNES	t	2024-09-09 16:11:18.732+02	2024-09-09 16:29:27.178+02	81
+191	Romancing SaGa	t	2024-09-09 17:16:13.372+02	2024-09-09 17:16:13.372+02	134
+192	Virgin	t	2024-09-10 15:42:22.469+02	2024-09-10 16:21:19.107+02	169
+193	25th anniversary	t	2024-09-10 16:34:16.773+02	2024-09-10 16:34:16.773+02	170
+194	Konami	t	2024-09-11 10:34:07.076+02	2024-09-11 10:34:07.076+02	171
+195	Konami - GB	\N	2024-09-11 10:57:12.948+02	2024-09-11 10:57:12.948+02	171
+196	Principal	t	2024-09-11 11:59:02.746+02	2024-09-11 11:59:02.746+02	172
+197	Probe	t	2024-09-11 13:06:08.909+02	2024-09-11 13:06:08.909+02	173
+198	Darkness	t	2024-09-11 17:14:06.852+02	2024-09-11 17:14:06.852+02	174
+199	Shining Force	t	2024-09-11 17:24:24.799+02	2024-09-11 17:24:24.799+02	174
+200	Compile	t	2024-09-12 16:09:22.411+02	2024-09-12 16:09:22.411+02	175
+201	Dream Land	t	2024-09-12 16:29:34.611+02	2024-09-12 16:29:54.799+02	176
+202	id Software	t	2024-09-13 08:06:21.073+02	2024-09-13 08:06:21.073+02	60
+203	Principal	t	2024-09-13 13:26:19.483+02	2024-09-13 13:26:19.483+02	177
+204	Principal	t	2024-09-14 11:17:07.525+02	2024-09-14 11:17:07.525+02	178
+205	Principal	t	2024-09-14 13:25:48.251+02	2024-09-14 13:25:48.251+02	179
+206	Principal	t	2024-09-15 09:27:23.151+02	2024-09-15 09:27:23.151+02	180
+207	Principal	t	2024-09-15 10:48:24.291+02	2024-09-15 10:48:24.291+02	181
+208	Principal	t	2024-09-15 11:59:56.725+02	2024-09-15 11:59:56.725+02	182
+209	Principal	t	2024-09-16 16:15:54.539+02	2024-09-16 16:15:54.539+02	183
+210	Principal	t	2024-09-17 16:04:49.222+02	2024-09-17 16:04:49.222+02	184
+211	Principal	t	2024-09-18 16:08:31.1+02	2024-09-18 16:08:31.1+02	185
+212	Virgin	t	2024-09-18 16:43:39.911+02	2024-09-18 16:43:54.607+02	186
+213	Street Fighter II versions	\N	2024-09-20 13:37:35.444+02	2024-09-20 13:37:35.444+02	95
+214	Principal	t	2024-09-20 15:48:38.255+02	2024-09-20 15:48:38.255+02	187
+215	Principal	t	2024-09-20 16:31:17.805+02	2024-09-20 16:31:17.805+02	188
+216	Super Star Wars	t	2024-09-21 11:28:24.62+02	2024-09-21 11:28:24.62+02	47
+217	RoadRunner	t	2024-09-21 12:53:55.354+02	2024-09-21 12:54:02.578+02	189
+218	Principal	t	2024-09-21 13:38:50.101+02	2024-09-21 13:38:50.101+02	190
+219	Underworld	\N	2024-09-22 10:38:53.6+02	2024-09-22 10:38:53.6+02	10
+220	Principal	t	2024-09-22 12:59:20.412+02	2024-09-22 12:59:20.412+02	191
+221	Mystic Quest	\N	2024-09-23 16:02:13.149+02	2024-09-23 16:02:13.149+02	99
+222	NES	\N	2024-09-23 16:12:11.627+02	2024-09-23 16:12:11.627+02	47
+223	G.G.	\N	2024-09-23 16:25:19.157+02	2024-09-23 16:25:19.157+02	104
+224	Principal	t	2024-09-23 18:37:27.347+02	2024-09-23 18:37:27.347+02	192
+225	Krusty's Fun House	\N	2024-09-24 15:43:23.775+02	2024-09-24 15:43:23.775+02	161
+226	Taz-mania	t	2024-09-24 16:06:27.983+02	2024-09-24 16:06:27.983+02	189
+227	Air Zonk	\N	2024-09-24 16:20:45.396+02	2024-09-24 16:20:45.396+02	126
+228	Alien 3	t	2024-09-24 16:47:10.99+02	2024-09-24 16:47:10.99+02	193
+229	Mega Drive	t	2024-09-25 15:43:07.41+02	2024-09-25 15:43:07.41+02	119
+230	Principal	t	2024-09-26 15:27:12.411+02	2024-09-26 15:27:12.411+02	143
+231	Mario Paint	\N	2024-09-26 15:35:45.83+02	2024-09-26 15:35:45.83+02	14
+232	Master System	t	2024-09-26 16:48:32.64+02	2024-09-26 16:48:32.64+02	194
+233	Principal	t	2024-09-26 17:20:15.391+02	2024-09-26 17:20:15.391+02	195
+234	Batman Returns - SEGA	f	2024-09-27 09:01:37.458+02	2024-09-27 09:01:50.969+02	87
 \.
 
 
@@ -4997,6 +6080,8 @@ COPY public."Themes" (id, name, main_img, "createdAt", "updatedAt", "parentId", 
 45	Ciberpunk	scifi/cyberpunk.jpg	2024-08-28 17:26:18.929+02	2024-08-28 17:26:18.929+02	6	\N
 46	Era Vikinga	historical/viking.jpg	2024-09-06 08:30:50.591+02	2024-09-06 08:30:50.591+02	1	\N
 47	Robos	crime/heist.jpg	2024-09-08 10:11:49.773+02	2024-09-08 10:11:49.773+02	8	\N
+48	Basado en serie de TV	adaptation/tv_show.jpg	2024-09-10 16:45:47.601+02	2024-09-10 16:45:47.601+02	16	\N
+49	Medieval	historical/medieval.jpg	2024-09-22 09:53:48.892+02	2024-09-22 09:53:48.892+02	1	\N
 \.
 
 
@@ -5004,70 +6089,70 @@ COPY public."Themes" (id, name, main_img, "createdAt", "updatedAt", "parentId", 
 -- Name: AwardCategories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."AwardCategories_id_seq"', 27, true);
+SELECT pg_catalog.setval('public."AwardCategories_id_seq"', 45, true);
 
 
 --
 -- Name: Awards_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."Awards_id_seq"', 7, true);
+SELECT pg_catalog.setval('public."Awards_id_seq"', 8, true);
 
 
 --
 -- Name: Characters_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."Characters_id_seq"', 144, true);
+SELECT pg_catalog.setval('public."Characters_id_seq"', 177, true);
 
 
 --
 -- Name: Companies_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."Companies_id_seq"', 174, true);
+SELECT pg_catalog.setval('public."Companies_id_seq"', 231, true);
 
 
 --
 -- Name: Franchise_Franchises_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."Franchise_Franchises_id_seq"', 4, true);
+SELECT pg_catalog.setval('public."Franchise_Franchises_id_seq"', 5, true);
 
 
 --
 -- Name: Franchises_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."Franchises_id_seq"', 168, true);
+SELECT pg_catalog.setval('public."Franchises_id_seq"', 195, true);
 
 
 --
 -- Name: Game_Games_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."Game_Games_id_seq"', 5, true);
+SELECT pg_catalog.setval('public."Game_Games_id_seq"', 7, true);
 
 
 --
 -- Name: Games_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."Games_id_seq"', 329, true);
+SELECT pg_catalog.setval('public."Games_id_seq"', 426, true);
 
 
 --
 -- Name: Genres_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."Genres_id_seq"', 87, true);
+SELECT pg_catalog.setval('public."Genres_id_seq"', 94, true);
 
 
 --
 -- Name: People_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."People_id_seq"', 114, true);
+SELECT pg_catalog.setval('public."People_id_seq"', 131, true);
 
 
 --
@@ -5081,21 +6166,21 @@ SELECT pg_catalog.setval('public."PlatformModels_id_seq"', 21, true);
 -- Name: Platforms_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."Platforms_id_seq"', 29, true);
+SELECT pg_catalog.setval('public."Platforms_id_seq"', 30, true);
 
 
 --
 -- Name: Series_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."Series_id_seq"', 189, true);
+SELECT pg_catalog.setval('public."Series_id_seq"', 234, true);
 
 
 --
 -- Name: Themes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."Themes_id_seq"', 47, true);
+SELECT pg_catalog.setval('public."Themes_id_seq"', 49, true);
 
 
 --

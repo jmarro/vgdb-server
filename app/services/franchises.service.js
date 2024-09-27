@@ -1,6 +1,7 @@
 const Franchise = require('../models/Franchise.model');
 const Franchise_Franchise = require('../models/Franchise_Franchise.model');
 const Franchise_Person = require('../models/Franchise_Person.model');
+const Game = require('../models/Game.model');
 const Serie = require('../models/Serie.model');
 const { Op } = require('sequelize');
 
@@ -36,7 +37,7 @@ async function getFranchise(id) {
     {
       model: Serie,
       as: 'series',
-      include: ['games']
+      include: [{model: Game, as:'games'}]
     },
     {
       model: Franchise,
@@ -45,7 +46,8 @@ async function getFranchise(id) {
     {
       model: Franchise,
       as: 'subFranchises'
-    }]
+    }],
+    order: [[ { model: Serie, as: 'series' }, { model: Game, as: 'games' }, 'release_date', 'ASC']]
   });
 };
 

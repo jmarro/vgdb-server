@@ -13,12 +13,17 @@ const Character = require('../models/Character.model');
 const Serie = require('../models/Serie.model');
 const Game_Games = require('../models/Game_Games.model');
 
-async function getAllGames(page) {
+async function getAllGames(page, orderBy) {
   const offset = 9*page;
+  let order = [['score', 'DESC NULLS LAST'], ['name', 'ASC']];
+  if (orderBy !== 'score') {
+    order = [[orderBy, 'ASC']];
+  }
+
   return await Game.findAndCountAll({ 
     limit: 9,
     offset,
-    order: [['score', 'DESC NULLS LAST'], ['name', 'ASC']]
+    order
   });
 };
 
@@ -64,7 +69,8 @@ async function getGame(id) {
     {
       model: Game,
       as: 'subGames'
-    }]
+    }],
+    order: [[ { model: Serie, as: 'serie' }, { model: Game, as: 'games' }, 'release_date', 'ASC']]
   });
 };
 

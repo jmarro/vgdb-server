@@ -4,11 +4,12 @@ async function getAllGames(req, res) {
   try {
     let games;
     let page = req.query && req.query.page ? req.query.page : 0;
+    let orderBy = req.query && req.query.orderBy ? req.query.orderBy : 'score';
     if (req.query && req.query.name) {
       console.log('here',req.query.name)
       games = await services.getSearchGames(req.query.name, page);
     } else { 
-      games = await services.getAllGames(page);
+      games = await services.getAllGames(page, orderBy);
     }
     res.json(games);
   } catch (err) {
