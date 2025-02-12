@@ -20,7 +20,9 @@ async function getAllCompanies(req, res) {
 async function getCompany(req, res) {
   try {
     const id = req.params.id_company;
-    const company = await services.getCompany(id);
+    let pageDeveloped = req.query && req.query.pageDeveloped ? req.query.pageDeveloped : 0;
+    let pagePublished = req.query && req.query.pagePublished ? req.query.pagePublished : 0;
+    const company = await services.getCompany(id, pageDeveloped, pagePublished);
     res.json(company);
   } catch (err) {
     console.error(err);
