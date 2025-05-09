@@ -8,7 +8,7 @@ class Game_Character extends Model {
   
 Game_Character.init({
     type: {
-        type: DataTypes.STRING,  // main, playable, secondary, antagonist, villain
+        type: DataTypes.STRING,  // main, playable, secondary, antagonist, villain, crossover
         allowNull: false
     },
     is_main_for_character: {

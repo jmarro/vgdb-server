@@ -31,7 +31,7 @@ async function getPerson(id) {
     where: {
       id: id
     },
-    include: ['franchises', 'games',
+    include: ['franchises', 'games', 'companies',
     {
       model: Character,
       as: 'characters',

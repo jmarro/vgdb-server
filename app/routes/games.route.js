@@ -28,6 +28,8 @@ router.post('/:id_game/addSecondaryCharacters', controllers.addSecondaryCharacte
 router.post('/:id_game/removeSecondaryCharacter', controllers.removeSecondaryCharacter);
 router.post('/:id_game/addVillainCharacters', controllers.addVillainCharacters);
 router.post('/:id_game/removeVillainCharacter', controllers.removeVillainCharacter);
+router.post('/:id_game/addCrossoverCharacters', controllers.addCrossoverCharacters);
+router.post('/:id_game/removeCrossoverCharacter', controllers.removeCrossoverCharacter);
 router.post('/:id_game/addAwards', controllers.addAwards);
 router.post('/:id_game/removeAward', controllers.removeAward);
 router.post('/:id_game/updateOwnedGame', controllers.updateOwnedGame);

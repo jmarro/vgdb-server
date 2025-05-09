@@ -67,10 +67,48 @@ async function deleteCompany(req, res) {
   }
 };
 
+async function addPeople(req, res) {
+  try {
+    const company_id = req.params.id_company;
+    console.log('request', req);
+    console.log('persons', req.body);
+    companyPeopleArr = req.body.map(creatorId => {
+      return {
+        CompanyId: parseInt(company_id),
+        PersonId: creatorId
+      }
+    });
+    const response = await services.addPeople(companyPeopleArr);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function removePerson(req, res) {
+  try {
+    const company_id = req.params.id_company;
+    toRemove = {
+      CompanyId: parseInt(company_id),
+      PersonId: req.body.personId
+    }
+    console.log('request', req);
+    console.log('persons', req.body);
+    const response = await services.removePerson(toRemove);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 module.exports = {
   getAllCompanies,
   getCompany,
   createCompany,
   updateCompany,
-  deleteCompany
+  deleteCompany,
+  addPeople,
+  removePerson
 };

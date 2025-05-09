@@ -252,6 +252,23 @@ async function removeVillainCharacter(gameCharacter) {
   });
 }
 
+async function addCrossoverCharacters(gameCharactersArr) {
+  console.log(gameCharactersArr)
+  return await Game_Character.bulkCreate(gameCharactersArr);
+}
+
+async function removeCrossoverCharacter(gameCharacter) {
+  console.log(gameCharacter)
+  return await Game_Character.destroy({
+    where: {
+      GameId: gameCharacter.GameId,
+      CharacterId: gameCharacter.CharacterId,
+      type: 'CROSSOVER'
+    }
+  });
+}
+
+
 async function addGameRelation(gameGamesArr) {
   console.log(gameGamesArr)
   return await Game_Games.bulkCreate(gameGamesArr);
@@ -361,6 +378,8 @@ module.exports = {
   removeAntagonistCharacter,
   addVillainCharacters,
   removeVillainCharacter,
+  addCrossoverCharacters,
+  removeCrossoverCharacter,
   addAwards,
   removeAward,
   updateOwnedGame,

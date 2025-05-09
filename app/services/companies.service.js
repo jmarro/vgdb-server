@@ -3,6 +3,7 @@ const { Sequelize, Op } = require('sequelize');
 const Company = require('../models/Company.model');
 const Game = require('../models/Game.model');
 const Game_Company = require('../models/Game_Company.model');
+const Company_Person = require('../models/Company_Person.model');
 
 async function getAllCompanies(page) {
   const offset = 9*page;
@@ -35,7 +36,7 @@ async function getCompany(id, pageDeveloped, pagePublished) {
     where: {
       id: id
     },
-    include: ['parent_company', 'platforms', 'sub_companies', 'franchises', 'franchises_created']
+    include: ['parent_company', 'platforms', 'sub_companies', 'franchises', 'franchises_created', 'people']
   });
   const games_developed = await Game.findAndCountAll({
 
@@ -99,11 +100,28 @@ async function deleteCompany(id, company) {
   });
 }
 
+async function addPeople(companyPeopleArr) {
+  console.log(companyPeopleArr)
+  return await Company_Person.bulkCreate(companyPeopleArr);
+}
+
+async function removePerson(companyPerson) {
+  console.log(companyPerson)
+  return await Company_Person.destroy({
+    where: {
+      CompanyId: companyPerson.CompanyId,
+      PersonId: companyPerson.PersonId
+    },
+  });
+}
+
 module.exports = {
   getAllCompanies,
   getSearchCompanies,
   getCompany,
   createCompany,
   updateCompany,
-  deleteCompany
+  deleteCompany,
+  addPeople,
+  removePerson
 };

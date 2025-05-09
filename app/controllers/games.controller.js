@@ -432,6 +432,43 @@ async function removeVillainCharacter(req, res) {
   }
 };
 
+async function addCrossoverCharacters(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    console.log('request', req);
+    console.log('companies', req.body);
+    const gameCharactersArr = req.body.map(characterId => {
+      return {
+        GameId: parseInt(game_id),
+        CharacterId: characterId,
+        type: 'CROSSOVER'
+      }
+    });
+    const response = await services.addCrossoverCharacters(gameCharactersArr);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
+async function removeCrossoverCharacter(req, res) {
+  try {
+    const game_id = req.params.id_game;
+    toRemove = {
+      GameId: parseInt(game_id),
+      CharacterId: req.body.characterId
+    }
+    console.log('request', req);
+    console.log('char', req.body);
+    const response = await services.removeCrossoverCharacter(toRemove);
+    res.json(response);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
+
 async function addGameToCollection(req, res) {
   try {
     const game_id = req.params.id_game;
@@ -670,6 +707,8 @@ module.exports = {
   removeAntagonistCharacter,
   addVillainCharacters,
   removeVillainCharacter,
+  addCrossoverCharacters,
+  removeCrossoverCharacter,
   addAwards,
   removeAward,
   updateOwnedGame,
