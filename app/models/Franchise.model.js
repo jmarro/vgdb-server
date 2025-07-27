@@ -27,6 +27,9 @@ Franchise.init({
     wikipedia: {
         type: DataTypes.STRING
     },
+    notes: {
+        type: DataTypes.STRING
+    },
     is_main: {
         type: DataTypes.BOOLEAN
     }
